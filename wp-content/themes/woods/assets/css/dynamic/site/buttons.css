@@ -1,0 +1,89 @@
+/* #Button Appearance Styles (regular scheme) */
+.btn-default,
+.btn-secondary,
+.btn-default:hover,
+.btn-secondary:hover {
+	color: $invert_link_color;
+	background: $regular_link_color;
+	border-color: $regular_link_color;
+}
+.btn,
+.btn-default,
+.mphb-book-button,
+.mphb_sc_checkout-submit-wrapper .button,
+.mphb_widget_search-form .mphb_widget_search-submit-button-wrapper .button {
+	color: $invert_link_color;
+	background: $regular_link_color;
+	border-color: $regular_link_color;
+}
+.btn:hover,
+.btn-default:hover,
+.mphb-book-button:hover,
+.mphb_sc_checkout-submit-wrapper .button:hover,
+.mphb_widget_search-form .mphb_widget_search-submit-button-wrapper .button:hover {
+	color: $invert_link_color;
+	background-color: $regular_link_hover_color;
+	border-color: $regular_link_hover_color;
+}
+
+.btn:focus, .btn-default:focus {
+	box-shadow: none;
+}
+
+.btn-primary {
+	color: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+}
+
+.btn-secondary {
+	background-color: $regular_accent_color_3;
+	color: $invert_accent_color_1;
+	border-color: $regular_accent_color_3;
+}
+
+.btn-secondary:hover {
+	border-color: $regular_accent_color_3;
+	background-color: $regular_accent_color_3;
+	color: $invert_accent_color_1;
+}
+
+/* #Button Appearance Styles (invert scheme) */
+.invert .btn-default {
+	color: $regular_link_color;
+	background-color: $invert_link_color;
+	border-color: $invert_link_color;
+}
+.invert .btn-default:hover {
+	color: $regular_link_color;
+	background-color: $invert_link_hover_color;
+	border-color: $invert_link_hover_color;
+}
+.invert .btn-default:focus {
+	box-shadow: 0 0 10px $invert_link_color;
+}
+.invert .btn-primary {
+	color: $regular_link_color;
+	background-color: $invert_accent_color_1;
+	border-color: $invert_accent_color_1;
+}
+.invert .btn-primary:hover {
+	color: $regular_link_color;
+	background-color: @darken( $invert_accent_color_1, 10% );
+	border-color: @darken( $invert_accent_color_1, 10% );
+}
+.invert .btn-primary:focus {
+	box-shadow: 0 0 10px $invert_accent_color_1;
+}
+.invert .btn-secondary {
+	color: $regular_link_color;
+	background-color: $invert_accent_color_2;
+	border-color: $invert_accent_color_2;
+}
+.invert .btn-secondary:hover {
+	color: $regular_link_color;
+	background-color: @darken( $invert_accent_color_2, 10% );
+	border-color: @darken( $invert_accent_color_2, 10% );
+}
+.invert .btn-secondary:focus {
+	box-shadow: 0 0 10px $invert_accent_color_2;
+}

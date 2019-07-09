@@ -1,0 +1,12 @@
+#tm_builder_outer_content .tm_pb_module.tm_pb_number_counter .percent + *,
+#tm_builder_outer_content .tm_pb_module.tm_pb_number_counter .percent {
+	color: $regular_accent_color_3;
+}
+
+#tm_builder_outer_content .tm_pb_module span.percent-value {
+	font-family: @font_family( $h5_font_family );
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_number_counter .percent + * {
+		color: $regular_text_color;
+}

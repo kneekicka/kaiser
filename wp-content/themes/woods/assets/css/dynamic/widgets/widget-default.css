@@ -1,0 +1,99 @@
+/* #Widgets (defaults) */
+.widget li {
+	color: $regular_link_color;
+}
+.invert .widget li {
+	color: $invert_link_color;
+}
+.invert .widget select {
+	color: $regular_text_color;
+}
+
+/* #Widget Calendar */
+.widget_calendar caption {
+	color: $invert_link_color;
+	background-color: $regular_accent_color_1;
+}
+.widget_calendar th {
+	color: $regular_accent_color_1;
+}
+.invert .widget_calendar caption {
+	background-color: $regular_accent_color_1;
+}
+.invert .widget_calendar th {
+	color: $regular_accent_color_1;
+}
+
+/* #Widget Tag Cloud */
+.invert .tagcloud a:hover {
+	color: $invert_accent_color_1;
+	background-color:  $regular_link_color;
+	border-color:  $regular_link_color;
+}
+
+/* #Widget Recent Posts */
+.widget_recent_entries .post-date {
+	color: $regular_text_color;
+}
+.invert .widget_recent_entries .post-date {
+	color: @darken( $invert_text_color, 10% );
+}
+
+#after-content-full-width-area .widget .widget-title,
+#after-content-area .widget .widget-title,
+#after-loop-area .widget .widget-title {
+	color:  $regular_accent_color_2;
+}
+
+#recentcomments > li a {
+	color: $regular_link_color;
+}
+
+#recentcomments > li a:hover {
+	color: $regular_accent_color_3;
+}
+
+
+.invert #recentcomments > li a:hover {
+	color: $invert_text_color;
+}
+
+/* Sidebar */
+#recentcomments > li {
+	color: $regular_text_color;
+}
+
+#recentcomments > li > .comment-author-link, .recentcomments a {
+	color: $regular_accent_color_1;
+}
+
+.footer-area-wrap:not(.invert) .widget_recent_comments .widget-title {
+		color: $regular_accent_color_2;
+}
+
+.recentcomments a:hover {
+	color: $regular_accent_color_3;
+}
+
+.widget_categories .postform {
+	color: $regular_text_color;
+}
+
+.widget_categories ul li a:hover {
+	color: $regular_link_color;
+}
+
+.tagcloud a {
+	color: $regular_accent_color_6;
+	border-color: $regular_accent_color_6;
+}
+
+.tagcloud a:hover {
+	color: $invert_accent_color_1;
+	border-color: $regular_accent_color_3;
+	background: $regular_accent_color_3;
+}
+
+.custom-posts .caption h6 a:hover {
+	color: $regular_link_color;
+}

@@ -1,0 +1,26 @@
+.accordion-content {
+	margin: 0;
+	z-index: 1;
+	overflow: hidden;
+	/* css animation */
+	padding: 0 1em;
+	opacity: 0;
+	@include transition(all, 0.3s, ease);
+}
+
+.content-open {
+	opacity: 1;
+	@include px('padding', 15px 20px);
+}
+
+
+.accordion-trigger{
+	.open {
+		i {
+			@include transform(rotate(0.5turn));
+		}
+	}
+	i {
+		@include transition(all, 300ms, ease-in-out);
+	}
+}

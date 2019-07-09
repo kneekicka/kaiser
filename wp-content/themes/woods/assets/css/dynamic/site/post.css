@@ -1,0 +1,161 @@
+/* #Entry Meta */
+.post__cats a{
+	color: $invert_link_color;
+	background-color: $regular_accent_color_3;
+}
+
+.sticky__label {
+	color: $invert_link_color;
+}
+
+.post__cats a:hover {
+	color: $invert_link_color;
+	background-color: $regular_accent_color_1;
+}
+.entry-meta .material-icons,
+.post__tags .material-icons,
+.entry-meta .fa,
+.post__tags .fa {
+	color: @alpha( $regular_accent_color_1, 30 );
+}
+.post__posted-by,
+.posted-by__author,
+.post-featured-content {
+	color: $regular_h5_color;
+}
+
+.post__posted-by a, .post__comments a {
+		color: $regular_link_color;
+}
+.post__posted-by a:hover, .post__comments a:hover {
+		color: $regular_link_hover_color;
+}
+.post__date a {
+	color: $regular_h5_color;
+}
+.post__date a:hover {
+	color: $regular_link_color;
+}
+.post__tags a,
+.tm_pb_menu_items .mprm-shortcode-items .mprm-tags-wrapper a {
+	color: $regular_accent_color_6;
+	border-color: $regular_accent_color_6;
+}
+.post__tags a:hover,
+.tm_pb_menu_items .mprm-shortcode-items .mprm-tags-wrapper a:hover {
+	color: $invert_accent_color_1;
+	border-color: $regular_accent_color_3;
+	background: $regular_accent_color_3;
+}
+
+.post-author__title a:hover {
+	color: $regular_link_hover_color;
+}
+
+.post-thumbnail .sticky__label {
+	background: $regular_accent_color_5;
+}
+
+.post-thumbnail .sticky__label:before {
+	border-bottom-color: $regular_accent_color_5;
+}
+
+.post-thumbnail .sticky__label:after {
+	border-top-color: $regular_accent_color_5;
+}
+
+.single .related-posts .related-post .entry-title a:hover,
+.comment-reply-link:hover {
+		color: $regular_accent_color_1;
+}
+
+.comment-date {
+	color: @alpha( $regular_accent_color_2, 25 );
+}
+
+.comment-form__field {
+		border-color: @alpha( $regular_accent_color_2, 12 );
+}
+
+.comment-body .fn {
+	color: $regular_accent_color_2;
+}
+
+.invert .post__cats a:hover {
+	color: $regular_link_color;
+	background-color: $invert_accent_color_1;
+}
+
+/* #Post Format */
+.format-quote .post-quote {
+	color: $invert_text_color;
+}
+.post-format-link {
+	color: $regular_link_color;
+}
+
+.post-format-link:hover {
+	color: $invert_accent_color_1;
+}
+
+.post .post-format-quote:before {
+	background: $regular_accent_color_1;
+}
+
+.post-gallery__caption {
+	color: $invert_accent_color_1;
+	background: @alpha( $regular_accent_color_2, 50 );
+}
+
+.post-thumbnail__format-link {
+	background: $regular_accent_color_2;
+}
+
+.post-thumbnail__link:after,
+.mphb-room-type-gallery-wrapper .post-gallery__link:after {
+	background: linear-gradient(to bottom, transparent 0%, @alpha( $regular_accent_color_2, 70 ) 75%);
+}
+
+.post-thumbnail__link:hover:before,
+.mphb-room-type-gallery-wrapper .post-gallery__link:before {
+	color: $invert_accent_color_1;
+}
+
+/* #Author Bio */
+.post-author__holder {
+	background-color: $regular_link_color;
+}
+
+/* #Comment Reply Link */
+#cancel-comment-reply-link {
+	color: $regular_accent_color_1;
+}
+#cancel-comment-reply-link:hover {
+	color: $regular_accent_color_2;
+}
+
+.post .post-format-quote {
+	color: $invert_accent_color_1;
+	font-family: @font_family( $h5_font_family );
+	letter-spacing: $h5_letter_spacing{px};
+	line-height: $h5_line_height;
+	font-size: $h5_font_size{px};
+}
+
+@media (max-width: 992px) {
+	.post .post-format-quote {font-size: $h6_font_size{px};}
+}
+
+.nav-links .nav-previous a, .nav-links .nav-next a {
+		color: $regular_accent_color_2;
+}
+
+.nav-links .nav-previous a:hover, .nav-links .nav-next a:hover {
+		color: $regular_link_color;
+}
+
+.post.posts-list__item .entry-title a:hover,
+.tax-mp_menu_category .posts-list__item .entry-title a:hover,
+.tax-mp_ingredient .posts-list__item .entry-title a:hover {
+	color: $regular_link_color;
+}

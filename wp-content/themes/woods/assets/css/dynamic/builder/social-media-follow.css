@@ -1,0 +1,7 @@
+.tm_pb_builder #tm_builder_outer_content .tm_pb_module.tm_pb_social_media_follow .tm_pb_social_icon a {
+	color: $regular_link_hover_color;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_module.tm_pb_social_media_follow .tm_pb_social_icon a:hover {
+	color: $regular_link_color;
+}

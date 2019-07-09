@@ -1,0 +1,20 @@
+#tm_builder_outer_content .location_info ._phone_number {
+	color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .location_info p strong {
+	font-family: @font_family( $h5_font_family );
+	color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .location_info:before {
+	background: $regular_accent_color_2;
+}
+
+.tm_pb_builder #tm_builder_outer_content .location_info ._mail a {
+	color: $regular_accent_color_1;
+}
+
+.tm_pb_builder #tm_builder_outer_content .location_info ._mail a:hover {
+	color: $regular_accent_color_3;
+}

@@ -1,0 +1,49 @@
+.tm_pb_builder #tm_builder_outer_content {
+	.tm_pb_button:not(.tm_pb_contact_submit),
+	.tm_pb_button:not(.tm_pb_contact_submit):hover,
+	.tm_pb_button.tm_pb_custom_button_icon:hover,
+	.more-link,
+	.more-link:hover {
+		border: 2px solid;
+		padding: 11px 48px 12px;
+		margin-top: 13px;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: .9px;
+		background: none;
+		&.tm_pb_button_icon_alignment_left {
+			&:after {
+				margin: 0 10px 0 0;
+				left: 1em;
+				right: auto;
+			}
+		}
+		&:after {
+			margin: 0 0 0 10px;
+			line-height: 1.2em;
+			opacity: 1;
+			right: 1em;
+			transition: all 0s;
+		}
+	}
+	.more-link, .more-link:hover {
+		padding: 9px 21px;
+		font-size: .75rem;
+	}
+	.tm_pb_contact_submit, .tm_pb_contact_submit:hover {
+		@include btn;
+		@include border-radius;
+	}
+}
+
+.download_btn {
+	text-transform: uppercase;
+	&:before {
+		content: '\f019';
+		font-family: 'FontAwesome';
+		font-size: 43px;
+		display: block;
+		margin: 0 0 7px;
+	}
+}

@@ -1,0 +1,31 @@
+.widget .contact-information-widget__inner li {
+	color: $regular_text_color;
+}
+
+.widget.contact-information-widget h4::before {
+	background: $regular_accent_color_2;
+}
+
+.widget.contact-information-widget .contact-information-widget__inner li strong {
+	color: $regular_accent_color_2;
+	font-family: @font_family( $h5_font_family );
+}
+
+.widget.contact-information-widget .contact-information-widget__inner li a {
+	color: $regular_accent_color_1;
+}
+
+.widget.contact-information-widget .contact-information-widget__inner li a:hover,
+.widget.contact-information-widget .contact-information-widget__inner li h5,
+.widget.contact-information-widget .contact-information-widget__inner li h5 a,
+.widget.contact-information-widget h4 {
+	color: $regular_accent_color_2;
+}
+
+.widget.contact-information-widget .contact-information-widget__inner li h5 {
+	font-size: @font_size($h5_font_size, multiple, ceil, 1.15)px;
+}
+
+.widget.contact-information-widget .contact-information-widget__inner li .icon {
+	color: $regular_accent_color_1;
+}

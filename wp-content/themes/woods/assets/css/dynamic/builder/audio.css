@@ -1,0 +1,63 @@
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module {
+	background-color: $regular_accent_color_3;
+}
+
+#tm_builder_outer_content .tm_pb_audio_module_content h2 {
+	font-style: $h4_font_style;
+	font-weight: $h4_font_weight;
+	font-size: @font_size($h4_font_size, multiple, ceil, 0.9333)px;
+	line-height: $h4_line_height;
+	font-family: @font_family( $h4_font_family );
+	letter-spacing: $h4_letter_spacing{px};
+}
+
+@media (min-width: 992px) {
+	#tm_builder_outer_content .tm_pb_audio_module_content h2 {
+		font-size: $h4_font_size{px};
+	}
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-controls .mejs-play button::before,
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-controls .mejs-pause button::before,
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-controls .mejs-volume-button button::before,
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-time-float .mejs-time-float-current,
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-controls .mejs-time {
+	color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-controls .mejs-time-rail .mejs-time-total,
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-controls .mejs-horizontal-volume-total {
+	background-color: @alpha($regular_accent_color_2, 30);
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-controls .mejs-time-rail .mejs-time-handle,
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-controls .mejs-horizontal-volume-handle {
+	background-color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-controls .mejs-time-rail .mejs-time-current,
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-controls .mejs-horizontal-volume-current {
+	background-color: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-time-float .mejs-time-float-current,
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-controls .mejs-time,
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_audio_container .mejs-container .mejs-controls .mejs-button button:before,
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_audio_container .mejs-container .mejs-controls span.mejs-currenttime {
+	color: $invert_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_audio_module .mejs-time-float .mejs-time-float-corner {
+	border-color: $regular_accent_color_1 transparent transparent;
+}
+
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_audio_container .mejs-container .mejs-controls .mejs-time-rail .mejs-time-total,
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_audio_container .mejs-container .mejs-controls .mejs-horizontal-volume-total {
+	background: @alpha( $invert_accent_color_1, 50 );
+}
+
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_audio_container .mejs-container .mejs-controls .mejs-time-total .mejs-time-handle,
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_audio_container .mejs-container .mejs-controls .mejs-horizontal-volume-handle,
+#tm_builder_outer_content .tm_pb_audio_module.tm_pb_module .tm_audio_container .mejs-container .mejs-controls .mejs-horizontal-volume-current {
+	background: $invert_accent_color_1;
+}

@@ -1,0 +1,27 @@
+#tm_builder_outer_content {
+	.tm_pb_tabs.tm_pb_module {
+		.tm_pb_tabs_controls {
+			border-bottom: none;
+			li {
+				padding: 0 0 6px;
+				margin-right: 50px;
+				&:last-child {
+					margin-left: 0;
+				}
+				&:before {
+					display: none;
+				}
+				a {
+					transition: .3s all ease;
+					font-size: 20px;
+					font-weight: 400;
+				}
+				&.tm_pb_tab_active {}
+			}
+		}
+		.tm_pb_all_tabs {
+			padding: 22px 0 0;
+		.tm_pb_tab {}
+		}
+	}
+}

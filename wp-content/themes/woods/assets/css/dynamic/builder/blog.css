@@ -1,0 +1,25 @@
+#tm_builder_outer_content .tm_pb_blog.tm_pb_module .tm_pb_post_categories a {
+	background: $regular_accent_color_3;
+	color: $invert_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_blog.tm_pb_module .tm_pb_post_categories a:hover,
+#tm_builder_outer_content .tm_pb_blog.tm_pb_module .tm_pb_post_meta a {
+	background: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_blog.tm_pb_module .tm_pb_post_meta{
+	color: @alpha( $regular_accent_color_2, 75 );
+}
+
+#tm_builder_outer_content .tm_pb_blog.tm_pb_module .entry-title a:hover {
+	color: $regular_link_color;
+}
+
+#tm_builder_outer_content .tm_pb_blog.tm_pb_module .tm_pb_post_meta a:hover {
+	color: $regular_accent_color_3;
+}
+
+#tm_builder_outer_content .tm_pb_blog.tm_pb_module .tm_pb_post span a:hover {
+	color: $regular_link_color;
+}

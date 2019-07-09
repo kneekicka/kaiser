@@ -1,0 +1,46 @@
+#tm_builder_outer_content {
+	.tm_pb_circle_counter {
+		max-width: 100%;
+		margin: 0 0 30px;
+		.tm_pb_circle_counter_bar {
+			max-width: 100%;
+
+			.percent {
+				.percent-value {
+					font-size: 60px;
+
+					@include media-breakpoint-down(lg) {
+						font-size: 40px;
+					}
+				}
+				p {
+					margin: 0;
+					&:last-of-type {
+						padding: 43% 0;
+					}
+				}
+				h6 {
+					margin: 0;
+					padding: 0;
+
+					position: absolute;
+					top: 50%;
+					left: 0;
+					right: 0;
+					margin-top: 35px;
+					visibility: visible;
+
+					font-size: .625rem;
+					line-height: 1em;
+					text-transform: uppercase;
+					letter-spacing: 1.5px;
+					font-weight: bold;
+				}
+			}
+			canvas {
+				max-width: 100%!important;
+				height: auto!important;
+			}
+		}
+	}
+}

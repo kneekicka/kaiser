@@ -1,0 +1,146 @@
+.widget-subscribe {
+	padding: 0 0 60px;
+	margin: 0;
+
+	.sidebar & {
+		padding: 0;
+	}
+}
+
+.follow-block {
+	padding: 0 0 20px;
+	.sidebar &,
+	.footer-area & {
+		text-align: left;
+	}
+	&__message {
+		padding: 0 0 15px;
+		.footer-area & {
+			padding-bottom: 20px;
+		}
+	}
+}
+.subscribe-block {
+	padding: 0 0 20px;
+	.sidebar &,
+	.footer-area & {
+		text-align: left;
+	}
+
+	.follow-block + & {
+		padding: 10px 0;
+
+		@include media-breakpoint-up(lg) {
+			padding: 20px 0;
+		}
+		.footer-area & {
+
+		}
+	}
+	&__form {
+		margin-top: 7px;
+		max-width: 750px;
+		margin: 0 auto;
+		.after-loop-area &,
+		.full-width-header-area &,
+		.before-content-area &,
+		.before-loop-area &
+		 {
+			margin-top: 21px;
+			margin-left:0;
+			margin-right: 0;
+		}
+		.after-content-area &,
+		.after-content-full-width-area & {
+			margin-top: 20px;
+		}
+	}
+	&__input {
+		letter-spacing: 1.5px;
+		box-shadow: none;
+		outline: none;
+		font-weight: 400;
+		@include transition(all 0.2s ease-out);
+	}
+	&__input-group {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: stretch;
+		align-items: flex-start;
+		position: relative;
+		.sidebar &,
+		.footer-area & {
+			justify-content: center;
+		}
+	}
+	&__input[type='email'] {
+		max-width: 100%;
+		width: 100%;
+		border-right: none;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+
+		order: 0;
+		flex: 1 1 0;
+		align-self: auto;
+
+		.footer-area & {
+			&:focus {
+				box-shadow: none;
+			}
+		}
+
+		.sidebar-1-4 &, .sidebar-1-3 & {
+			max-width: 100%;
+		}
+	}
+	&__submit {
+		font-size: 0;
+		max-width: 40%;
+		padding-right: 20px;
+		padding-left: 20px;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		position: absolute;
+		top: 50%;
+		display: inline-block;
+		transform: translateY(-50%);
+		padding: 0;
+		right: 27px;
+		order: 0;
+		flex: 0 1 auto;
+		align-self: auto;
+		outline: none;
+		&:focus {
+				outline: none;
+		}
+		&:before {
+			@include font-size(1.125);
+			line-height: .6em;
+			content:'\f003';
+			font-family: 'FontAwesome';
+			@include transition(all 0.3s ease-out);
+		}
+		.footer-area & {
+			font-size: 0;
+			&:before {
+				display: inline-block;
+			}
+		}
+	}
+	&__message {
+		padding: 0 0 15px;
+		.footer-area & {
+			padding-bottom: 20px;
+		}
+	}
+	&__messages {
+		position: relative;
+	}
+	&__error, &__success {
+		position: absolute;
+		bottom: -30px;
+	}
+}

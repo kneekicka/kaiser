@@ -1,0 +1,495 @@
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0;
+}
+
+.card-columns {
+	padding-top: 3em;
+}
+
+/*--------------------------------------------------------------
+### Hentry (WordPress native CSS-class for post/page article)
+--------------------------------------------------------------*/
+.hentry {
+	position: relative;
+	margin-top: 0;
+
+	@include card;
+	&:last-child {
+		.posts-list & {
+			margin-bottom: 3em;
+		}
+	}
+	.card-columns & {
+		margin-top: 0;
+		margin-bottom: 3em;
+	}
+	&.page {
+		margin-bottom: 0;
+
+		@include media-breakpoint-up(lg) {
+
+		}
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+.content-layout-boxed .tm_pb_section.tm_pb_with_background {
+	padding: 0 30px;
+}
+
+/*--------------------------------------------------------------
+### Entry (header, content, footer)
+--------------------------------------------------------------*/
+.entry {
+	&-title {
+		&:first-child {
+			.single-post & {
+				margin-top: 0;
+				margin-bottom: 9px;
+			}
+		}
+		.posts-list--default & {
+			@include media-breakpoint-up(lg) {
+
+			}
+		}
+	}
+	&-meta {
+		padding-bottom: 19px;
+		.entry-summary + &,
+		.entry-content + & {
+			margin-top: 1em;
+		}
+		.single-post & {
+
+		}
+	}
+	&-summary,
+	&-content {
+		.posts-list & {
+
+			@include media-breakpoint-up(md) {
+				display: block;
+			}
+		}
+		.post-list__item & {
+			margin-top: 0;
+			p {
+				margin: 1em 0 0;
+			}
+		}
+	}
+	&-content {
+		padding-top: 0;
+	}
+	&-footer {
+		position: relative;
+		margin-top: 0;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		align-items: center;
+
+		.single-post & {
+			flex-direction: row;
+			padding-top: 73px;
+			padding-bottom: 65px;
+			border-bottom: 1px solid $color__border-input;
+		}
+		&:after, &:before {
+			display: none;
+		}
+
+		@include media-breakpoint-down(lg) {
+			display: block;
+		}
+	}
+}
+
+.entry-footer-wrapper {
+	display: flex;
+	> span {
+		line-height: .7;
+		margin-right: 30px;
+	}
+
+	@include media-breakpoint-down(lg) {
+		display: block;
+		clear: both;
+		padding-top: 20px;
+	}
+}
+
+.entry-footer {
+	.posts-list__item & {
+		padding-top: 2px;
+	}
+
+	.btn-primary {
+		background: transparent;
+	}
+}
+
+/*--------------------------------------------------------------
+### Post attributes (thumbnail, meta)
+--------------------------------------------------------------*/
+.posts-list--default,
+.tax-mp_menu_category,
+.tax-mp_ingredient,
+.tax-mphb_room_type_facility,
+.tax-mphb_room_type_category,
+.tax-mp_menu_tag {
+	.posts-list__item {
+		padding-bottom: 60px;
+		margin-bottom: 60px;
+		border-bottom: 1px solid $color__border-input;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+.posts-list--grid-2-cols,
+.posts-list--grid-3-cols,
+.posts-list--vertical-justify {
+	.post.posts-list__item {
+		margin-bottom: 60px;
+	}
+}
+
+.post {
+	&-thumbnail {
+		margin-bottom: 30px;
+
+		.posts-list--grid-2-cols &,
+		.posts-list--grid-3-cols & {
+			margin-bottom: 20px;
+		}
+
+		.format-standard.no-thumb &,
+		.post_format-post-format-image.no-thumb &,
+		.post_format-post-format-status.no-thumb & {
+			margin: 0;
+		}
+
+		.single-post & {
+			margin-bottom: 54px;
+		}
+
+		&__link {
+			&.post-thumbnail--small {
+				display: block;
+				margin-bottom: 15px;
+				text-align: center;
+
+				@include media-breakpoint-up(lg) {
+					float: left;
+					margin-right: 25px;
+					text-align: left;
+				}
+			}
+		}
+		&__img {
+			display: inline-block;
+			vertical-align: top;
+			.entry-header + .post-thumbnail > & {
+				margin-top: 25px;
+			}
+		}
+		&--fullwidth {
+			.posts-list & {
+				display: block;
+			}
+		}
+	}
+	&__cats {
+		margin-right: 30px;
+		float: left;
+		a {
+			font-size: .625rem;
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 1.5px;
+			line-height: 22px;
+			display: inline-block;
+			margin: 0 5px 5px 0;
+			padding: 4px 13px;
+			vertical-align: top;
+			text-decoration: none;
+		}
+		.post-thumbnail--fullwidth + & {
+			.has-post-thumbnail & {
+				position: absolute;
+				z-index: 99;
+				top: 10px;
+				left: 10px;
+
+				@include media-breakpoint-up(lg) {
+					top: 30px;
+				}
+			}
+		}
+		.post-format-wrap & {
+			position: absolute;
+			z-index: 99;
+			top: 10px;
+			left: 10px;
+
+			@include media-breakpoint-up(lg) {
+				top: 30px;
+				left: 30px;
+			}
+		}
+
+		.single & {
+			margin-right: 0;
+			float: none;
+		}
+	}
+	&__date,
+	&__comments,
+	&__tags {
+		.material-icons,
+		.fa {
+			font-size: 16px;
+			margin-right: 10px;
+			vertical-align: middle;
+			.invert & {
+				color: inherit;
+			}
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+
+	&__date {
+		&:before, &:after {
+			content:'-';
+			color: inherit;
+			display: inline-block;
+		}
+	}
+
+	&__posted-by,
+	&__date,
+	&__comments {
+		margin-right: 0;
+		text-transform: uppercase;
+		font-size: .625rem;
+		font-weight: bold;
+		letter-spacing: 1.5px;
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.single & {
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+	&__tags {
+		margin-top:0;
+
+		@include media-breakpoint-down(md) {
+			clear: both;
+		}
+		.posts-list--grid-3-cols &,
+		.blog-masonry-3-cols & {
+			clear: both;
+		}
+
+		.posts-list--grid-2-cols &,
+		.posts-list--masonry-2-cols &
+		 {
+			@include media-breakpoint-down(lg) {
+				clear: both;
+			}
+		}
+		a {
+			display: inline-block;
+			font-size: .625rem;
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: .9px;
+			line-height: 22px;
+			margin: 0 5px 5px 0;
+			padding: 2px 13px;
+			vertical-align: top;
+			text-decoration: none;
+			border: 2px solid;
+			@include transition(all 0.3s ease-out);
+		}
+		.single-post & {
+			margin-top: 0;
+
+			@include media-breakpoint-up(xl) {
+				max-width: 60%;
+			}
+
+			@include media-breakpoint-up(sm) {
+				float: left;
+			}
+		}
+	}
+	&posted-by__author {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.post-format-quote {
+		position: relative;
+		margin: 0;
+		padding: 62px 45px 60px;
+		&:before {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 2px;
+			height: 100px;
+			content: '';
+			transform: translateY(-50%);
+		}
+	}
+}
+
+.post_badge_wrapper {
+	overflow: hidden;
+	padding-bottom: 12px;
+}
+
+.mejs-container {
+	margin-bottom: 30px;
+	.posts-list--grid-2-cols &,
+	.posts-list--grid-3-cols & {
+		margin-bottom: 20px;
+	}
+}
+
+.post-author__title a {
+	@include transition(all 0.3s ease-out);
+}
+
+/*--------------------------------------------------------------
+### Read More button
+--------------------------------------------------------------*/
+.btn {
+	.posts-list__item & {
+		&__text {
+			display: block;
+		}
+		&__icon,
+		.material-icons,
+		.fa {
+			line-height: 46px;
+			width: 46px;
+			height: 46px;
+			color: inherit;
+			display: none;
+		}
+	}
+	.posts-list__item & {
+		.posts-list--default:not(.two-sidebars) & {
+			@include media-breakpoint-up(lg) {
+
+			}
+			&__text {
+				@include media-breakpoint-up(lg) {
+					display: inline-block
+				}
+			}
+			&__icon,
+			.material-icons,
+			.fa {
+				@include media-breakpoint-up(lg) {
+					display: none;
+				}
+			}
+		}
+	}
+	&.btn-primary {
+		font-size: .75rem;
+		padding: 9px 21px;
+		display: inline-block;
+		line-height: 1.5;
+	}
+}
+/*--------------------------------------------------------------
+### Related posts
+--------------------------------------------------------------*/
+.post {
+	&__date,
+	&__comments {
+		.single .related-posts  & {
+			margin-right: 0;
+			margin-left: 0px;
+		}
+	}
+	&__cats{
+		.single .related-post .post-thumbnail__img + &, .single .related-post .post-thumbnail__link + & {
+			margin-top: 30px;
+		}
+	}
+}
+.single .related-posts{
+	margin-bottom: 3em;
+	.post-thumbnail__img{
+		width: 100%;
+		height: auto;
+		@include media-breakpoint-up(sm){
+			width: auto;
+			height: auto;
+		}
+	}
+}
+/*--------------------------------------------------------------
+### 404 page
+--------------------------------------------------------------*/
+.error404 {
+background-size: cover;
+background-attachment: fixed;
+	#primary {
+			width: 100%;
+			box-sizing: border-box;
+	}
+
+	.error-404{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.page-title {
+		font-size: 80px;
+		letter-spacing: 10px;
+		@include media-breakpoint-up(md) {
+			font-size: 340px;
+			letter-spacing: 47px;
+		}
+	}
+
+	.description {
+		padding-bottom: 30px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.fullHeightBlock  {
+		h3 {
+			font-size: 35px;
+		}
+	}
+}
+/*--------------------------------------------------------------
+### Sticky Post
+--------------------------------------------------------------*/
+@import "sticky";

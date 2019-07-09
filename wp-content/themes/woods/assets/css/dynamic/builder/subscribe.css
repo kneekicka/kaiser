@@ -1,0 +1,7 @@
+.subscribe-block__input.error {
+		box-shadow: inset 0 0 0 2px $regular_accent_color_1;
+}
+
+.footer-area .subscribe-block__input[type='email']:focus {
+	background: $invert_accent_color_1;
+}

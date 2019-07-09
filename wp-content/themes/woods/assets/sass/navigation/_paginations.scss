@@ -1,0 +1,136 @@
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+	overflow: hidden;
+	margin-top: 2em;
+	.nav-previous {
+		float: left;
+		width: 50%;
+		> a {
+			display: inline-block;
+			vertical-align: top;
+			text-decoration: none;
+			white-space: nowrap;
+			&:before {
+				font-size: 20px;
+				content: '\E408';
+				vertical-align: top;
+
+				@include material-icon();
+			}
+		}
+	}
+	.nav-next {
+		float: right;
+		width: 50%;
+		text-align: right;
+		white-space: nowrap;
+		> a {
+			display: inline-block;
+			vertical-align: top;
+			text-decoration: none;
+			&:after {
+				font-size: 20px;
+				content: '\E409';
+				vertical-align: top;
+
+				@include material-icon();
+			}
+		}
+	}
+}
+
+.pagination {
+	margin: 2em 0;
+	.card-columns + & {
+		margin-top: 0;
+	}
+}
+
+.nav-links {
+	padding: 26px 0 53px;
+	overflow: hidden;
+
+	@include media-breakpoint-down(lg) {
+		padding: 20px 0;
+	}
+	.nav-previous, .nav-next {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 0.875rem;
+		letter-spacing: 1px;
+		a {
+
+			&:before {
+				margin-right: 12px;
+			}
+		}
+	}
+	.tm_pb_blog & {
+		padding-left: 20px;
+	}
+}
+
+#tm_builder_outer_content .tm_pb_module .page-numbers,
+.page-numbers, .single-post .page-links .page-links__item, .single-post .page-links a {
+	line-height: 3;
+	display: inline-block;
+	min-width: 50px;
+	height: 50px;
+	margin: 0 5px 5px 0;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid;
+	font-weight: bold;
+	font-size: 0.875rem;
+	line-height: 45px;
+	letter-spacing: .9px;
+	@include border-radius;
+
+	&.dots {
+		min-width: 2em;
+		border: none;
+		background-color: transparent;
+	}
+	&.next,
+	&.prev {
+		padding-left: 30px;
+		padding-right: 30px;
+		text-transform: uppercase;
+		i {
+			vertical-align: middle;
+		}
+	}
+}
+
+.single-post .page-links a .page-links__item {
+	width: auto;
+	height: auto;
+	background: none;
+	border: none;
+	margin: 0;
+	min-width: auto;
+}
+
+
+.page-links {
+	clear: both;
+	margin: 0 0 1em;
+	&__title {
+		margin-right: 5px;
+	}
+	a,
+	> .page-links__item {
+		line-height: 3;
+		display: inline-block;
+		min-width: 3em;
+		height: 3em;
+		margin: 0 5px 5px 0;
+		text-align: center;
+		border: 1px solid $color__background-hr;
+		background: transparent;
+	}
+	a {
+		text-decoration: none;
+	}
+}

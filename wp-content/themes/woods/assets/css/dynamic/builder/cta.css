@@ -1,0 +1,17 @@
+#tm_builder_outer_content .tm_pb_promo{
+	color: $regular_accent_color_3;
+}
+
+#tm_builder_outer_content .tm_pb_promo .tm_pb_promo_button{
+	background-color: $regular_accent_color_3;
+	color: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_promo .tm_pb_promo_button:after{
+	color: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_cta .tm_pb_promo_description .cta_title,
+#tm_builder_outer_content .tm_pb_cta .tm_pb_promo_description h2 {
+	color: $invert_accent_color_1;
+}

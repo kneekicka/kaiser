@@ -1,0 +1,15 @@
+<svg width="90" height="60" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="62" width="92" y="-1" x="-1"/>
+ </g>
+
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" height="60" width="90" fill="#BAC1C9"/>
+  <rect id="svg_2" height="60" width="90" fill="#BAC1C9"/>
+  <rect id="svg_3" height="46" width="60" fill="#FFFFFF" y="7" x="15"/>
+  <rect id="svg_4" height="46" width="76" fill="#FFFFFF" y="7" x="7"/>
+  <text style="cursor: text;" transform="matrix(1,0,0,1,0,0) " font-style="normal" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Euphoria, sans-serif" font-size="15" id="svg_6" y="35.515132" x="18.00803" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="null" fill="#bac1c9">Minimal</text>
+ </g>
+</svg>

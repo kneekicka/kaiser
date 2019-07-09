@@ -1,0 +1,100 @@
+.comments {
+	&-area {
+		position: relative;
+		margin-bottom: 30px;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 90px;
+		}
+	}
+	&-title {
+		@include media-breakpoint-up(lg) {
+
+		}
+	}
+}
+
+.comment {
+	&-list {
+		margin: 0;
+		padding: 0 0 38px;
+		list-style: none;
+		.children {
+			margin-left: 0;
+			padding-left: 10px;
+			list-style: none;
+
+			@include media-breakpoint-up(lg) {
+				padding-left: 30px;
+			}
+		}
+		> .comment,
+		> .ping {
+			margin-bottom: 10px;
+		}
+	}
+	&-content {
+		a {
+			word-wrap: break-word;
+		}
+	}
+	&-body {
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		&__holder {
+			position: relative;
+			padding-right: 18px;
+		}
+		.avatar {
+			float: left;
+			width: 40px;
+			margin: 0 15px 10px 0;
+			border-radius: 0;
+
+			@include media-breakpoint-up(lg) {
+				width: auto;
+				margin: 0 42px 15px 0;
+			}
+		}
+		.comment-metadata {
+			padding-top: 30px;
+		}
+		.fn {
+			margin-right: 10px;
+			font-size: 20px;
+			font-weight: 400;
+			text-transform: capitalize;
+			@include media-breakpoint-up(lg) {
+				margin-right: 30px;
+			}
+		}
+		.reply {
+			position: absolute;
+			z-index: 9;
+			top: 0;
+			right: 0;
+			@include transition(all 0.3s ease-out);
+		}
+	}
+	&-reply-link {
+		font-size: 17px;
+		@include transition(all 0.3s ease-out);
+		.material-icons {
+			font-size: inherit;
+		}
+	}
+	&-date {
+		display: inline-block;
+		font-size: 0.625rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		&__time {
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+}
+
+.bypostauthor {
+	display: block;
+}

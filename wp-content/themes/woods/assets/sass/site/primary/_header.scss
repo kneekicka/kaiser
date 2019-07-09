@@ -1,0 +1,64 @@
+.header-container {
+	padding: 0;
+
+	@include media-breakpoint-up(md) {
+		&.isStuck {
+			position: fixed;
+			z-index: 1000;
+			right: 0;
+			left: 0;
+		}
+	}
+	.container & {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.booking {
+		order: 2;
+		align-self: center;
+		margin-left: 63px;
+
+		@include media-breakpoint-down(lg) {
+			margin-left: 40px;
+		}
+		@include media-breakpoint-down(md) {
+			margin-left: 0;
+		}
+	}
+}
+
+.pseudoStickyBlock {
+	display:none;
+	@include media-breakpoint-up(md) {
+		display: block;
+	}
+}
+
+.isStuck {
+	@include media-breakpoint-only(xl) {
+		position: fixed;
+		z-index: 1000;
+		right: 0;
+		left: 0;
+		background: $color__header-isstuck;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		justify-content: center;
+		&.main-navigation .menu {
+			margin: 0;
+			width: 100%;
+			justify-content: inherit;
+			> li > a {
+				padding: 24px 0;
+			}
+		}
+	}
+}
+
+@import "header/layout-default";
+@import "header/layout-centered";
+@import "header/layout-minimal";
+@import "header/layout-transparent";
+@import "header/top-panel";
+@import "header/logo";

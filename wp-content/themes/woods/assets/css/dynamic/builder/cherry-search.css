@@ -1,0 +1,11 @@
+.site .cherry-search__more-button,
+.site .cherry-search form.cherry-search__form button.search-submit {
+	background: $regular_accent_color_1;
+	color: $invert_text_color;
+}
+
+.site .cherry-search__more-button:hover,
+.site .cherry-search form.cherry-search__form button.search-submit:hover {
+	background: $regular_accent_color_3;
+	color: $invert_text_color;
+}

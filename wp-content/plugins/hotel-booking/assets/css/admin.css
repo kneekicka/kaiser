@@ -1,0 +1,286 @@
+.mphb-hide {
+  display: none !important;
+}
+.mphb-table-centered {
+  text-align: center;
+}
+.mphb-table-centered td,
+.mphb-table-centered th {
+  text-align: center;
+}
+.mphb-centered {
+  text-align: center;
+}
+.mphb-date-input-width {
+  width: 90px;
+}
+.mphb-ctrl-gallery img {
+  max-width: 100%;
+  cursor: pointer;
+}
+.mphb-ctrl-complex-vertical > table > tbody > tr > th {
+  padding-left: 12px;
+}
+.mphb-ctrl-complex-vertical > table > tbody > tr:last-of-type > td {
+  border-bottom-color: inherit;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.mphb-price-text {
+  width: 80px;
+}
+.mphb-long-price-text {
+  width: 100px;
+}
+.mphb-preloader {
+  background-image: url("../../images/loading.gif");
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.mphb-bookings-calendar-wrapper {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+.mphb-bookings-calendar-wrapper .mphb-booking-calendar-tables-wrapper {
+  position: relative;
+  clear: both;
+}
+.mphb-bookings-calendar-wrapper table {
+  border-collapse: collapse;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-calendar-rooms {
+  width: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-calendar-rooms > thead tr,
+.mphb-bookings-calendar-wrapper table.mphb-bookings-calendar-rooms > tfoot tr {
+  height: 70px;
+  max-height: 70px;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-calendar-rooms > thead tr th,
+.mphb-bookings-calendar-wrapper table.mphb-bookings-calendar-rooms > tfoot tr th {
+  padding: 0;
+  text-align: center;
+  width: 160px;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-calendar-rooms > tbody > tr > th,
+.mphb-bookings-calendar-wrapper table.mphb-bookings-calendar-rooms > tbody > tr td {
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: bottom;
+  height: 20px;
+  border: 1px solid #e5e5e5;
+  width: 160px;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-calendar-rooms > tbody > tr > th > a,
+.mphb-bookings-calendar-wrapper table.mphb-bookings-calendar-rooms > tbody > tr td > a {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 140px;
+  line-height: 14px;
+  font-size: 12px;
+}
+.mphb-bookings-calendar-wrapper .mphb-bookings-calendar-holder {
+  width: -moz-calc(100% - 160px);
+  width: -webkit-calc(100% - 160px);
+  width: calc(100% - 160px);
+  margin-left: 160px;
+  overflow-x: scroll;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table {
+  width: auto;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > thead > tr,
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > tfoot > tr {
+  height: 70px;
+  max-height: 70px;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > thead > tr > th,
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > tfoot > tr > th {
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > tbody > tr > td {
+  border: 1px solid #e5e5e5;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > tbody > tr > td.mphb-date-first-part {
+  border-right: none;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > tbody > tr > td.mphb-date-second-part {
+  border-left: none;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table td,
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table th {
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  word-wrap: normal;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table td {
+  width: 15px;
+  min-width: 15px;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table th {
+  width: 30px;
+  min-width: 30px;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table td.mphb-no-rooms-found {
+  text-align: left;
+  padding-left: 10px;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table td.mphb-date-today,
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table th.mphb-date-today {
+  background: #efefef;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > tbody > tr > td {
+  height: 20px;
+  max-height: 20px;
+  position: relative;
+  /*
+			&.mphb-date-second-part.mphb-date-room-locked{
+				&.mphb-date-{
+					&booked{
+						border-right-color: @bookedColor;
+					}
+					&pending{
+						border-right-color: @pendingColor;
+					}
+				}
+			}
+
+			&.mphb-date-check-in.mphb-date-check-in-{
+				&booked{
+					div.mphb-date-triangle{
+						border-right-color: @bookedColor;
+					}
+				}
+				&pending{
+					div.mphb-date-triangle{
+						border-right-color: @pendingColor;
+					}
+				}
+			}
+
+			&.mphb-date-check-out.mphb-date-check-out-{
+				&booked{
+					div.mphb-date-triangle{
+						border-top-color: @bookedColor;
+					}
+				}
+				&pending{
+					div.mphb-date-triangle{
+						border-top-color: @pendingColor;
+					}
+				}
+			}
+
+			&.mphb-date-check-in{
+				div.mphb-date-triangle{
+					border-right: @columnWidth / 2 solid;
+					border-top: @columnHeight solid #fff;
+					height: 0;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 0;
+				}
+			}
+
+			&.mphb-date-check-out{
+				div.mphb-date-triangle{
+					border-right: @columnWidth / 2 solid #FFF;
+					border-top: @columnHeight solid;
+					height: 0;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 0;
+				}
+			}
+
+			&.mphb-date-check-in.mphb-date-check-out{
+				.mphb-date-triangle-separator{
+					background: #FFF;
+					display: block;
+					height: 36px;
+					left: 8px;
+					position: absolute;
+					top: -3px;
+					transform: rotate(30deg);
+					width: 2px;
+				}
+			}*/
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > tbody > tr > td.mphb-date-first-part {
+  overflow: hidden;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > tbody > tr > td.mphb-date-room-locked.mphb-date-booked {
+  background: #daa282;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > tbody > tr > td.mphb-date-room-locked.mphb-date-pending {
+  background: #cef093;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > tbody > tr > td .mphb-link-to-booking {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.mphb-bookings-calendar-wrapper table.mphb-bookings-date-table > tbody > tr > td .mphb-silent-link-to-booking {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+.mphb-bookings-calendar-wrapper .mphb-bookings-calendar-filters-wrapper .mphb-bookings-calendar-date {
+  padding: 15px;
+}
+.mphb-bookings-calendar-wrapper .mphb-bookings-calendar-filters-wrapper .mphb-bookings-calendar-date * {
+  vertical-align: middle;
+}
+.mphb-bookings-calendar-wrapper .mphb-bookings-calendar-filters-wrapper .mphb-bookings-calendar-search {
+  padding: 15px;
+}
+.mphb-bookings-calendar-wrapper .mphb-bookings-calendar-filters-wrapper .mphb-bookings-calendar-search * {
+  vertical-align: middle;
+}
+.mphb-bookings-calendar-wrapper .mphb-bookings-calendar-filters-wrapper .mphb-bookings-calendar-legend {
+  padding: 20px;
+}
+.mphb-bookings-calendar-wrapper .mphb-bookings-calendar-filters-wrapper .mphb-bookings-calendar-legend .legend-item {
+  display: inline-block;
+  line-height: 15px;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+.mphb-bookings-calendar-wrapper .mphb-bookings-calendar-filters-wrapper .mphb-bookings-calendar-legend .legend-item:before {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  content: "";
+}
+.mphb-bookings-calendar-wrapper .mphb-bookings-calendar-filters-wrapper .mphb-bookings-calendar-legend .legend-item.booked:before {
+  background-color: #daa282;
+}
+.mphb-bookings-calendar-wrapper .mphb-bookings-calendar-filters-wrapper .mphb-bookings-calendar-legend .legend-item.pending:before {
+  background-color: #cef093;
+}
+.mphb-bookings-calendar-wrapper .mphb-bookings-calendar-filters-wrapper .mphb-custom-period-wrapper {
+  display: inline-block;
+}
+body.post-type-mphb_booking #post-body-content {
+  display: none;
+}

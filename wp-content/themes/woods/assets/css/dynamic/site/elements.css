@@ -1,0 +1,52 @@
+/* #Elements */
+blockquote {
+	color: $regular_text_color;
+}
+blockquote cite {
+	color: $regular_link_color;
+}
+blockquote a:hover {
+	color: $regular_link_color;
+}
+
+code {
+	color: @darken( $regular_text_color, 15% );
+	background: $invert_text_color;
+}
+
+tbody {
+	border-color: @alpha( $regular_accent_color_2, 12 );
+}
+
+tbody tr {
+	border-bottom-color: @alpha( $regular_accent_color_2, 12 );
+}
+
+tbody tr th, tbody tr td {
+	border-right-color: @alpha( $regular_accent_color_2, 12 );
+}
+
+.entry-content ul li:before,
+.entry-content ol li:before,
+.entry-content ol li:after,
+.site-content ol li:after,
+.site-content ol li:before,
+.site-content ul li:before {
+	color: $regular_link_color;
+}
+
+.entry-content ul li a,
+.widget_categories ul li a,
+.widget_archive ul li a,
+.widget ul li a
+ {
+	color: $regular_text_color;
+}
+
+.entry-content ul li a:hover,
+.widget_categories ul li a:hover,
+.widget_archive ul li a:hover,
+.widget ul li a:hover
+ {
+	color: $regular_link_color;
+}

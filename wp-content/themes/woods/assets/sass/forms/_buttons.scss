@@ -1,0 +1,33 @@
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	@include btn;
+}
+
+input[type='submit'] {
+	padding: 21px 64px;
+}
+
+// General styles
+.btn, .mphb-book-button,
+.mphb_sc_checkout-submit-wrapper .button {
+	text-decoration: none;
+
+	@include btn;
+	@include border-radius;
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+	&-fullwidth {
+		width: 100%;
+	}
+}
+
+.btn-primary {
+	background: transparent;
+}

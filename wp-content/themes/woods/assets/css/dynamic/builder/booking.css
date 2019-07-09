@@ -1,0 +1,462 @@
+.mphb-booking-form,
+.mphb_sc_search_results-wrapper .mphb_sc_search-wrapper,
+.availability_search_wrapper .mphb_sc_search-wrapper {
+	background: $regular_accent_color_1;
+}
+
+.mphb_sc_search-wrapper .mphb_sc_search-submit-button-wrapper input,
+.mphb-booking-form .mphb-reserve-btn-wrapper input {
+	background: $regular_accent_color_3;
+	color: $invert_accent_color_1;
+	border-color: $regular_accent_color_3;
+}
+
+.mphb_sc_search-wrapper .mphb_sc_search-submit-button-wrapper input:hover,
+.mphb-booking-form .mphb-reserve-btn-wrapper input:hover {
+	color: $invert_accent_color_1;
+}
+
+.mphb-room-details .mphb-price-breakdown tbody tr {
+	border-bottom-color: $invert_accent_color_1;
+	background: $regular_accent_color_7;
+}
+
+.mphb-room-details .mphb-price-breakdown tfoot tr th, #mphb-customer-details {
+	background: $regular_accent_color_7;
+}
+
+#mphb-customer-details input, textarea {
+	background: $invert_accent_color_1;
+}
+
+.mphb-calendar .datepick-month-header,
+.mphb-calendar .datepick-month-header select,
+.mphb-calendar .datepick-month-header input,
+.datepick-popup .datepick-month-header,
+.datepick-popup .datepick-month-header select,
+.datepick-popup .datepick-month-header input,
+.widget_mphb_search_availability_widget {
+	background: $regular_accent_color_7;
+}
+
+.mphb-calendar .datepick .datepick-month table tbody > tr > td,
+.mphb-calendar .datepick .datepick-month td,
+.datepick-popup .datepick .datepick-month td {
+		border-right-color: $invert_accent_color_1;
+}
+
+.mphb-calendar .datepick .datepick-month:first-child,
+.datepick-popup .datepick .datepick-month:first-child,
+.mphb-calendar .datepick .datepick-ctrl a:first-child,
+.datepick-popup .datepick .datepick-ctrl a:first-child {
+	border-right-color: $regular_accent_color_7;
+}
+
+.mphb_sc_search-wrapper .mphb-datepick::-webkit-input-placeholder { color: @alpha( $regular_accent_color_2, 75 ); }
+.mphb_sc_search-wrapper .mphb-datepick::-moz-placeholder { color: @alpha( $regular_accent_color_2, 75 ); }
+.mphb_sc_search-wrapper .mphb-datepick:-moz-placeholder { color: @alpha( $regular_accent_color_2, 75 ); }
+.mphb_sc_search-wrapper .mphb-datepick:-ms-input-placeholder { color: @alpha( $regular_accent_color_2, 75 ); }
+
+.mphb_sc_search-wrapper .mphb_sc_search-form select { color: @alpha( $regular_accent_color_2, 75 ); }
+
+.mphb_sc_search-wrapper .mphb_sc_search-form .mphb_sc_search-check-in-date label,
+.mphb_sc_search-wrapper .mphb_sc_search-form .mphb_sc_search-check-out-date label,
+.mphb_sc_search-wrapper .mphb_sc_search-form .mphb_sc_search-adults label,
+.mphb_sc_search-wrapper .mphb_sc_search-form .mphb_sc_search-childs label,
+.mphb-check-in-date-wrapper label,
+.mphb-check-out-date-wrapper label,
+.mphb-adults-wrapper label,
+.mphb-check-childs-date-wrapper label {
+	color: @alpha( $invert_accent_color_1, 70 );
+}
+
+.mphb_sc_room-wrapper ul li:before,
+.mphb_sc_rooms-wrapper ul li:before,
+.single-mphb_room_type .mphb_room_type .mphb-single-room-type-attributes li:before {
+	background: @alpha( $regular_text_color, 70 );
+}
+
+.mphb_sc_search-wrapper .form_logo_wrapper .title {
+	font-style: $h3_font_style;
+	font-weight: $h3_font_weight;
+	font-size: @font_size($h3_font_size, multiple, ceil, 0.87)px;
+	line-height: $h3_line_height;
+	font-family: @font_family( $h3_font_family );
+	text-align: $h3_text_align;
+	color: $invert_accent_color_1;
+}
+
+.mphb_sc_search-wrapper .form_logo_wrapper .description {
+	color: @alpha( $invert_accent_color_1, 70 );
+}
+
+.mphb_sc_room-wrapper .mphb-regular-price,
+.mphb-room-type .mphb-regular-price .mphb-price,
+.mphb_sc_services-wrapper .mphb_room_service .mphb-price,
+.mphb-room-details .mphb-total-price .mphb-price{
+	font-family: @font_family( $h5_font_family );
+	color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .mphb_sc_services-wrapper .mphb_room_service .mphb-service-title a:hover {
+	color: $regular_link_color;
+}
+
+#tm_builder_outer_content .tm_pb_module.room_type_small_thumbnail .mphb_sc_room-wrapper .mphb-room-type-title {
+	font-size: $h4_font_size{px};
+}
+#tm_builder_outer_content .tm_pb_module .mphb_sc_room-wrapper .mphb-room-type .mphb-room-type-title a:hover,
+#tm_builder_outer_content .tm_pb_module .mphb_sc_rooms-wrapper .mphb-room-type .mphb-room-type-title a:hover {
+	color: $regular_link_color;
+}
+
+.fullwidth_booking_wrapper .mphb-price {
+	font-family: @font_family( $h5_font_family );
+}
+
+.fullwidth_booking_wrapper h5 {
+	font-family: @font_family( $body_font_family );
+}
+
+.fullwidth_booking_wrapper h5 strong {
+		font-family: @font_family( $h5_font_family );
+		font-size: @font_size($h4_font_size, multiple, ceil, 1.8)px;
+}
+
+.mphb_sc_room-wrapper .mphb-regular-price > strong,
+.mphb_sc_search_results-wrapper .mphb-room-type .mphb-regular-price strong
+ {
+	font-family: @font_family( $body_font_family );
+	color: $regular_text_color;
+}
+
+.mphb_sc_room-wrapper .mphb-regular-price .mphb-price:after {
+	color: $regular_accent_color_2;
+}
+
+.mrhb-price-suffix {
+	color: $regular_accent_color_2;
+	font-family: @font_family( $h5_font_family );
+}
+
+.mprm-main-wrapper .mprm-tags .mprm-tag,
+.mprm-container .mprm-tags .mprm-tag {
+		color: $regular_accent_color_6;
+}
+
+.mphb-gallery-slider .swiper-button-next, .mphb-gallery-slider .swiper-button-prev,
+.blog .swiper-button-next.post-gallery__button-next, .blog .swiper-button-prev.post-gallery__button-prev,
+.single-mp_menu_item .swiper-button-next.post-gallery__button-next,
+.single-mp_menu_item .swiper-button-prev.post-gallery__button-prev,
+.mphb-room-type-gallery-wrapper .swiper-button-next.post-gallery__button-next,
+.mphb-room-type-gallery-wrapper .swiper-button-prev.post-gallery__button-prev,
+.single-post .swiper-button-next.post-gallery__button-next, .single-post .swiper-button-prev.post-gallery__button-prev,
+.archive .post_format-post-format-gallery .post-gallery .swiper-button-next.post-gallery__button-next,
+.archive .post_format-post-format-gallery .post-gallery .swiper-button-prev.post-gallery__button-prev {
+	background: $invert_accent_color_1;
+	color: @alpha( $regular_accent_color_2, 50 );
+}
+
+.mphb-gallery-slider .swiper-button-next:hover, .mphb-gallery-slider .swiper-button-prev:hover,
+.blog .swiper-button-next.post-gallery__button-next:hover, .blog .swiper-button-prev.post-gallery__button-prev:hover,
+.single-mp_menu_item .swiper-button-next.post-gallery__button-next:hover,
+.single-mp_menu_item .swiper-button-prev.post-gallery__button-prev:hover,
+.mphb-room-type-gallery-wrapper .swiper-button-next.post-gallery__button-next:hover,
+.mphb-room-type-gallery-wrapper .swiper-button-prev.post-gallery__button-prev:hover,
+.single-post .swiper-button-next.post-gallery__button-next:hover, .single-post .swiper-button-prev.post-gallery__button-prev:hover,
+.archive .post_format-post-format-gallery .post-gallery .swiper-button-next.post-gallery__button-next:hover,
+.archive .post_format-post-format-gallery .post-gallery .swiper-button-prev.post-gallery__button-prev:hover {
+		background: $regular_accent_color_1;
+}
+
+.mphb-gallery-slider .swiper-button-next:hover:after, .mphb-gallery-slider .swiper-button-prev:hover:after,
+.blog .swiper-button-next.post-gallery__button-next:hover i, .blog .swiper-button-prev.post-gallery__button-prev:hover i,
+.single-mp_menu_item .swiper-button-next.post-gallery__button-next:hover i,
+.single-mp_menu_item .swiper-button-prev.post-gallery__button-prev:hover i,
+.mphb-room-type-gallery-wrapper .swiper-button-next.post-gallery__button-next:hover i,
+.mphb-room-type-gallery-wrapper .swiper-button-prev.post-gallery__button-prev:hover i,
+.single-post .swiper-button-next.post-gallery__button-next:hover i, .single-post .swiper-button-prev.post-gallery__button-prev:hover i,
+.archive .post_format-post-format-gallery .post-gallery .swiper-button-next.post-gallery__button-next:hover i,
+.archive .post_format-post-format-gallery .post-gallery .swiper-button-prev.post-gallery__button-prev:hover i {
+		color: $invert_accent_color_1;
+}
+
+.mphb-gallery-slider .swiper-button-prev:before,
+.blog .swiper-button-prev.post-gallery__button-prev:before,
+.single-mp_menu_item .swiper-button-prev.post-gallery__button-prev:before {
+	background: @alpha( $regular_text_color, 15 );
+}
+
+.mphb-gallery-slider .swiper-button-next:after, .mphb-gallery-slider .swiper-button-prev:after {
+	color: $regular_accent_color_2;
+}
+
+.mphb_sc_search_results-wrapper .mphb-room-type .mphb-loop-room-type-attributes li:before,
+.mphb_sc_search_results-wrapper .mphb-room-type .excerpt_caption ul li:before {
+	background: @alpha( $regular_text_color, 15 );
+}
+
+.room_type_small_thumbnail .mphb_sc_room-wrapper .mphb-book-button {
+	border-color: $regular_accent_color_2;
+	color: $regular_accent_color_2;
+}
+
+.room_type_small_thumbnail .mphb_sc_room-wrapper .mphb-book-button:hover,
+.fullwidth_booking_wrapper .btn:hover {
+	border-color: $regular_link_color;
+	color: $regular_link_color;
+}
+
+p > sub {
+	background: $regular_accent_color_4;
+	color: $invert_accent_color_1;
+}
+
+.mphb-room-type h3,
+.single-mphb_room_type .mphb-regular-price strong {
+	font-family: @font_family( $body_font_family );
+}
+
+.mphb_sc_search_results-wrapper .mphb-room-type .mphb-room-type-title {
+	font-size: @font_size($h3_font_size, multiple, ceil, 0.8)px;
+}
+
+#tm_builder_outer_content .mphb-room-type .mphb-loop-room-type-attributes li {
+	color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .mphb-room-type .mphb-loop-room-type-attributes li span {
+	color:$regular_text_color;
+}
+
+#mphb-customer-details h3,
+.mphb-room-details h3,
+.single-mphb_room_service .mphb_room_service h2 {
+	font-style: $h4_font_style;
+	font-weight: $h4_font_weight;
+	font-size: $h4_font_size{px};
+	line-height: $h4_line_height;
+	font-family: @font_family( $h4_font_family );
+	letter-spacing: $h4_letter_spacing{px};
+}
+
+.mphb-room-details .mphb-room-type-title span,
+.mphb-room-details .mphb-guests-number span,
+.mphb-room-details .mphb-check-in-date span,
+.mphb-room-details .mphb-check-out-date span {
+	color: @alpha( $regular_accent_color_2, 65 );
+}
+
+.mphb-room-details .mphb-price-breakdown .mphb-price,
+.single-mphb_room_service .mphb-price-wrapper .mphb-price,
+.single-mphb_room_type .mphb-regular-price {
+		color: @alpha( $regular_accent_color_2, 80 );
+		font-family: @font_family( $h5_font_family );
+}
+
+.mphb-single-room-sidebar h2 {
+	font-style: $h4_font_style;
+	font-weight: $h4_font_weight;
+	font-size: $h4_font_size{px};
+	line-height: $h4_line_height;
+	font-family: @font_family( $h4_font_family );
+	letter-spacing: $h4_letter_spacing{px};
+}
+
+.mphb-single-room-content h2 {
+	font-style: $h3_font_style;
+	font-weight: $h3_font_weight;
+	font-size: $h3_font_size{px};
+	line-height: $h3_line_height;
+	font-family: @font_family( $h3_font_family );
+	letter-spacing: $h3_letter_spacing{px};
+}
+
+.single-mphb_room_service .mphb-price-wrapper {
+	font-family: @font_family( $h5_font_family );
+}
+
+/*Calendar*/
+.mphb-calendar .datepick .datepick-nav a:hover,
+.datepick-popup .datepick .datepick-nav a:hover {
+	color: $regular_link_color;
+}
+
+.datepick .datepick-ctrl {
+	background-color: $invert_accent_color_1;
+}
+
+.datepick .datepick-ctrl a {
+	color:  $regular_accent_color_1;
+}
+
+.mphb-calendar .datepick .datepick-ctrl a:hover,
+.datepick-popup .datepick .datepick-ctrl a:hover {
+	color:  $regular_accent_color_3;
+}
+
+.mphb-calendar .datepick-nav, .datepick-popup .datepick-nav {
+	background: $regular_accent_color_3;
+}
+
+.mphb-calendar .datepick .datepick-nav > a,
+.datepick-popup .datepick .datepick-nav > a{
+	font-family: @font_family( $body_font_family );
+}
+
+.datepick-popup .datepick .datepick-nav > .datepick-cmd-today,
+.mphb-calendar .datepick .datepick-nav > .datepick-cmd-today {
+	font-style: $h4_font_style;
+	font-weight: $h4_font_weight;
+	font-size: @font_size($h4_font_size, multiple, ceil, 0.725)px;
+	font-family: @font_family( $h4_font_family );
+	letter-spacing: $h4_letter_spacing{px};
+	color: $invert_text_color;
+}
+
+.mphb-calendar .datepick-month-header,
+.mphb-calendar .datepick-month-header select,
+.mphb-calendar .datepick-month-header input,
+.datepick-popup .datepick-month-header,
+.datepick-popup .datepick-month-header select,
+.datepick-popup .datepick-month-header input {
+	color: $regular_accent_color_8;
+}
+
+.datepick-popup .datepick-month a,
+.datepick-popup .datepick-month td .datepick-weekend,
+.mphb-calendar .datepick-month a,
+.mphb-calendar .datepick-month td .datepick-weekend {
+	color: $regular_text_color;
+}
+
+.datepick-popup .datepick-month td span,
+.mphb-calendar .datepick-month td .mphb-past-date,
+.mphb-datepick-popup .datepick-month td .mphb-past-date {
+	color: @alpha( $regular_text_color, 60 );
+}
+
+.datepick-popup .datepick-month th,
+.datepick-month th a,
+.mphb-calendar .datepick-month th,
+.mphb-calendar .datepick-month td .mphb-available-date {
+	background: $invert_accent_color_1;
+	color: $regular_text_color;
+}
+
+.datepick-popup .datepick-month td .datepick-today,
+.datepick-popup .datepick-month td .datepick-highlight,
+.mphb-calendar .datepick-month td .datepick-today,
+.mphb-calendar .datepick-month td .datepick-highligh,
+.mphb-calendar .datepick-month td .datepick-selected,
+.datepick-popup .datepick-month td .datepick-selected,
+.mphb-calendar .datepick-month td .mphb-booked-date,
+.datepick-popup  .datepick-month td .mphb-booked-date,
+.mphb-datepick-popup .datepick-month td .mphb-booked-date,
+.mphb-calendar .datepick .datepick-month table td span.datepick-today,
+.datepick-popup .datepick .datepick-month table td span.datepick-today,
+.calendar_designations li:nth-child(1):before {
+		background-color: $regular_accent_color_3;
+		color: $invert_accent_color_1;
+}
+
+.mphb-calendar .datepick .datepick-month table td span.mphb-booked-date,
+.datepick-popup .datepick .datepick-month table td span.mphb-booked-date,
+.calendar_designations li:nth-child(2):before {
+		background-color: $regular_accent_color_1;
+		color: $invert_accent_color_1;
+}
+
+.mphb_sc_search-form select, .mphb-booking-form select {
+	background-color: $invert_accent_color_1;
+}
+
+.calendar_designations li:nth-child(3):before {
+		color: $regular_text_color;
+}
+
+/*Sidebar*/
+.widget_mphb_rooms_widget .mphb-room-type .mphb-widget-room-type-title b,
+.mprm_widget .mprm-widget-items .mprm-content-container b {
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: $h6_font_size{px};
+	line-height: $h6_line_height;
+	font-family: @font_family( $h6_font_family );
+	letter-spacing: $h6_letter_spacing{px};
+	text-align: $h6_text_align;
+	color: $regular_h6_color;
+}
+
+.widget_mphb_rooms_widget .mphb-room-type .mphb-widget-room-type-attributes li > span {
+	color: @alpha( $regular_accent_color_2, 65 );
+}
+
+.widget_mphb_rooms_widget .mphb-room-type .mphb-widget-room-type-attributes li {
+	color: $regular_text_color;
+}
+
+.widget_mphb_rooms_widget .mphb-room-type .mphb-widget-room-type-price .mphb-price {
+	font-family: @font_family( $h5_font_family );
+	color: $regular_accent_color_2;
+}
+
+.mprm-main-wrapper .mprm-tags .mprm-tag:hover,
+.mprm-container .mprm-tags .mprm-tag:hover {
+		color: $invert_accent_color_1;
+		border-color: $regular_accent_color_3;
+		background: $regular_accent_color_3;
+}
+
+.mprm_widget .mprm-widget-items.mprm-view-simple-list .mprm-list li {
+	color: $regular_accent_color_2;
+}
+
+.mprm_widget .mprm-widget-items.mprm-view-simple-list .mprm-list li.mprm-price {
+	font-family: @font_family( $h5_font_family );
+}
+
+.mprm_widget .mprm-widget-items.mprm-view-simple-list .mprm-list li:first-child {
+	color: $regular_text_color;
+}
+
+.mprm-container.mprm-widget-categories.mprm-view-grid .mprm-menu-category .mprm-link {
+	color: $invert_accent_color_1;
+}
+
+.mprm-container.mprm-widget-categories.mprm-view-grid .mprm-menu-category .mprm-link .mprm-category-content .mprm-title {
+	font-style: $h4_font_style;
+	font-weight: $h4_font_weight;
+	font-size: @font_size($h4_font_size, multiple, ceil, 0.8)px;
+	line-height: $h4_line_height;
+	font-family: @font_family( $h4_font_family );
+	letter-spacing: $h4_letter_spacing{px};
+	text-align: $h4_text_align;
+	color: inherit;
+}
+
+.mprm-container.mprm-widget-categories.mprm-view-grid .mprm-menu-category:hover .mprm-category-content:hover i {
+		color: $regular_accent_color_1;
+}
+
+.mprm-container.mprm-widget-categories.mprm-view-list .mprm-title {
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: $h6_font_size{px};
+	line-height: $h6_line_height;
+	font-family: @font_family( $h6_font_family );
+	letter-spacing: $h6_letter_spacing{px};
+	text-align: $h6_text_align;
+}
+
+.mprm-container.mprm-widget-categories.mprm-view-list .mprm-title:hover {
+	color: $regular_link_color;
+}
+
+.mprm_widget .mprm-widget-items .mprm-tags-wrapper > a:hover {
+	color: $regular_link_color;
+}
+
+.mphb_sc_search_results-not-found {
+	color:  $regular_accent_color_1;
+}

@@ -1,0 +1,10 @@
+#tm_builder_outer_content h5.phone {
+	color: $regular_accent_color_1;
+	font-size: $h3_font_size{px};
+}
+
+@media (max-width: 992px) {
+	#tm_builder_outer_content h5.phone {
+		font-size: @font_size($h3_font_size, multiple, ceil, 0.6)px;
+	}
+}

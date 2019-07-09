@@ -1,0 +1,20 @@
+#tm_builder_outer_content {
+	.tm_pb_brands_showcase_module__wrapper {
+		.tm_pb_brands_showcase_module {
+			&__super-title {}
+			&__title {}
+			&__sub-title {}
+			&__item {
+				&__wrapper {}
+				&__title {}
+				&__description {}
+			}
+			&__brands {
+				padding-top: 7px;
+			}
+		}
+		.tm_pb_brands_showcase_module__brands {
+			padding-top: 7px;
+		}
+	}
+}

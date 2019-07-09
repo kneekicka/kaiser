@@ -1,0 +1,43 @@
+#tm_builder_outer_content {
+	.tm_pb_module.tm_pb_accordion .tm_pb_toggle {
+		border: none;
+		padding: 0;
+		margin: 0;
+
+		&.tm_pb_toggle_close,
+		&.tm_pb_toggle_open {
+			@include transition(all 0.3s ease-out);
+			.tm_pb_toggle_title {
+				padding: 15px 30px 15px 45px;
+				margin: 0;
+				background: none;
+				@include transition(all 0.3s ease-out);
+				&::before {
+					@include font-size(1.3);
+					font-family: 'FontAwesome';
+					content: "\f107";
+					@include transition(all 0.3s ease-out);
+					left: 16px;
+				}
+				@include media-breakpoint-up(md) {
+					padding: 20px 65px 22px;
+					&::before {
+						left: 30px;
+					}
+				}
+			}
+		}
+		&.tm_pb_toggle_open {
+			.tm_pb_toggle_title::before {
+				transform: rotate(180deg);
+			}
+		}
+		.tm_pb_toggle_content {
+			padding: 15px 30px;
+			@include media-breakpoint-up(md) {
+				padding: 0 65px 8px;
+				margin-top: -6px;
+			}
+		}
+	}
+}

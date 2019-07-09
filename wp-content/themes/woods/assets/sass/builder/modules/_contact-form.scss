@@ -1,0 +1,75 @@
+$contact-message_font-size: 12px;
+
+#tm_builder_outer_content {
+	.tm_pb_contact_form {
+		position: relative;
+		.tm_contact_bottom_container {
+			position: relative;
+			overflow: visible;
+			float: none;
+			text-align: center;
+			padding-top: 5px;
+		}
+		.tm_pb_contact_message {
+			min-height: 100px;
+		}
+
+	}
+	div.tm_pb_contact_right {
+		display: block;
+		@include media-breakpoint-up(xl) {
+			position: absolute;
+			right: calc(100% + 30px);
+			top: 20px;
+			min-width: 200px;
+		}
+	}
+	.tm_pb_contact_main_title {
+		margin-bottom: 0;
+		margin-top: 0;
+		@include media-breakpoint-up(xl) {}
+	}
+	.tm_pb_contact_submit {
+		margin-top: 20px;
+		padding: 21px 64px !important;
+	}
+	.tm_pb_contact_field {
+		text-align: left;
+		width: 100%;
+	}
+	.tm_pb_contact_form_input {
+		border: 1px solid $color__border-input;
+		padding: 21px 26px 20px;
+	}
+	.tm_contact_error {
+		border: 1px solid $color__not-valid;
+		background-color: lighten($color__not-valid, 27);
+	}
+	.cf-success-message {
+		font-size: 12px;
+		color: $color__valid;
+	}
+	.tm-pb-contact-message {
+		position: absolute;
+		bottom: 70px;
+		left: 50%;
+		width: 100%;
+		transform: translateX(-50%);
+		text-align: center;
+		color: $color__not-valid;
+		> p {	font-weight: 600; }
+		li, p { font-size: $contact-message_font-size; }
+		p { margin-bottom: 0; padding-right: $contact-message_font-size; }
+		p, ul { display: inline; }
+		ul + p::before { content: ""; display: block; }
+		ul li {
+			display: inline;
+			padding-right: 10px;
+			&::before { display: none; }
+			&::after {
+				content: ',';
+			}
+			&:last-child::after { display: none; }
+		}
+	}
+}

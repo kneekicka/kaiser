@@ -1,0 +1,12 @@
+.mphb-hide {
+  display: none !important;
+}
+.mphb-preloader {
+  background-image: url("../../images/loading.gif");
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.mphb_sc_checkout-services-list {
+  list-style: none;
+}

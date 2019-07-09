@@ -1,0 +1,176 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Box shadow
+@mixin box-shadow {
+	box-shadow: $box__shadow_mobile;
+
+	@include media-breakpoint-up(lg) {
+		box-shadow: $box__shadow;
+	}
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after {
+	clear: both;
+}
+
+@mixin reset-container {
+	max-width: inherit;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+@mixin reset-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+@mixin font-awesome-icon {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+@mixin btn {
+	line-height: 1;
+	display: inline-block;
+	max-width: 99%;
+	padding: $button__indents;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: top;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	border: $button__border;
+	box-shadow: $button__box-shadow;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: .9px;
+	@include transition(all 0.3s ease-out);
+}
+
+@mixin material-icon {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+@mixin arrows-icon {
+	font-family: "arrows";
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+}
+
+// Optional hyphenation
+@mixin hyphens($mode: auto) {
+	word-wrap: break-word;
+	-webkit-hyphens: $mode;
+	-moz-hyphens: $mode;
+	-ms-hyphens: $mode; // IE10+
+	-o-hyphens: $mode;
+	hyphens: $mode;
+}
+
+@mixin word-wrap {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	word-break: break-word;
+}
+
+// .hentry, .widget
+@mixin card {
+	@include border-radius;
+}
+
+// Resize anything
+@mixin resizable($direction) {
+	resize: $direction; // Options: horizontal, vertical, both
+	overflow: auto; // Per CSS3 UI, `resize` only applies when `overflow` isn't `visible`
+}
+
+// tiles class
+@mixin tiles( $class_name, $property, $ratio: 1, $breakpoints: $grid-breakpoints, $gutter: $grid-gutter-width, $columns: $grid-columns ) {
+	.#{$class_name}{
+		@each $breakpoint, $size in $breakpoints{
+			@if $breakpoint!='xs' and $breakpoint!='sm' {
+				@include media-breakpoint-up( $breakpoint ) {
+					@if $property=='width' {
+						width: percentage($ratio/$columns);
+					} @else {
+						$padding:($size - map-get($container-max-widths, $breakpoint))/2;
+						#{$property}: #{($size - $padding)/$columns*$ratio};
+					}
+				}
+			} @else {
+				@include media-breakpoint-up( $breakpoint ) {
+					@if $property=='width' {
+						#{$property}: 100%;
+					} @else {
+						#{$property}: 544px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// Opacity
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	// IE8 filter
+	$opacity-ie: ($opacity * 100);
+	filter: #{alpha(opacity=$opacity-ie)};
+}
+
+@import "transform";
+@import "border-radius";

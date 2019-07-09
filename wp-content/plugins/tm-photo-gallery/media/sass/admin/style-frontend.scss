@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+
+@import "variables/variables";
+@import "mixins/mixins";
+@import "normalize";
+
+.preloader {
+	animation: rotate 1.4s linear infinite;
+	position: relative;
+	left: 50%;
+	margin-bottom: 20px;
+	margin-left: -50px;
+	width: 100px;
+	height: 100px;
+
+	@include media-breakpoint-up(lg) {
+		width: 117px;
+		height: 117px;
+		margin-left: -58px;
+	}
+}
+
+.filter-select {
+	display: inline-block;
+	text-align: left;
+	position: relative;
+	font-weight: 700;
+	margin-bottom: 15px;
+
+	@include font-size(.75);
+	line-height: 20px;
+
+	&__panel {
+		background: #fff;
+		text-transform: uppercase;
+		padding: 14px 45px 14px 20px;
+		border: 1px solid #e1e1e1;
+		min-width: 210px;
+		position: relative;
+		cursor: pointer;
+
+		&:before {
+			content: '\f107';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 18px;
+			font: 400 22px/1 'FontAwesome';
+		}
+
+		&:hover {
+			box-shadow: -2px 4px 13px 0px rgba(0, 0, 0, 0.1);
+		}
+	}
+
+	&__list {
+		padding: 5px 0;
+		position: absolute;
+		width: 100%;
+		left: -9999px;
+		z-index: 1;
+		background: #fff;
+		border: 1px solid #e1e1e1;
+		margin-top: 2px;
+		transition: .3s;
+		transition-property: opacity, margin-top;
+		opacity: 0;
+
+		li {
+			list-style: none;
+			border: none;
+			border-top: 1px solid #e1e1e1;
+
+			&:first-child {
+				border: none;
+			}
+			a {
+				display: block;
+				padding: 3.5px 20px;
+				text-transform: uppercase;
+				box-shadow: none;
+			}
+			&.active, a:hover {
+
+			}
+		}
+	}
+
+	&.open {
+		.filter-select__panel {
+			box-shadow: -2px 4px 13px 0px rgba(0, 0, 0, 0.1);
+		}
+		.filter-select__list {
+			opacity: 1;
+			left: 0;
+		}
+	}
+}
+
+@import "typography/typography";
+@import "elements/slider";
+@import "elements/listings";
+@import "elements/animation";
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}

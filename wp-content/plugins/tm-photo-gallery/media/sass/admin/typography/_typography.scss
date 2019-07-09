@@ -1,0 +1,60 @@
+.tm-pg {
+	font-family: $font-family;
+	font-size: 14*$px;
+	color: $text-color;
+
+	a {
+		color: $gray-color-3;
+
+		&:active,
+			&:focus {
+			color: $gray-color-3;
+			//border: none;
+			box-shadow: none;
+		}
+		i {
+			color: $gray-color-3;
+		}
+		&:hover {
+			color: $accent-color;
+
+			i {
+				color: inherit;
+			}
+		}
+		&:disabled,
+			&.disabled {
+			opacity: .5;
+			cursor: default;
+			pointer-events: none;
+
+			&:hover {
+				background: inherit;
+				color: inherit;
+			}
+		}
+	}
+	p {
+		margin: 0 0 1em;
+	}
+}
+
+/* Headers */
+@include htags();
+
+.tm-pg {
+	&_sidebar-title {
+		padding: 11px 0 0;
+		margin: 0 0 11px;
+	}
+	&_library_title {
+		margin: 0;
+	}
+	&_library_grid_header_select_all {
+		&.selected{
+			i {
+				color: $accent-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev,
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next {
+	color: $invert_accent_color_1;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-prev:hover,
+.tm_pb_builder #tm_builder_outer_content .tm-pb-slider-arrows .tm-pb-arrow-next:hover {
+	color: $regular_link_color;
+}
+
+#tm_builder_outer_content .tm_pb_slides .tm_pb_slide_title {
+	font-size: @font_size($h5_font_size, multiple, ceil, 1.05)px;
+	font-family: @font_family( $h5_font_family );
+	text-align: $h5_text_align;
+	color: $invert_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_slides .tm_pb_slide_content p {
+	font-family: @font_family( $h1_font_family );
+	color: $invert_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_slides .tm_pb_slide_title:after {
+	background: $invert_accent_color_1;
+}

@@ -1,0 +1,125 @@
+.footer-container {
+	padding: 106px 0 76px;
+	text-align: center;
+	.default & {
+		padding-top: 50px;
+		padding-bottom: 55px;
+	}
+	.minimal & {
+		padding-top: 84px;
+	}
+	.container & {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+.footer-area {
+	text-align: left;
+	padding: 100px 0 20px;
+	p, .subscribe-block__message {
+		opacity: .75;
+	}
+	dl {
+		margin: 0 0 18px;
+		dt {
+			font-weight: 400;
+			align-items: center;
+			display: flex;
+			&:before {
+				content:'\f041';
+				font-family: 'FontAwesome';
+				font-size: .9rem;
+				margin-right: 19px;
+			}
+		}
+		&:nth-child(2) dt {
+			&:before {
+				content:'\f095';
+			}
+		}
+		&:nth-child(3) dt {
+			&:before {
+				content:'\f017';
+			}
+		}
+		&:nth-child(4) dt {
+			&:before {
+				content:'\f0e0';
+			}
+		}
+	}
+
+	.widget {
+		@include media-breakpoint-down(md) {
+			padding-bottom: 15px;
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+		&.widget-about {
+			padding-top: 5px;
+		}
+
+		&.widget-subscribe {
+			.widget-title {
+					margin-bottom: 16px;
+			}
+
+			.subscribe-block__form {
+				padding-top: 7px;
+			}
+		}
+	}
+}
+.footer-copyright {
+	opacity: .55;
+	font-size: .875rem;
+}
+.site-info {
+	.footer-logo {
+		margin: 0 0 12px;
+	}
+	.social-list {
+		margin: 0 0 30px;
+	}
+	&__flex {
+		display: flex;
+		flex-direction: column;
+
+		flex-wrap: nowrap;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		align-content: stretch;
+		align-items: flex-start;
+		@include media-breakpoint-up(md) {
+			flex-direction: row;
+		}
+		.footer-logo {
+			order: 0;
+			flex: 0 1 auto;
+			align-self: center;
+		}
+		.social-list {
+			order: 1;
+			flex: 0 1 auto;
+			align-self: center;
+			@include media-breakpoint-up(md) {
+				order: 2;
+			}
+		}
+		.site-info__mid-box {
+			text-align: center;
+
+			order: 2;
+			flex: 0 1 auto;
+			align-self: center;
+			@include media-breakpoint-up(md) {
+				order: 1;
+			}
+		}
+	}
+}
+
+@import "footer/layout-default";
+@import "footer/layout-centered";
+@import "footer/layout-minimal";

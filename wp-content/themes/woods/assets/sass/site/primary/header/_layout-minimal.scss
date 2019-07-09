@@ -1,0 +1,74 @@
+.site-header.minimal {
+	.site-branding {
+		padding: 0;
+		order: 1;
+		flex: 0 1 100%;
+		text-align: center;
+		@include media-breakpoint-up(md) {
+			order: 0;
+			flex: 0 1 auto;
+			text-align: center;
+		}
+	}
+	.social-list {
+		padding: 0;
+		align-self: center;
+		order: 0;
+		flex: 0 1 100%;
+		text-align: center;
+		@include media-breakpoint-up(md) {
+			order: 2;
+			flex: 0 1 auto;
+			text-align: left;
+			transform: translateY(3px);
+		}
+	}
+	.main-navigation {
+		order: 2;
+		flex: 0 1 100%;
+		align-self: center;
+		@include media-breakpoint-up(md) {
+			order: 1;
+		}
+
+		@include media-breakpoint-only(md) {
+			order: 2;
+			flex: 0 1 100%;
+			margin: 0;
+		}
+
+		@include media-breakpoint-down(md) {
+			text-align: center;
+			padding: 20px 0;
+			&.isStuck {
+				padding: 0;
+			}
+		}
+	}
+}
+.header-container {
+	&__flex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		align-content: stretch;
+		-ms-flex-align: center;
+		align-items: center;
+		@include media-breakpoint-up(lg) {
+			flex-wrap: nowrap;
+		}
+
+		@include media-breakpoint-down(md) {
+			justify-content: center;
+			padding-top: 30px;
+		}
+	}
+
+	.btn.booking {
+		@include media-breakpoint-down(md) {
+			margin-bottom: 30px;
+		}
+	}
+}

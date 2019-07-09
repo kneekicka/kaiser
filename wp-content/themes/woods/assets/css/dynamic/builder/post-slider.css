@@ -1,0 +1,14 @@
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slides .tm_pb_slide_description .post-meta,
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slides .tm_pb_slide_description .post-meta a,
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slides .tm_pb_slide_description .tm_pb_slide_content {
+		color: $invert_text_color !important;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slides .tm_pb_slide_description .post-meta a:hover {
+		color: $regular_accent_color_1 !important;
+}
+
+.tm_pb_builder #tm_builder_outer_content .tm_pb_slides .tm_pb_slide_description .tm_pb_more_button {
+	border-color: $invert_text_color;
+	color: $invert_text_color;
+}

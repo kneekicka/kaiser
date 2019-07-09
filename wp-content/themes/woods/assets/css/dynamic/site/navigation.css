@@ -1,0 +1,51 @@
+/* #Paginations */
+#tm_builder_outer_content .tm_pb_module .page-numbers,
+.page-numbers,
+.page-links a {
+	color: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_module .page-numbers.current,
+#tm_builder_outer_content .tm_pb_module .page-numbers:not(.dots):hover,
+.page-numbers:hover,
+.page-numbers.current {
+	color: $invert_accent_color_1;
+	background: $regular_link_color;
+	border-color: $regular_link_color;
+}
+
+.page-links a,
+.page-links > .page-links__item {
+	color: $regular_accent_color_3;
+}
+
+.single-post .page-links a:hover, .page-links a:hover {
+	color: $invert_text_color;
+	background: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+}
+
+.single-post .page-links > .page-links__item {
+	background: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+	color: $invert_text_color;
+}
+
+/* #Breadcrumbs */
+.breadcrumbs {
+	background: @alpha( $regular_accent_color_2, 4 );
+}
+
+.breadcrumbs__item {
+	font-style: $breadcrumbs_font_style;
+	font-weight: $breadcrumbs_font_weight;
+	font-size: $breadcrumbs_font_size{px};
+	line-height: $breadcrumbs_line_height;
+	font-family: @font_family( $breadcrumbs_font_family );
+	letter-spacing: $breadcrumbs_letter_spacing{px};
+}
+
+.breadcrumbs__wrap, .breadcrumbs__item-link {
+	color: $regular_accent_color_3;
+}

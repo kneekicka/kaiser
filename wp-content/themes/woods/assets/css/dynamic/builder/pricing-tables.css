@@ -1,0 +1,27 @@
+#tm_builder_outer_content .tm_pb_featured_table .tm_pb_pricing_heading {
+	background: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_pricing li:before {
+	color: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_pricing .tm_pb_dollar_sign {
+	color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_pricing.tm_pb_module .tm_pb_tm_price .tm_pb_sum,
+#tm_builder_outer_content .tm_pb_tm_price .tm_pb_frequency,
+#tm_builder_outer_content .tm_pb_pricing .tm_pb_dollar_sign
+ {
+	color: $regular_accent_color_2;
+	font-style: $h5_font_style;
+	font-weight: $h5_font_weight;
+	line-height: $h5_line_height;
+	font-family: @font_family( $h5_font_family );
+	letter-spacing: $h5_letter_spacing{px};
+}
+
+#tm_builder_outer_content .tm_pb_pricing.tm_pb_module div.tm_pb_pricing_table > div {
+	background: $invert_accent_color_1;
+}

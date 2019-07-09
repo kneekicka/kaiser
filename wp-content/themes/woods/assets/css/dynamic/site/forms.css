@@ -1,0 +1,75 @@
+/* #Search Form */
+input {
+	color: $regular_accent_color_2;
+}
+.search-form__field,
+.sidebar .cherry-search__field.search-field[type="search"] {
+	color: $regular_accent_color_2;
+}
+.search-form__field::-webkit-input-placeholder { color: $regular_text_color; }
+.search-form__field::-moz-placeholder { color: $regular_text_color; }
+.search-form__field:-moz-placeholder { color: $regular_text_color; }
+.search-form__field:-ms-input-placeholder { color: $regular_text_color; }
+
+.top-panel .search-form__submit {
+	color: $invert_accent_color_1;
+}
+.top-panel .search-form__submit:hover {
+	color: $regular_link_color;
+}
+
+/* #Comment, Contact, Password Forms */
+.comment-form .submit,
+.wpcf7-submit,
+.post-password-form label + input {
+	color: $invert_link_color;
+	background-color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+}
+.comment-form .submit:hover,
+.wpcf7-submit:hover,
+.post-password-form label + input:hover {
+	color: $invert_link_color;
+	background-color: $regular_accent_color_3;
+	border-color: $regular_accent_color_3;
+}
+.comment-form .submit:focus,
+.wpcf7-submit:focus,
+.post-password-form label + input:focus {
+	box-shadow: 0 0 10px $regular_accent_color_1;
+}
+
+.sidebar .search-form__submit {
+	color: $regular_accent_color_3;
+}
+
+.post-password-form label input {
+	border-color: $regular_accent_color_7;
+}
+
+.comment-list .comment-form__field {
+	background-color: $invert_accent_color_1;
+}
+
+.sidebar .search-form__submit:hover,
+.no-results .search-form__submit:hover,
+.full-width-header-area .search-form__submit:hover,
+.before-content-area .search-form__submit:hover,
+.before-loop-area .search-form__submit:hover,
+.after-loop-area .search-form__submit:hover,
+.after-content-area .search-form__submit:hover,
+.after-content-full-width-area .search-form__submit:hover,
+.footer-area .search-form__submit:hover
+ {
+	color: $regular_accent_color_1;
+}
+
+.footer-area .search-form__submit {
+	color: $regular_accent_color_2;
+}
+
+/* #Input Placeholders */
+::-webkit-input-placeholder { color: @alpha( $regular_text_color, 55 ); }
+::-moz-placeholder          { color: @alpha( $regular_text_color, 55 ); }
+:-moz-placeholder           { color: @alpha( $regular_text_color, 55 ); }
+:-ms-input-placeholder      { color: @alpha( $regular_text_color, 55 ); }

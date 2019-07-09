@@ -1,0 +1,66 @@
+.tm-pg {
+	/* spacer */
+	&_spacer {
+		height: 30px;
+	}
+	/* radio group */
+	&_radio-group {
+		overflow: hidden;
+	}
+	&_radio-img {
+		float: left;
+		margin: 10px 35px 0 5px;
+		text-align: center;
+		max-width: 80px;
+		position: relative;
+
+		input {
+			display: none;
+		}
+		label{
+			display: inline-block;
+		}
+		img {
+			width: 100%;
+			height: auto;
+			margin: 0 0 5px 0;
+			pointer-events: none;
+		}
+		input:checked + label {
+			font-weight: bold;
+
+			img {
+				box-shadow: 0 0 0 2px #ffffff, 0 0 0 5px $accent-color;
+			}
+		}
+	}
+
+	/* text */
+	&_text {
+		&-item {
+			margin: 10px 0;
+		}
+		label {
+			margin-right: 10px;
+		}
+		input[type="text"] {
+			width: auto;
+		}
+	}
+
+	/* number */
+	&_number {
+		&-item {
+			margin: 10px 0;
+		}
+		label {
+			margin-right: 10px;
+		}
+	}
+
+	.control-disable {
+		opacity: 0.55;
+		cursor: default;
+		pointer-events: none;
+	}
+}

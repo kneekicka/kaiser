@@ -1,0 +1,113 @@
+#tm_builder_outer_content .mprm-simple-view-column .mp_menu_item, #tm_builder_outer_content .mprm-view-list .mp-menu-item {
+	border-bottom-color: @alpha( $regular_text_color, 50 );
+}
+
+#tm_builder_outer_content .mprm-simple-view-column .mprm-list li.mprm-price {
+	font-family: @font_family( $h5_font_family );
+}
+
+.mprm-content-container.mprm-title-big b {
+	font-family: @font_family( $h4_font_family );
+	font-size: @font_size($h4_font_size, multiple, ceil, 1)px;
+	color: $regular_h4_color;
+}
+
+.mprm-content-container .mprm-price-container .mprm-price {
+	color: $regular_accent_color_2;
+	font-family: @font_family( $h5_font_family );
+}
+
+#tm_builder_outer_content .mprm-simple-view-column .mprm-list li:first-child,
+#tm_builder_outer_content .mprm-view-list .mprm-list li:first-child,
+.mp_menu_item .mprm-content-container.mprm-title-big b,
+.mprm-container.mprm-view-simple-list .mprm-flex-item.mprm-title a {
+	color: $regular_accent_color_2;
+	font-family: @font_family( $h6_font_family );
+	font-size: @font_size($h6_font_size, multiple, ceil, 1)px;
+	font-weight: $h6_font_weight;
+}
+
+#tm_builder_outer_content .tm_pb_module .mp_menu_item.no-thumb .mprm-link:hover b,
+#tm_builder_outer_content .mprm-simple-view-column .mprm-link:hover .mprm-list li:first-child,
+#tm_builder_outer_content .mprm-view-list .mprm-link:hover .mprm-list li:first-child,
+.mprm-container.mprm-view-simple-list .mprm-flex-item.mprm-title a:hover,
+#tm_builder_outer_content .tm_pb_module .mp_menu_item.has-thumb .mprm-item-title a:hover,
+#tm_builder_outer_content .tm_pb_menu_items .mp_menu_item.has-thumb .mprm-item-title a:hover {
+	color: $regular_link_color;
+}
+
+#tm_builder_outer_content .mprm-simple-view-column .mp_menu_item .mprm-price,
+#tm_builder_outer_content .mprm-view-list .mp_menu_item .mprm-price,
+.single-mp_menu_item .entry-content > p span,
+.mprm-main-wrapper.mp_menu_item .content-wrapper .mprm-sidebar .mprm-price-box .mprm-price {
+	color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_module .mprm-view-grid .mp_menu_item.has-thumb .mprm-link,
+.type-mp_menu_item.hentry .mprm-related-items > a,
+.mprm-view-grid .mp_menu_item.has-thumb .mprm-link {
+	background: -webkit-linear-gradient(45deg, $regular_accent_color_1 0%, $regular_accent_color_2 80%);
+	background: linear-gradient(45deg, $regular_accent_color_1 0%, $regular_accent_color_2 80%);
+}
+
+#tm_builder_outer_content .mprm-simple-view-column .mprm-tags-wrapper .mprm-tag,
+#tm_builder_outer_content .mprm-view-list .mprm-tags-wrapper .mprm-tag {
+		color: $regular_accent_color_6;
+		border-color: $regular_accent_color_6;
+}
+
+.single-mp_menu_item .entry-content > ul li:before {
+	background: @alpha( $regular_text_color, 70 );
+}
+
+.mprm-cart-added-alert {
+	color: $regular_accent_color_1;
+}
+
+.widget.mprm_widget .mprm-taxonomy-title, .widget.mprm_widget .mprm-title a {
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: $h6_font_size{px};
+	line-height: $h6_line_height;
+	font-family: @font_family( $h6_font_family );
+	letter-spacing: $h6_letter_spacing{px};
+	text-align: $h6_text_align;
+	color: $regular_accent_color_2;
+}
+
+.widget.mprm_widget .mprm-title a:hover {
+	color: $regular_link_color;
+}
+
+.type-mp_menu_item.hentry .mprm-related-items > a:after {
+	color: $invert_accent_color_1;
+}
+
+.mprm-container.mprm-widget-categories.mprm-view-grid .mprm-menu-category .mprm-effect-hover {
+	background: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_module .mprm-view-grid .mp_menu_item.has-thumb .mprm-link i,
+.mprm-view-grid .mp_menu_item.has-thumb .mprm-link i {
+	color: $invert_accent_color_1;
+}
+
+.mprm-sidebar .mprm-related-items-list li .mprm-related-title a {
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: $h6_font_size{px};
+	line-height: $h6_line_height;
+	font-family: @font_family( $h6_font_family );
+	letter-spacing: $h6_letter_spacing{px};
+	text-align: $h6_text_align;
+	color: $regular_accent_color_2;
+}
+
+.mprm-sidebar .mprm-related-items-list li .mprm-related-title a:hover {
+	color: $regular_accent_color_1;
+}
+
+.mprm-main-wrapper.mp_menu_item .content-wrapper .mprm-sidebar .mprm-ingredients .mprm-ingredient {
+	color: $regular_accent_color_6;
+	border-color: $regular_accent_color_6;
+}

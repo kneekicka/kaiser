@@ -1,0 +1,61 @@
+/* Calendar */
+.mphb-calendar {
+  /*  Extra day before or after the main month */
+  /* Booked date */
+  /* Pending date */
+  /* Available date */
+  /* Date that earlier than today */
+}
+.mphb-calendar .datepick-month td .mphb-booked-date {
+  background-color: red;
+  color: #000;
+}
+.mphb-calendar .datepick-month td .mphb-pending-date {
+  background-color: orange;
+  color: #000;
+}
+.mphb-calendar .datepick-month td .mphb-available-date {
+  background-color: greenyellow;
+  color: #000;
+}
+.mphb-calendar .datepick-month td .mphb-past-date {
+  background-color: #eee;
+  color: #888;
+}
+/* Datepickers */
+.mphb-datepick-popup {
+  /*  Extra day before or after the main month */
+  /* Booked date */
+  /* Pending date */
+  /* Available date */
+  /* Date that earlier than today */
+  /* Date that earlier than min date */
+  /* Date that later than max date */
+}
+.mphb-datepick-popup .datepick-month td .mphb-booked-date {
+  background-color: red;
+  color: #000;
+}
+.mphb-datepick-popup .datepick-month td .mphb-pending-date {
+  background-color: orange;
+  color: #000;
+}
+.mphb-datepick-popup .datepick-month td .mphb-available-date {
+  /*		background-color: greenyellow;
+		color: #000;*/
+}
+.mphb-datepick-popup .datepick-month td .mphb-past-date {
+  background-color: #eee;
+  color: #888;
+}
+.mphb-datepick-popup .datepick-month td .mphb-earlier-min-date {
+  background-color: #eee;
+  color: #888;
+}
+.mphb-datepick-popup .datepick-month td .mphb-later-max-date {
+  background-color: #eee;
+  color: #888;
+}
+.mphb-datepick-popup .mphb-selectable-date {
+  cursor: pointer;
+}

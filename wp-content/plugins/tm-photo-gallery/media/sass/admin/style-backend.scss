@@ -1,0 +1,369 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
+@import "variables/variables";
+@import "mixins/mixins";
+@import "normalize";
+.hide{
+	opacity: 0;
+	visibility: hidden;
+}
+#wp-gallery-list, #wp-gallery-editor, #wp-media-grid {
+	margin-top: 22px;
+}
+/* WP CSS HOOKS */
+#tm-pg-scroll-cotainer, #tm-pg-sidebar-scroll-container, .tm-pg-scroll-cotainer{
+	overflow: auto;
+	position: relative;
+
+	&.editor-enabled {
+		& > div:not(#tm-pg-editor) {
+			display: none;
+		}
+	}
+}
+
+.wp-person a:focus .gravatar, a:focus, a:focus .media-icon img{
+	box-shadow: none;
+}
+#wpbody-content {
+	padding: 0;
+}
+#wpfooter {
+	display: none;
+}
+.tm-pg_library-filter_selected-objects{
+	h5.tm-pg_library-filter_selected-title{
+		color: $white-color;
+		margin: 0;
+	}
+}
+#tm-pg-grid{
+	h5.tm-pg_library_title{
+		margin: 0;
+	}
+}
+.tm-pg_library{
+	h5.tm-pg_library_title{
+		margin: 0 0 0.8em;
+
+		a {
+			i {
+				vertical-align: middle;
+			}
+		}
+	}
+}
+.tm-pg_body-sidebar_container{
+	h5.tm-pg_library-filter_selected-title{
+		color: $white-color;
+		margin: 0;
+	}
+}
+.search-res {
+	position: relative;
+	margin: 0;
+	bottom: 0;
+	.ac_results {
+		display: block;
+		word-spacing: -0.3em;
+		width: 165px;
+		position: absolute;
+		right: 110px;
+		top: 45px;
+		li {
+			cursor: pointer;
+		}
+	}
+}
+
+@keyframes show-box {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.show-box {
+	animation: show-box 1s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hide-box {
+	0%   { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+.hide-box {
+	animation: hide-box 1s 1;
+	animation-fill-mode: forwards;
+}
+
+.uploader-inline {
+	.media-uploader-status {
+		h3 {
+			display: none;
+		}
+	}
+	.has-upload-message {
+		.upload-ui {
+			margin: 0 0 4em;
+		}
+		.upload-instructions {
+			font-size: 14px;
+			color: #464646;
+			font-weight: normal;
+		}
+	}
+	h3 {
+		font-size: 20px;
+		line-height: 28px;
+		font-weight: 400;
+		margin: 0;
+	}
+	.drop-instructions {
+		display: none;
+	}
+	p {
+		font-size: 12px;
+		margin: 0.5em 0;
+	}
+	.media-progress-bar {
+		display: none;
+	}
+	.browser {
+		display: inline-block !important;
+	}
+	.close::before {
+		color: #777;
+		display: inline-block;
+		font: 400 30px/50px dashicons !important;
+	}
+	.close {
+		background-color: transparent;
+		border: 0 none;
+		cursor: pointer;
+		height: 48px;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+		width: 50px;
+		z-index: 1;
+	}
+}
+
+.media-uploader-status .upload-dismiss-errors, .media-uploader-status .upload-errors {
+	display: none;
+}
+
+.errors.media-uploader-status .upload-dismiss-errors, .errors.media-uploader-status .upload-errors {
+	display: block;
+}
+
+.media-sidebar {
+	.media-uploader-status {
+		.upload-dismiss-errors {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+}
+
+.upload-errors {
+	.upload-error {
+		padding: 12px;
+		margin-bottom: 12px;
+		background: #fff;
+		border-left: 4px solid #dd3d36;
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	}
+	.upload-error-filename {
+		font-weight: bold;
+	}
+	.upload-error-message {
+		display: block;
+		padding-top: 8px;
+		word-wrap: break-word;
+	}
+}
+
+.uploader-window {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 86, 132, 0.9);
+	z-index: 250000;
+	display: none;
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: opacity 250ms;
+	transition: opacity 250ms;
+	h3 {
+		z-index: -1;
+		margin: -0.5em 0 0;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		font-size: 40px;
+		color: #fff;
+		padding: 0;
+	}
+	.media-progress-bar {
+		margin-top: 20px;
+		max-width: 300px;
+		background: transparent;
+		border-color: #fff;
+		display: none;
+		div {
+			background: #fff;
+		}
+	}
+}
+
+body.drag-over {
+	.uploader-window {
+		display: block;
+		opacity: 1;
+	}
+}
+
+.uploader-window-content {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border: 1px dashed #fff;
+}
+
+.uploading {
+	.uploader-window {
+		.media-progress-bar {
+			display: block;
+		}
+	}
+}
+
+.media-frame {
+	.uploader-inline {
+		margin-bottom: 20px;
+		padding: 0;
+		text-align: center;
+	}
+}
+
+.uploader-inline-content {
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	.upload-ui {
+		margin: 2em 0;
+	}
+	.post-upload-ui {
+		margin-bottom: 2em;
+	}
+}
+
+.supports-drag-drop {
+	.uploader-inline {
+		.drop-instructions {
+			display: block;
+		}
+	}
+}
+
+.uploading.uploader-inline {
+	.media-progress-bar {
+		display: block;
+	}
+}
+
+.drag-drop {
+	.drag-drop-inside {
+		width: auto;
+		margin: 45px auto 0;
+	}
+}
+body.drag-over {
+	.uploader-window {
+		display: block;
+		opacity: 1;
+	}
+}
+
+#popup-wraper,
+#popup-dialog-wraper,
+#tm-pg-popup-wraper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility: visible;
+    display: block;
+    background-color: rgba(22,22,22,0.5);
+	top: 0;
+	z-index: 999999;
+}
+
+
+.tm-pg_sidebar_loading,
+.tm-pg_body-sidebar_loading {
+	display: none;
+}
+.tm-pg_disable {
+	overflow: hidden;
+	position: relative;
+	.tm-pg_sidebar_loading,
+	.tm-pg_body-sidebar_loading  {
+		align-items: center;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		right: 20px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		z-index: 9999;
+		background: rgba(255,255,255,0.9);
+		//background: rgba(44,144,251,0.2);
+	}
+	.tm-pg_sidebar_loading {
+		margin-top: 42px;
+	}
+	.tm-pg_body-sidebar_loading {
+		width: 100%;
+		right: 0;
+	}
+	.preloader {
+		animation: tm-pg_rotate 1.4s linear infinite;
+		position: relative;
+	}
+}
+
+i.mce-i-add_tm_photo_gallery {
+	font: 400 20px/1 dashicons;
+    margin-left: -2px;
+    padding: 0 2px 0 0;
+    vertical-align: top;
+	&:before{
+		content: "\f180";
+	}
+}
+
+label {
+	span {
+		cursor: pointer;
+	}
+}
+
+@import "layout/layout";
+@import "layout/notification";
+@import "typography/typography";
+@import "forms/forms";
+@import "elements/elements";
+@import "elements/ui-elements";
+//@import "elements/listings";

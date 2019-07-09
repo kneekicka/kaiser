@@ -1,0 +1,78 @@
+#tm_builder_outer_content {
+	.tm_pb_pricing.tm_pb_module {
+		.tm_pb_pricing_table {
+			margin-top: 5px;
+
+			.tm_pb_pricing_heading {
+				background: none;
+			}
+		}
+		div.tm_pb_pricing {
+			margin: 0 -6px;
+
+			&_table {
+				text-align: left;
+				> div {
+					margin: 0 6px;
+					border-radius: 5px;
+					padding: 28px 60px 60px 60px;
+					-webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,0.07);
+					box-shadow: 0 0 8px 0 rgba(0,0,0,0.07);
+					@include media-breakpoint-down(sm) {
+						padding-left: 30px;
+						padding-right: 30px;
+					}
+					.tm_pb_pricing {
+						li {
+							padding-left: 0;
+							line-height: 1.5;
+							&:before {
+								display:none;
+							}
+						}
+					}
+				}
+
+				@include media-breakpoint-down(lg) {
+					width: 100%;
+					float: none;
+					padding-bottom: 0;
+				}
+			}
+			&_heading {
+				margin-bottom: 0;
+				padding: 10px 0 7px;
+			}
+			&_title {}
+			&_content {
+				padding: 0;
+				&_top {
+					padding-bottom: 0;
+				}
+			}
+		}
+		.tm_pb_best_value {}
+
+		.tm_pb_tm_price {
+			display: flex;
+			align-items: flex-start;
+			padding-top: 42px;
+			.tm_pb_sum{font-size: 40px;}
+			.tm_pb_frequency, .tm_pb_dollar_sign{
+				font-size: 1rem;
+				opacity: .5;
+				padding: 10px 0 0 10px;
+				margin: 0;
+			}
+			.tm_pb_dollar_sign {
+				padding-left: 0;
+				margin-left: -13px;
+			}
+		}
+		.tm_pb_pricing_table_button.tm_pb_button, .tm_pb_pricing_table_button.tm_pb_button:hover {
+			margin-top: 8px;
+			width: 100%;
+			text-align: center;
+		}
+	}
+}

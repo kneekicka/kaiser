@@ -1,0 +1,16 @@
+.mphb-hide {
+  display: none !important;
+}
+.mphb-table-centered {
+  text-align: center;
+}
+.mphb-table-centered td,
+.mphb-table-centered th {
+  text-align: center;
+}
+.mphb-centered {
+  text-align: center;
+}
+.mphb-date-input-width {
+  width: 90px;
+}

@@ -1,0 +1,93 @@
+.site-header.transparent {
+	@include media-breakpoint-up(xl) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+	}
+
+	.site-branding {
+		padding: 0;
+		order: 1;
+		flex: 0 1 100%;
+		text-align: center;
+		@include media-breakpoint-up(md) {
+			order: 0;
+			flex: 0 1 auto;
+		}
+	}
+	.social-list {
+		padding: 0;
+		order: 0;
+		flex: 0 1 100%;
+		text-align: center;
+		@include media-breakpoint-up(md) {
+			order: 2;
+			flex: 0 1 auto;
+			text-align: left;
+		}
+	}
+	.main-navigation {
+		order: 2;
+		@include media-breakpoint-up(md) {
+			order: 1;
+		}
+		@include media-breakpoint-only(md) {
+			order: 2;
+			flex: 0 1 100%;
+			margin: 0;
+		}
+		.menu {
+			@include media-breakpoint-down(md) {
+				justify-content: center;
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			text-align: center;
+			padding: 20px 0;
+		}
+	}
+
+	.header-container {
+
+		&__flex {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-content: stretch;
+			align-items: center;
+			@include media-breakpoint-up(lg) {
+				flex-wrap: nowrap;
+			}
+
+			@include media-breakpoint-down(md) {
+				justify-content: center;
+				padding-top: 30px;
+			}
+		}
+	}
+
+	.btn.booking {
+		@include media-breakpoint-down(md) {
+			margin-bottom: 30px;
+		}
+	}
+}
+.header-layout-transparent {
+	position: relative;
+
+	&.top-panel-invisible {
+
+		.hentry:first-child,
+		.sidebar-primary .widget:first-child {
+			margin-top: 0;
+		}
+
+		.card-columns {
+			padding-top: 0;
+		}
+	}
+}

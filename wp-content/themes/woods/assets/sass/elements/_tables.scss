@@ -1,0 +1,38 @@
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+tbody {
+	border: 1px solid;
+}
+
+tbody tr {
+	border-bottom: 1px solid;
+}
+
+tbody tr th, tbody tr td {
+	border-right: 1px solid;
+	padding: 0 5px;
+}
+
+.entry-content {
+	table {
+		margin: 0 0 1.5em;
+		max-width: 100%;
+		border: 1px solid $color__border-table;
+		th,
+		td {
+			padding: 5px;
+			vertical-align: top;
+			border: 1px solid $color__border-table;
+		}
+		thead th {
+			vertical-align: bottom;
+			border-bottom: 1px solid $color__border-table;
+		}
+		tbody + tbody {
+			border-top: 1px solid $color__border-table;
+		}
+	}
+}

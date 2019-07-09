@@ -1,0 +1,18 @@
+#tm_builder_outer_content {
+	.tm_pb_number_counter.tm_pb_module {
+		.percent {
+			padding-bottom: 10px;
+			& + * {}
+
+			.percent-value {
+				font-size: 60px;
+				@include media-breakpoint-down(lg) {
+					font-size: 40px;
+				}
+			}
+		}
+		h6 {
+			padding-top: 10px;
+		}
+	}
+}

@@ -1,0 +1,236 @@
+.post {
+	/* Gallery */
+	&-gallery {
+		margin-bottom: 1em;
+
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 2em;
+		}
+
+		&.swiper-container {
+			margin-bottom: 30px;
+		}
+		.entry-content & {
+			margin-top: 0;
+		}
+		&__image {
+			display: block;
+			margin: auto;
+		}
+		&__button-next,
+		&__button-prev {
+			top: 50%;
+			display: none;
+			width: 50px;
+			height: 50px;
+			margin-top: -25px;
+			text-align: center;
+			background-image: none;
+		}
+		&__button-prev {
+			left: 0;
+
+			@include border-right-radius($border__radius);
+		}
+		&__button-next {
+			right: 0;
+
+			@include border-left-radius($border__radius);
+		}
+		.material-icons,
+		.fa {
+			line-height: 50px;
+		}
+
+		&__slide {
+			&.swiper-slide:hover {
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
+
+		&__caption {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			padding: 15px;
+		}
+		&__link {
+			display: block;
+		}
+	}
+	.posts-list--grid-2-cols &, .posts-list--grid-3-cols &, .blog-masonry-2-cols &{
+		.post-thumbnail__format-link {
+			min-height: 255px;
+			padding: 0 15px;
+
+			@include media-breakpoint-only(lg) {
+				min-height: 123px;
+			}
+
+			@include media-breakpoint-only(md) {
+				min-height: 91px;
+			}
+		}
+	}
+	.posts-list--grid-3-cols &, .blog-masonry-3-cols &{
+		.post-thumbnail__format-link {
+			min-height: 165px;
+		}
+	}
+	/* Link */
+	&-format-link {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 2px;
+		font-size: 0.875rem;
+		.posts-list--grid-3-cols &,
+		.blog-masonry-2-cols &,
+		.blog-masonry-3-cols &,
+		.blog-vertical-justify & {
+			font-size: 0.625rem;
+		}
+
+		.posts-list--grid-2-cols & {
+			@include media-breakpoint-down(lg) {
+				font-size: 0.625rem;
+			}
+		}
+	}
+	&-thumbnail {
+		.has-thumb & {
+			position: relative;
+		}
+		&__format-link {
+			text-align: center;
+			min-height: 189px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.has-thumb & {
+				position: absolute;
+				background: none;
+				top: 50%;
+				right: 0;
+				bottom: 50%;
+				left: 0;
+				text-align: center;
+				min-height: auto;
+				.post-format-link {
+					margin: -20px 0 0 0;
+				}
+			}
+		}
+	}
+	/* Quote */
+	&-format-quote {
+		background-color: $color__quote-format-post;
+	}
+	/* Wrapper for non-image featured content */
+	&-featured-content {
+		margin-bottom: 1em;
+
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 30px;
+
+			.posts-list--grid-2-cols &,
+			.posts-list--grid-3-cols & {
+				margin-bottom: 20px;
+			}
+		}
+		.format-video & {
+			background: none;
+		}
+		.post__cats {
+			padding: 1em 0 0 1em;
+
+			@include media-breakpoint-up(lg) {
+				padding-top: 2em;
+			}
+			.format-video & {
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin: 10px;
+
+				@include media-breakpoint-up(lg) {
+					margin: 30px;
+				}
+				&:first-child {
+					position: static;
+				}
+			}
+		}
+	}
+	&.format-status {
+		.post__cats {
+			padding: 0;
+		}
+	}
+}
+
+/* Aside */
+.format {
+	&-aside {
+		.entry-title {
+			.blog &,
+			.archive & {
+				display: none;
+			}
+		}
+	}
+}
+
+/* Image | Room type gallery hover */
+.post-thumbnail__link, .mphb-room-type-gallery-wrapper .post-gallery__link {
+	font-size: 2.5rem;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	display: block;
+	&:before {
+		@include material-icon;
+		content: "search";
+		text-align: center;
+		vertical-align: middle;
+		color: inherit;
+		opacity: 0;
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -30%);
+		@include transition(all 0.4s ease-out);
+	}
+	&:after {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		content: '';
+		opacity: 0;
+		transform: translate3d(0, 50%, 0);
+		will-change: opacity;
+		will-change: transform;
+		@include transition(opacity 0.95s, transform 0.15s);
+	}
+	&:hover {
+		&:before {
+			opacity: 1;
+			transform: translate(-50%, -50%);
+		}
+		&:after {
+			opacity: 1;
+			transition-delay: .1s;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+}

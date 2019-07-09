@@ -1,0 +1,37 @@
+/* ==========================================================================
+	Variables
+	========================================================================== */
+
+/* Base
+	========================================================================== */
+
+/* Colours */
+
+$colourPrimary:                   #3FA80A;
+$colourSecondary:                orange;
+$colourWhite:                    #fff;
+$colourGrey:                     #444;
+
+/* Typography  */
+
+$baseFontSize:                  18; // No px on this
+$baseLineHeight:                25px;
+$baseFontFamily:                Arial, Helvetica, sans-serif;
+$baseFontColour:                 #444;
+
+$headingFontFamily:             Arial, Helvetica, sans-serif;
+$headingColour:                  #444;
+
+$headingAlpha:                  48px;
+$headingBeta:                   36px;
+$headingGamma:                  24px;
+$headingDelta:                  20px;
+$headingEpsilon:                20px;
+$headingZeta:                   20px;
+
+/* Links  */
+$linkColour:                    $baseFontColour;
+$linkVisited:                   $baseFontColour;
+$linkHover:                     $colourPrimary;
+$linkActive:                    $colourPrimary;
+$linkFocus:                     $colourPrimary;

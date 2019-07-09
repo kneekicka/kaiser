@@ -1,0 +1,29 @@
+/* #Social */
+.social-list a,
+.social-list a:hover,
+.share-btns__link,
+.share-btns__link:hover {
+	color: $invert_accent_color_1;
+}
+.entry-footer .social-list a,
+.entry-footer .share-btns__link {
+	color: $regular_accent_color_6;
+}
+.social-list a:hover::before,
+.share-btns__link:hover {
+	color: $regular_link_color;
+}
+.after-content-full-width-area .social-list a,
+.after-content-full-width-area .social-list a:hover {
+	color: $regular_accent_color_2;
+}
+.social-list--footer .menu-item a:hover { color: $invert_link_color; }
+.social-list--footer .menu-item a:hover::before { background-color: @alpha( $invert_link_color, 10 ); }
+
+/* #Social (invert scheme) */
+.invert .social-list a {
+	color: $invert_link_color;
+}
+.invert .social-list a:hover {
+	color: $regular_accent_color_2;
+}

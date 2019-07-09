@@ -1,0 +1,13 @@
+.widget_mphb_rooms_widget .mphb-widget-room-type-title,
+.widget_mphb_rooms_widget .mphb-widget-room-type-price,
+.widget_mphb_rooms_widget .mphb-widget-room-type-book-button {
+  margin: 8px 0;
+}
+.widget_mphb_rooms_widget .mphb-widget-room-type-attributes,
+.widget_mphb_rooms_widget .mphb-widget-room-type-description,
+.widget_mphb_rooms_widget .mphb-widget-room-type-featured-image {
+  margin: 4px 0;
+}
+.widget_mphb_rooms_widget .mphb-room-type:not(:first-of-type) {
+  margin-top: 16px;
+}

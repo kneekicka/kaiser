@@ -1,0 +1,1272 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TM Photo Gallery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Thu Aug 04 2016 14:28:28 GMT+0300\n"
+"POT-Revision-Date: Thu Aug 04 2016 14:28:32 GMT+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../classes/class-hooks.php:133
+msgid "Minimal version of PHP "
+msgstr ""
+
+#: ../classes/class-hooks.php:138
+msgid "Minimal version of MySQL "
+msgstr ""
+
+#: ../classes/class-hooks.php:143
+msgid "Minimal version of WordPress "
+msgstr ""
+
+#: ../classes/class-media.php:66
+msgid "TM Photo Gallery"
+msgstr ""
+
+#: ../classes/class-media.php:76
+msgid "Media library"
+msgstr ""
+
+#: ../classes/class-media.php:85
+msgid "Galleries"
+msgstr ""
+
+#: ../classes/class-module.php:33
+msgid "Add New"
+msgstr ""
+
+#: ../classes/class-structure.php:102 ../classes/models/class-album.php:158 ..
+#: /classes/models/class-set.php:112
+msgid "F j, Y"
+msgstr ""
+
+#. Description of the plugin
+msgid "Allows the user to edit the metadata of an image over the internet"
+msgstr ""
+
+#. Author of the plugin
+msgid "Evan Hunter"
+msgstr ""
+
+#. Description of the plugin
+msgid "Simple function to cycle through temporary filenames ( a to z )"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides functions for reading and writing EXIF Information"
+msgstr ""
+
+#. Description of the plugin
+msgid "Retrieves information from a Exchangeable Image File Format (EXIF)"
+msgstr ""
+
+#. Description of the plugin
+msgid "Stores information into a Exchangeable Image File Format (EXIF)"
+msgstr ""
+
+#. Description of the plugin
+msgid "Retrieves information from a Meta APP3 segment and returns it"
+msgstr ""
+
+#. Description of the plugin
+msgid "Stores information into a Meta APP3 segment from a Meta array."
+msgstr ""
+
+#. Description of the plugin
+msgid "Generates html detailing the contents an APP1 EXIF array"
+msgstr ""
+
+#. Description of the plugin
+msgid "Packs TIFF IFD data from EXIF or Meta into a form ready for"
+msgstr ""
+
+#. Description of the plugin
+msgid "Packs a chain of IFD's from EXIF or Meta segments into a form"
+msgstr ""
+
+#. Description of the plugin
+msgid "Packs an IFD from EXIF or Meta segments into a form"
+msgstr ""
+
+#. Description of the plugin
+msgid "Decodes the information stored in a TIFF header and it's"
+msgstr ""
+
+#. Description of the plugin
+msgid "Reads and interprets a chain of standard Image File Directories (IFD's),"
+msgstr ""
+
+#. Description of the plugin
+msgid "Reads and interprets a standard or Non-standard Image File"
+msgstr ""
+
+#. Description of the plugin
+msgid "Attempts to interpret an IFD entry into a text string using the"
+msgstr ""
+
+#. Description of the plugin
+msgid "Interprets an IFD entry marked as \"Special\" in the IFD_Tag_Definitions"
+msgstr ""
+
+#. Description of the plugin
+msgid "Generates html detailing the contents a single IFD."
+msgstr ""
+
+#. Description of the plugin
+msgid "Decodes an IFD field value from a binary data string, using"
+msgstr ""
+
+#. Description of the plugin
+msgid "Encodes an IFD field from a value to a binary data string, using"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides functions for reading EXIF Makernote Information"
+msgstr ""
+
+#. Description of the plugin
+msgid "Attempts to decodes the Makernote tag supplied, returning the"
+msgstr ""
+
+#. Description of the plugin
+msgid "Attempts to provide a text value for any makernote tag marked"
+msgstr ""
+
+#. Description of the plugin
+msgid "Attempts to interpret a makernote into html."
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides definitions of the tags for TIFF, EXIF, Interoperability,"
+msgstr ""
+
+#. Description of the plugin
+msgid "This script extracts a Casio Type 2 EXIF Makernote Thumbnail"
+msgstr ""
+
+#. Description of the plugin
+msgid "This script extracts a EXIF thumbnail from the first IFD of a"
+msgstr ""
+
+#. Description of the plugin
+msgid "This script extracts a JFXX (JPEG File Interchange Format"
+msgstr ""
+
+#. Description of the plugin
+msgid "This script extracts a Minolta EXIF Makernote Thumbnail"
+msgstr ""
+
+#. Description of the plugin
+msgid "This script extracts a Photoshop IRB (Image Resource Block)"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides functions for reading and writing IPTC-NAA Information"
+msgstr ""
+
+#. Description of the plugin
+msgid "Extracts IPTC-NAA IIM data from the string provided, and returns"
+msgstr ""
+
+#. Description of the plugin
+msgid "Encodes an array of IPTC-NAA records into a string encoded"
+msgstr ""
+
+#. Description of the plugin
+msgid "Generates html detailing the contents a IPTC-NAA IIM array"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides functions for reading and writing information to/from"
+msgstr ""
+
+#. Description of the plugin
+msgid "Retrieves information from a JPEG File Interchange Format (JFIF)"
+msgstr ""
+
+#. Description of the plugin
+msgid "Creates a new JFIF segment from an array of JFIF data in the"
+msgstr ""
+
+#. Description of the plugin
+msgid "Generates html showing the JFIF information contained in"
+msgstr ""
+
+#. Description of the plugin
+msgid "Retrieves information from a JPEG File Interchange Format Extension (JFXX)"
+msgstr ""
+
+#. Description of the plugin
+msgid "Creates a new JFXX segment from an array of JFXX data in the"
+msgstr ""
+
+#. Description of the plugin
+msgid "Generates html showing the JFXX thumbnail contained in"
+msgstr ""
+
+#. Description of the plugin
+msgid "Reads all the JPEG header segments from an JPEG image file into an"
+msgstr ""
+
+#. Description of the plugin
+msgid "Writes JPEG header data into a JPEG file. Takes an array in the"
+msgstr ""
+
+#. Description of the plugin
+msgid "Retreives the contents of the JPEG Comment (COM = 0xFFFE) segment if one"
+msgstr ""
+
+#. Description of the plugin
+msgid "Creates a new JPEG Comment segment from a string, and inserts"
+msgstr ""
+
+#. Description of the plugin
+msgid "Generates html showing the contents of any JPEG Comment segment"
+msgstr ""
+
+#. Description of the plugin
+msgid "Retreives information about the intrinsic characteristics of the"
+msgstr ""
+
+#. Description of the plugin
+msgid "Generates html showing some of the intrinsic JPEG values which"
+msgstr ""
+
+#. Description of the plugin
+msgid "Retrieves the compressed image data part of the JPEG file"
+msgstr ""
+
+#. Description of the plugin
+msgid "Generates html showing information about the Application (APP)"
+msgstr ""
+
+#. Description of the plugin
+msgid "Retrieves data from a file. This function is required since"
+msgstr ""
+
+#. Description of the plugin
+msgid "Agfa Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Decodes the Makernote tag and returns the new tag with the decoded"
+msgstr ""
+
+#. Description of the plugin
+msgid "Canon Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Attempts to interpret a makernote into html. Returns false if"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides a text value for any tag marked as special for makernotes"
+msgstr ""
+
+#. Description of the plugin
+msgid "Casio Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Epson Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Fujifilm Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Konica/Minolta Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Kyocera Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Nikon Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Olympus Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Panasonic Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Pentax (Asahi) Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Ricoh Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Sony Makernote Parser"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides functions that mimic the way Photoshop reads and writes"
+msgstr ""
+
+#. Description of the plugin
+msgid "Retrieves Photoshop 'File Info' metadata in the same way that Photoshop"
+msgstr ""
+
+#. Description of the plugin
+msgid "Stores Photoshop 'File Info' metadata in the same way that Photoshop"
+msgstr ""
+
+#. Description of the plugin
+msgid "Returns a string indicating the time difference between the local"
+msgstr ""
+
+#. Description of the plugin
+msgid "Checks a given XMP array against a reference array, and adds any"
+msgstr ""
+
+#. Description of the plugin
+msgid "Searches one level of an XMP array for a specific tag, and"
+msgstr ""
+
+#. Description of the plugin
+msgid "Creates a Globally Unique IDentifier, in the format that is used"
+msgstr ""
+
+#. Description of the plugin
+msgid "Adds a value to a particular field in a Photoshop File Info array,"
+msgstr ""
+
+#. Description of the plugin
+msgid "Searches an IPTC array for a particular record, and returns it if found"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Searches a Photoshop IRB array for a particular resource, and returns it if "
+"found"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Searches a one level of a XMP array for a particular item by name, and "
+"returns it if found."
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Searches a for a particular rdf:Description block within a XMP array, and "
+"returns its children if found."
+msgstr ""
+
+#. Description of the plugin
+msgid "Retrieves the Photoshop Information Resource Block (IRB) information"
+msgstr ""
+
+#. Description of the plugin
+msgid "Adds or modifies the Photoshop Information Resource Block (IRB)"
+msgstr ""
+
+#. Description of the plugin
+msgid "Retrieves IPTC-NAA IIM information from within a Photoshop"
+msgstr ""
+
+#. Description of the plugin
+msgid "Inserts a new IPTC-NAA IIM resource into a Photoshop"
+msgstr ""
+
+#. Description of the plugin
+msgid "Generates html showing the information contained in a Photoshop"
+msgstr ""
+
+#. Description of the plugin
+msgid "Extracts Photoshop Information Resource Block (IRB) information"
+msgstr ""
+
+#. Description of the plugin
+msgid "Packs a Photoshop Information Resource Block (IRB) array into it's"
+msgstr ""
+
+#. Description of the plugin
+msgid "Used by Interpret_IRB_to_HTML to interpret Color transfer functions"
+msgstr ""
+
+#. Description of the plugin
+msgid "Used by Interpret_IRB_to_HTML to interpret Color halftoning information"
+msgstr ""
+
+#. Description of the plugin
+msgid "Retrieves the Picture Info text information from an App12"
+msgstr ""
+
+#. Description of the plugin
+msgid "Writes Picture Info text into an App12 JPEG segment. Uses information"
+msgstr ""
+
+#. Description of the plugin
+msgid "Generates html showing the contents of any JPEG App12 Picture"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides functions for reading, writing and interpreting a"
+msgstr ""
+
+#. Description of the plugin
+msgid "Decodes the contents of a EXIF tag containing Print Image"
+msgstr ""
+
+#. Description of the plugin
+msgid "Encodes the contents of a EXIF tag containing Print Image"
+msgstr ""
+
+#. Description of the plugin
+msgid "Interprets the contents of a EXIF tag containing Print Image"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides various utility functions for the toolkit"
+msgstr ""
+
+#. Description of the plugin
+msgid "Creates a relative path version of a file or directiroy name,"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides a single place where the current version of the toolkit"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides functions for handling Unicode strings in PHP without"
+msgstr ""
+
+#. Description of the plugin
+msgid "UTF-8 is a Unicode encoding system in which extended characters"
+msgstr ""
+
+#. Description of the plugin
+msgid "UTF-16 is a Unicode encoding system uses 16 bit values for representing"
+msgstr ""
+
+#. Description of the plugin
+msgid "Checks a string for badly formed Unicode UTF-8 coding and"
+msgstr ""
+
+#. Description of the plugin
+msgid "Checks a string for badly formed Unicode UTF-16 coding and"
+msgstr ""
+
+#. Description of the plugin
+msgid "Converts a string encoded with Unicode UTF-8, to an array of"
+msgstr ""
+
+#. Description of the plugin
+msgid "Converts a string encoded with Unicode UTF-16, to an array of"
+msgstr ""
+
+#. Description of the plugin
+msgid "Converts an array of unicode character numbers to a string"
+msgstr ""
+
+#. Description of the plugin
+msgid "XML has specific requirements about the characters that are"
+msgstr ""
+
+#. Description of the plugin
+msgid "A HTML page can display UTF-8 data properly if it has a"
+msgstr ""
+
+#. Description of the plugin
+msgid "Converts HTML which contains escaped decimal or hex characters"
+msgstr ""
+
+#. Description of the plugin
+msgid "A HTML page can display UTF-16 data properly if it has a"
+msgstr ""
+
+#. Description of the plugin
+msgid "Performs the same function as HTML_Entities, but leaves entities"
+msgstr ""
+
+#. Description of the plugin
+msgid "Performs the same function as htmlspecialchars, but leaves characters"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides functions for parsing and constructing XML information"
+msgstr ""
+
+#. Description of the plugin
+msgid "Parses a string containing XML, and returns the resulting"
+msgstr ""
+
+#. Description of the plugin
+msgid "Takes a tree structure array (in the same format as returned"
+msgstr ""
+
+#. Description of the plugin
+msgid "Used by the read_xml_array_from_text function."
+msgstr ""
+
+#. Description of the plugin
+msgid "Used by the xml_get_children function."
+msgstr ""
+
+#. Description of the plugin
+msgid "Retrieves the Extensible Metadata Platform (XMP) information"
+msgstr ""
+
+#. Description of the plugin
+msgid "Adds or modifies the Extensible Metadata Platform (XMP) information"
+msgstr ""
+
+#. Description of the plugin
+msgid "An alias for read_xml_array_from_text."
+msgstr ""
+
+#. Description of the plugin
+msgid "Takes a tree structure array containing XMP (in the same format"
+msgstr ""
+
+#. Description of the plugin
+msgid "Generates html showing the information contained in an Extensible"
+msgstr ""
+
+#. Description of the plugin
+msgid "Used by Interpret_XMP_to_HTML"
+msgstr ""
+
+#. Description of the plugin
+msgid "Attempts to build a text representation of the value of an RDF"
+msgstr ""
+
+#: ../classes/models/class-gallery.php:415
+msgid "Undo"
+msgstr ""
+
+#: ../classes/models/class-gallery.php:416
+#, php-format
+msgid "%num% %gallery% moved to the Trash."
+msgstr ""
+
+#: ../classes/models/class-gallery.php:418
+#, php-format
+msgid "Gallery %id% remove error!"
+msgstr ""
+
+#: ../classes/models/class-gallery.php:423
+#, php-format
+msgid "%num% %gallery% restored from the Trash."
+msgstr ""
+
+#: ../classes/models/class-gallery.php:425
+#, php-format
+msgid "Gallery %id% restore error!"
+msgstr ""
+
+#: ../classes/models/class-gallery.php:430
+#, php-format
+msgid "%num% %gallery% permanently deleted."
+msgstr ""
+
+#: ../classes/models/class-gallery.php:432
+#, php-format
+msgid "Gallery %id% delete error!"
+msgstr ""
+
+#: ../classes/models/class-gallery.php:437
+msgid "gallery"
+msgstr ""
+
+#: ../classes/models/class-gallery.php:437
+msgid "galleries"
+msgstr ""
+
+#: ../classes/models/class-gallery.php:442
+msgid "Dismiss this notice."
+msgstr ""
+
+#: ../classes/models/class-term.php:441
+msgctxt "tag delimiter"
+msgid ","
+msgstr ""
+
+#: ../classes/widgets/class-gallery-widget.php:24
+msgid "Shows gallery list."
+msgstr ""
+
+#: ../classes/widgets/class-gallery-widget.php:26
+msgid "TM Photo gallery"
+msgstr ""
+
+#: ../configs/gallery-options.php:5 ../templates/gallery/editor/filters.php:16
+msgid "Show filter"
+msgstr ""
+
+#: ../configs/gallery-options.php:7 ../templates/popups/dialog.php:17
+msgid "Yes"
+msgstr ""
+
+#: ../configs/gallery-options.php:8
+msgid "No"
+msgstr ""
+
+#: ../configs/gallery-options.php:12 ../templates/gallery/editor/filters.php:23
+msgid "Filter type"
+msgstr ""
+
+#: ../configs/gallery-options.php:14 ../templates/gallery/editor/filters.php:26
+msgid "Line"
+msgstr ""
+
+#: ../configs/gallery-options.php:15
+msgid "Dropdrouwn"
+msgstr ""
+
+#: ../configs/gallery-options.php:19 ../templates/gallery/editor/filters.php:32
+msgid "Filter by"
+msgstr ""
+
+#: ../configs/gallery-options.php:21 ../templates/gallery/editor/filters.php:35
+msgid "Category"
+msgstr ""
+
+#: ../configs/gallery-options.php:22 ../templates/gallery/editor/filters.php:36
+msgid "Tag"
+msgstr ""
+
+#: ../configs/gallery-options.php:28 ../templates/gallery/editor/pagination.php:16
+msgid "Show pagination"
+msgstr ""
+
+#: ../configs/gallery-options.php:33 ../templates/gallery/editor/pagination.php:23
+msgid "Images per page"
+msgstr ""
+
+#: ../configs/gallery-options.php:38 ../templates/frontend/grid/pagination-block.
+#: php:21
+msgid "Load more"
+msgstr ""
+
+#: ../configs/gallery-options.php:43
+msgid "Load more img"
+msgstr ""
+
+#: ../configs/gallery-options.php:48
+msgid "Load more page"
+msgstr ""
+
+#: ../configs/gallery-options.php:55
+msgid "Appear Animation Effect"
+msgstr ""
+
+#: ../configs/gallery-options.php:57
+msgid "Appear 1"
+msgstr ""
+
+#: ../configs/gallery-options.php:58
+msgid "Appear 2"
+msgstr ""
+
+#: ../configs/gallery-options.php:59
+msgid "Appear 3"
+msgstr ""
+
+#: ../configs/gallery-options.php:63
+msgid "Hover Animation Effect"
+msgstr ""
+
+#: ../configs/gallery-options.php:65
+msgid "Hover 1"
+msgstr ""
+
+#: ../configs/gallery-options.php:66
+msgid "Hover 2"
+msgstr ""
+
+#: ../configs/gallery-options.php:67
+msgid "Hover 3"
+msgstr ""
+
+#: ../configs/gallery-options.php:74 ../templates/gallery/editor/display.php:15
+msgid "Grid"
+msgstr ""
+
+#: ../configs/language-admin-js.php:3 ../templates/photo-gallery/topbar/selected.
+#: php:20
+msgid "Albums"
+msgstr ""
+
+#: ../configs/language-admin-js.php:4 ../templates/photo-gallery/topbar/selected.
+#: php:19
+msgid "Sets"
+msgstr ""
+
+#: ../configs/language-admin-js.php:5
+#, php-format
+msgid ""
+"The file %filename% could not be uploaded. File format not supported. Upload "
+"only JPG, PNG or GIF."
+msgstr ""
+
+#: ../configs/language-admin-js.php:6
+#, php-format
+msgid "The file %filename% exceeds the upload size limit (%size%)."
+msgstr ""
+
+#: ../configs/language-admin-js.php:7
+msgid "Some error!"
+msgstr ""
+
+#: ../configs/language-admin-js.php:8
+#, php-format
+msgid "You just remove cover from the \"%name%\" %type%."
+msgstr ""
+
+#: ../configs/language-admin-js.php:9
+#, php-format
+msgid "You just set new cover for the \"%name%\" %type%."
+msgstr ""
+
+#: ../configs/language-admin-js.php:10
+msgid "All photos uploaded successfully."
+msgstr ""
+
+#: ../configs/language-admin-js.php:11
+msgid "Are you sure that you want delete all selected media ?"
+msgstr ""
+
+#: ../configs/language-admin-js.php:12
+#, php-format
+msgid "Are you sure that you want to delete \"%name%\" set ?"
+msgstr ""
+
+#: ../configs/language-admin-js.php:13
+#, php-format
+msgid "Are you sure that you want to delete \"%name%\" album ?"
+msgstr ""
+
+#: ../configs/language-admin-js.php:14
+msgid "Are you sure that you want to delete selected gallery ?"
+msgstr ""
+
+#: ../configs/language-admin-js.php:15
+#, php-format
+msgid "Are you sure that you want to delete \"%name%\" ?"
+msgstr ""
+
+#: ../configs/language-admin-js.php:16
+msgid "You just permanently delete all selected media."
+msgstr ""
+
+#: ../configs/language-admin-js.php:17
+#, php-format
+msgid "You just permanently delete \"%name%\" album."
+msgstr ""
+
+#: ../configs/language-admin-js.php:18
+#, php-format
+msgid "You just permanently delete \"%name%\" set."
+msgstr ""
+
+#: ../configs/language-admin-js.php:19
+#, php-format
+msgid "You just permanently delete \"%name%\"."
+msgstr ""
+
+#: ../configs/language-admin-js.php:20
+#, php-format
+msgid "You just add media to \"%name%\" set."
+msgstr ""
+
+#: ../configs/language-admin-js.php:21
+#, php-format
+msgid "You just add media to \"%name%\" album."
+msgstr ""
+
+#: ../configs/language-admin-js.php:22
+#, php-format
+msgid "You just delete media from \"%name%\" album."
+msgstr ""
+
+#: ../configs/language-admin-js.php:23
+#, php-format
+msgid "You just delete media from \"%name%\" set."
+msgstr ""
+
+#: ../configs/language-admin-js.php:24
+#, php-format
+msgid "You just add \"%name%\" tag to media."
+msgstr ""
+
+#: ../configs/language-admin-js.php:25
+#, php-format
+msgid "You just delete \"%name%\" tag from media."
+msgstr ""
+
+#: ../configs/language-admin-js.php:26
+#, php-format
+msgid "You just add \"%name%\" category to media."
+msgstr ""
+
+#: ../configs/language-admin-js.php:27
+#, php-format
+msgid "You just delete \"%name%\" category from media."
+msgstr ""
+
+#: ../configs/language-admin-js.php:28
+#, php-format
+msgid "You just add \"%name%\" album."
+msgstr ""
+
+#: ../configs/language-admin-js.php:29
+#, php-format
+msgid "You just add \"%name%\" set."
+msgstr ""
+
+#: ../configs/language-admin-js.php:30
+msgid "You just rotate image."
+msgstr ""
+
+#: ../configs/language-admin-js.php:31
+msgid "You just set a focus point."
+msgstr ""
+
+#: ../configs/language-admin-js.php:32
+msgid "You just change media title."
+msgstr ""
+
+#: ../configs/language-admin-js.php:33
+msgid "You just change media description."
+msgstr ""
+
+#: ../configs/language-admin-js.php:34
+#, php-format
+msgid "You just add \"%name%\" gallery."
+msgstr ""
+
+#: ../configs/language-admin-js.php:35
+msgid "You just change gallery name."
+msgstr ""
+
+#: ../configs/language-admin-js.php:36
+msgid "You just delete selected gallery."
+msgstr ""
+
+#: ../configs/language-admin-js.php:37
+msgid "You just restore selected gallery."
+msgstr ""
+
+#: ../configs/language-admin-js.php:38
+msgid "You just add to trash selected gallery."
+msgstr ""
+
+#: ../configs/language-admin-js.php:39
+#, php-format
+msgid "You just save \"%name%\" gallery."
+msgstr ""
+
+#: ../templates/frontend/grid/filters.php:13 ../templates/frontend/grid/filters.
+#: php:38
+msgid "All"
+msgstr ""
+
+#: ../templates/frontend/grid/filters.php:31
+msgid "Filter Tags"
+msgstr ""
+
+#: ../templates/frontend/grid/filters.php:32
+msgid "Filter Categories"
+msgstr ""
+
+#: ../templates/frontend/grid/items/grid/more-item.php:14 ..
+#: /templates/frontend/grid/items/justify/more-item.php:14 ..
+#: /templates/frontend/grid/items/masonry/more-item.php:14
+msgid "Show More"
+msgstr ""
+
+#: ../templates/gallery/editor/content.php:12
+msgid "Choose images for your gallery"
+msgstr ""
+
+#: ../templates/gallery/editor/display.php:8
+msgid "Choose display type for your gallery"
+msgstr ""
+
+#: ../templates/gallery/editor/display.php:24
+msgid "Masonry"
+msgstr ""
+
+#: ../templates/gallery/editor/display.php:33
+msgid "Justify"
+msgstr ""
+
+#: ../templates/gallery/editor/filters.php:8
+msgid "Filter options"
+msgstr ""
+
+#: ../templates/gallery/editor/filters.php:25 ../templates/gallery/editor/filters.
+#: php:34
+msgid "Choose filter type"
+msgstr ""
+
+#: ../templates/gallery/editor/filters.php:27
+msgid "Dropdown"
+msgstr ""
+
+#: ../templates/gallery/editor/pagination.php:8
+msgid "Pagination options"
+msgstr ""
+
+#: ../templates/gallery/editor/pagination.php:25
+msgid "Choose images per page"
+msgstr ""
+
+#: ../templates/gallery/editor/pagination.php:26
+msgid "Infinity"
+msgstr ""
+
+#: ../templates/gallery/editor/pagination.php:38
+msgid "Show \"Load more\" button "
+msgstr ""
+
+#: ../templates/gallery/editor/pagination.php:49
+msgid "Show \"Load more\" grid"
+msgstr ""
+
+#: ../templates/gallery/editor/pagination.php:60
+msgid "Show pagination block"
+msgstr ""
+
+#: ../templates/gallery/editor/slidebar/content.php:11
+msgid "Chosen"
+msgstr ""
+
+#: ../templates/gallery/editor/slidebar/content.php:12 ..
+#: /templates/gallery/grid/models/gallery.php:26
+msgid "Delete"
+msgstr ""
+
+#: ../templates/gallery/editor/slidebar/content.php:13
+msgid "Remove all"
+msgstr ""
+
+#: ../templates/gallery/editor/slidebar/display.php:9 ../templates/photo-
+#: gallery/index.php:63
+msgid "Properties"
+msgstr ""
+
+#: ../templates/gallery/editor/slidebar/display.php:14
+msgid "Colums count"
+msgstr ""
+
+#: ../templates/gallery/editor/slidebar/display.php:16
+msgid "Choose colum"
+msgstr ""
+
+#: ../templates/gallery/editor/slidebar/display.php:25
+msgid "Padding"
+msgstr ""
+
+#: ../templates/gallery/editor/topbar/index.php:11 ../templates/photo-
+#: gallery/index.php:20
+msgid "Back"
+msgstr ""
+
+#: ../templates/gallery/editor/topbar/index.php:19
+msgid "Save gallery"
+msgstr ""
+
+#: ../templates/gallery/editor/topbar/index.php:24
+msgid "Images"
+msgstr ""
+
+#: ../templates/gallery/editor/topbar/index.php:25
+msgid "Display"
+msgstr ""
+
+#: ../templates/gallery/editor/topbar/index.php:26
+msgid "Filters"
+msgstr ""
+
+#: ../templates/gallery/editor/topbar/index.php:27
+msgid "Pagination"
+msgstr ""
+
+#: ../templates/gallery/grid/index.php:12
+msgid "Gallery(s)"
+msgstr ""
+
+#: ../templates/gallery/grid/models/gallery.php:18
+msgid "Check It"
+msgstr ""
+
+#: ../templates/gallery/grid/models/gallery.php:23
+msgid "Rename"
+msgstr ""
+
+#: ../templates/gallery/grid/models/gallery.php:32 ..
+#: /templates/gallery/grid/models/gallery.php:33
+msgid "Gallery name"
+msgstr ""
+
+#: ../templates/gallery/grid/models/gallery.php:37 ../templates/photo-
+#: gallery/grid/models/album.php:30 ../templates/photo-gallery/grid/models/set.
+#: php:30
+msgid "photos"
+msgstr ""
+
+#: ../templates/gallery/grid/models/gallery.php:37 ../templates/photo-
+#: gallery/grid/models/album.php:31 ../templates/photo-gallery/grid/models/set.
+#: php:31
+msgid "Date created"
+msgstr ""
+
+#: ../templates/gallery/grid/models/new-gallery.php:12
+msgid "Add gallery"
+msgstr ""
+
+#: ../templates/gallery/grid/models/right-grid.php:21 ../templates/photo-
+#: gallery/slidebar/index.php:94 ../templates/photo-gallery/topbar/default.php:16
+msgid "Album"
+msgstr ""
+
+#: ../templates/gallery/grid/models/right-grid.php:24 ../templates/photo-
+#: gallery/slidebar/index.php:113 ../templates/photo-gallery/topbar/default.php:20
+msgid "Set"
+msgstr ""
+
+#: ../templates/gallery/list/topbar/default.php:11
+msgid "Gallery"
+msgstr ""
+
+#: ../templates/gallery/list/topbar/default.php:19
+msgid "All Gallery"
+msgstr ""
+
+#: ../templates/gallery/list/topbar/default.php:28
+msgid "Trash"
+msgstr ""
+
+#: ../templates/gallery/list/topbar/selected.php:16 ../templates/photo-
+#: gallery/topbar/selected.php:16
+msgid "Selected"
+msgstr ""
+
+#: ../templates/gallery/list/topbar/selected.php:16 ../templates/photo-
+#: gallery/topbar/selected.php:16
+msgid "objects"
+msgstr ""
+
+#: ../templates/notice/admin_error.php:2
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../templates/photo-gallery/breadcrumbs.php:10
+msgid "main"
+msgstr ""
+
+#: ../templates/photo-gallery/editor.php:14
+msgid "Rotate left"
+msgstr ""
+
+#: ../templates/photo-gallery/editor.php:15
+msgid "Rotate right"
+msgstr ""
+
+#: ../templates/photo-gallery/editor.php:16
+msgid "Focus"
+msgstr ""
+
+#: ../templates/photo-gallery/editor.php:19
+msgid "Are you sure? All your changes will be lost."
+msgstr ""
+
+#: ../templates/photo-gallery/editor.php:20
+msgid "Save"
+msgstr ""
+
+#: ../templates/photo-gallery/grid/albums.php:15 ../templates/photo-
+#: gallery/grid/photos.php:16 ../templates/photo-gallery/grid/sets.php:15
+msgid "Select all"
+msgstr ""
+
+#: ../templates/photo-gallery/grid/albums.php:21
+msgid "Add Album"
+msgstr ""
+
+#: ../templates/photo-gallery/grid/models/album.php:25
+msgid "Album name"
+msgstr ""
+
+#: ../templates/photo-gallery/grid/models/set.php:25
+msgid "Set name"
+msgstr ""
+
+#: ../templates/photo-gallery/grid/photos.php:23
+msgid "Add Photo"
+msgstr ""
+
+#: ../templates/photo-gallery/grid/sets.php:22
+msgid "Add Set"
+msgstr ""
+
+#: ../templates/photo-gallery/index.php:86
+msgid "Drag your files here"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:16
+msgid "File name:"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:20
+msgid "Dimensions:"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:28
+msgid "Main"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:32
+msgid "Title"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:36
+msgid "Description"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:40
+msgid "Link"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:47
+msgid "Tags"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:54 ../templates/photo-
+#: gallery/slidebar/index.php:58
+msgid "Add tags"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:60
+msgid "(Add tags separated by coma)"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:66
+msgid "Categories"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:83
+msgid "Add categories"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:86
+msgid "Add new"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:88
+msgid "(Add categories separated by coma)"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:100 ../templates/photo-
+#: gallery/topbar/selected.php:34
+msgid "Add to album"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:103
+msgid "Select a album"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:105
+msgid "Add album"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:118 ../templates/photo-
+#: gallery/topbar/selected.php:31
+msgid "Add to set"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:121
+msgid "Select a set"
+msgstr ""
+
+#: ../templates/photo-gallery/slidebar/index.php:123
+msgid "Add set"
+msgstr ""
+
+#: ../templates/photo-gallery/topbar/cover.php:6
+msgid "Set as cover"
+msgstr ""
+
+#: ../templates/photo-gallery/topbar/cover.php:14
+msgid "Unset cover"
+msgstr ""
+
+#: ../templates/photo-gallery/topbar/default.php:12
+msgid "Photo"
+msgstr ""
+
+#: ../templates/photo-gallery/topbar/selected.php:21
+msgid "Photos"
+msgstr ""
+
+#: ../templates/photo-gallery/uploader.php:17
+msgid "Close uploader"
+msgstr ""
+
+#: ../templates/photo-gallery/uploader.php:20
+msgid "Drop files anywhere to upload"
+msgstr ""
+
+#: ../templates/photo-gallery/uploader.php:22
+msgid "OR"
+msgstr ""
+
+#: ../templates/photo-gallery/uploader.php:25
+msgid "Select Files"
+msgstr ""
+
+#: ../templates/photo-gallery/uploader.php:29
+msgid "(Limitations: JPG, PNG, GIF, Max size: 100 Mb)"
+msgstr ""
+
+#: ../templates/popups/dialog.php:18
+msgid "Cancel"
+msgstr ""
+
+#: ../templates/popups/index.php:11
+msgid "Select gallery"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"TM Photo Gallery plugin organizes your images and allows to add responsive "
+"galleries to your site in 1 click."
+msgstr ""
+
+#. Author of the plugin
+msgid "Template Monster"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://www.templatemonster.com"
+msgstr ""

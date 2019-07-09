@@ -1,0 +1,587 @@
+.tm-pg {
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="number"],
+	input[type="tel"],
+	input[type="range"],
+	input[type="date"],
+	input[type="month"],
+	input[type="week"],
+	input[type="time"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="color"],
+	select,
+	textarea,
+	.ui.dropdown {
+		height: 40px;
+		line-height: 40px;
+		padding: 0 20px;
+		border: none;
+		background: $gray-color-1;
+		border-radius: $border-radius;
+		margin: 0;
+		box-shadow: none;
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+	textarea {
+		padding: 20px;
+		min-height: 130px;
+		line-height: 1.75;
+	}
+
+	button {
+		background: none;
+		border: none;
+	}
+
+	label {
+		color: $header-color;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	textarea {
+		width: 100%;
+		color: #32373c;
+	}
+
+	// Some main styles
+	&_input-button_group {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 0 10px;
+
+		@media (min-width: 980px) {
+			flex-wrap: nowrap;
+		}
+		input,
+		.dropdown {
+			min-width: 1px;
+			flex: 1 0 100%;
+			max-width: 100%;
+
+			@media (min-width: 980px) {
+				flex: 1;
+				max-width: inherit;
+			}
+		}
+		button {
+			margin-top: 10px;
+
+			@media (min-width: 980px) {
+				margin-top: 0;
+				margin-left: 10px;
+				min-width: 110px;
+			}
+		}
+		&.tm-pg_add-to-album_form,
+		&.tm-pg_add-to-set_form {
+			margin-bottom: 30px;
+			@media ( min-width: 768px ) and (max-width: 1280px) {
+				flex-direction: column;
+			}
+		}
+		.spinner {
+			position: absolute;
+			bottom: -30px;
+			right: -10px;
+		}
+	}
+
+	.tm_pager {
+		text-align: center;
+		margin: 15px 0 0 0;
+		&-item {
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 2px;
+			&-btn {
+				display: block;
+				background: $accent-color;
+				color: $white-color;
+				border-radius: $border-radius;
+				padding: 10px 10px;
+				display: inline-block;
+				transition: 300ms all;
+				width: 38px;
+				text-align: center;
+				border: 1px solid $accent-color;
+			}
+			&.current-page {
+				 pointer-events: none;
+
+				.tm_pager-item-btn {
+					background: none;
+					color: $accent-color;
+					box-shadow: 1px 1px 4px rgba(0,0,0,.15) inset;
+				}
+			}
+		}
+	}
+
+	a.tm-pg_btn,
+	button.tm-pg_btn {
+		background: $accent-color;
+		color: $white-color;
+		border-radius: $border-radius;
+		padding: 10px 20px;
+		display: inline-block;
+		transition: 300ms all;
+
+		i {
+			display: inline-block;
+			vertical-align: middle;
+			color: $white-color;
+			margin: -6px 10px -4px 0;
+		}
+		&:active,
+			&:focus {
+			background: $accent-color;
+			color: $white-color;
+		}
+		&:hover {
+			background: $header-color;
+			color: $white-color;
+		}
+		&:disabled,
+			&.disabled {
+			opacity: .5;
+			cursor: default;
+			pointer-events: none;
+
+			&:hover {
+				background: inherit;
+				color: inherit;
+			}
+		}
+		&-primary {
+			background: $accent-color;
+
+			&:active,
+				&:focus {
+				background: $accent-color;
+				color: $white-color;
+			}
+		}
+		&-default {
+			background: $gray-color-3;
+
+			&:hover {
+				background: $accent-color;
+				color: $white-color;
+			}
+			&:active,
+				&:focus {
+				background: $gray-color-3;
+				color: $white-color;
+			}
+		}
+		&_icon {
+			padding: 8px 23px 8px 14px;
+
+			i {
+				font-size: 23px;
+				margin: 0 6px 0 0;
+			}
+		}
+		& + .tm-pg_btn {
+			margin-left: 5px;
+		}
+	}
+
+	// Image upload form
+	&_upload {
+		width: 100%;
+		height: 200px;
+		background: $gray-color-2;
+		border-radius: $border-radius*6;
+		padding: $gap;
+		border: 5px dashed $gray-color-3;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		background-clip: padding-box;
+
+		i {
+			display: block;
+		}
+		&_container {
+			height: 0;
+			overflow: hidden;
+			transition: 300ms height;
+		}
+	}
+
+	// Filter panel search form
+	&_library-filter {
+		&_search {
+			&-form {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-end;
+
+				@media (min-width: 980px) {
+					flex-wrap: nowrap;
+				}
+				.ui.dropdown {
+					margin-top: 1px;
+					min-width: inherit;
+					flex: 1 0 100%;
+					max-width: 100%;
+
+					@media (min-width: 980px) {
+						min-width: 185px;
+						flex: 1 1 auto;
+						margin-top: 0;
+						margin-left: 1px;
+					}
+				}
+			}
+			&_field {
+				flex: 1 1 auto;
+				min-width: 100px;
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+			&_submit {
+				margin-top: 10px;
+
+				@media (min-width: 980px) {
+					margin-top: 0;
+					margin-left: 10px;
+				}
+				i {
+					line-height: 40px;
+					font-size: 30px;
+					color: $gray-color-3;
+				}
+				&:hover {
+					i {
+						color: $accent-color;
+					}
+				}
+			}
+			&_container {}
+		}
+	}
+}
+
+::-webkit-input-placeholder { opacity: 1; }
+::-moz-placeholder          { opacity: 1; }
+:-moz-placeholder           { opacity: 1; }
+:-ms-input-placeholder      { opacity: 1; }
+
+.select2-container--open {
+	.select2-dropdown {
+		overflow: hidden;
+		background: #e2e2e2 none repeat scroll 0 0;
+		padding: 6px 0;
+		width: 100%;
+		cursor: auto;
+		margin: 0;
+		min-width: 150px;
+		outline: medium none;
+		padding: 0;
+		position: absolute;
+		text-align: left;
+		text-shadow: none;
+		top: 100%;
+		transition: opacity 0.1s ease 0s;
+		border: none;
+		border-radius: 0;
+		box-shadow: 0 0 0 1px #FFFFFF;
+		padding-bottom: 10px;
+		li {
+			color: #888888;
+			padding: 6px 20px;
+
+			&.select2-results__option[aria-selected=true] {
+				color: #fff;
+				background: #5897fb;
+			}
+			&.select2-results__option[aria-disabled=true] {
+				display: none;
+			}
+		}
+		.select2-search {
+			&__field {
+				margin: 3%;
+				width: 94%;
+				border: none;
+			}
+		}
+		@media ( min-width: 768px ) and (max-width: 1280px) {
+			padding-left: 10px;
+		}
+	}
+}
+
+.select2 {
+	flex: 1 1 0;
+	max-width: 100%;
+	min-width: inherit;
+	position: relative;
+	transition: box-shadow 0.1s ease 0s, width 0.1s ease 0s;
+	text-align: left;
+	outline: medium none;
+	cursor: pointer;
+	display: inline-block;
+	&.select2-container--open {
+		.select2-selection--single {
+			.select2-selection__arrow {
+				b {
+					border-width: 0 7px 7px;
+				}
+			}
+		}
+	}
+	.selection {
+		.select2-selection {
+			background: #f1f1f1 none repeat scroll 0 0;
+			border: none;
+			border-radius: 2px;
+			height: 42px;
+		}
+		.select2-selection__rendered {
+			line-height: 44px;
+			color: #888888;
+			padding: 0 40px 0 20px;
+		}
+
+		.select2-selection__arrow {
+			height: 42px;
+			width: 35px;
+			b {
+				border-width: 7px 7px 0;
+				margin-left: -10px;
+			}
+		}
+	}
+
+}
+
+/* UI */
+.tm-pg {
+	// Dropdown (main styles in dropdown.css)
+	&_ui.dropdown {
+		padding: 0 40px 0 20px;
+		min-width: inherit;
+		max-width: 100%;
+		white-space: nowrap;
+
+		@media (min-width: 1500px) {
+			min-width: 185px;
+		}
+		i {
+			font-size: 30px;
+			line-height: 40px;
+		}
+		> .default.text,
+		> .text {
+			color: $text-color;
+			padding-right: 25px;
+		}
+		.menu {
+			padding: 6px 0;
+			width: 100%;
+			background: $gray-color-5;
+
+			.item {
+				padding: 9px 20px 8px;
+				min-width: 150px;
+
+				&.active,
+				&.selected,
+				&:hover {
+					background: $header-color;
+					color: $white-color;
+				}
+			}
+		}
+	}
+
+	// Checkbox
+	&_checkbox {
+		&-group {
+			border: 1px solid $gray-color-2;
+			border-radius: $border-radius;
+			padding: 10px;
+
+			@media (min-width: 980px) {
+				padding: 10px 20px;
+			}
+		}
+		&-item {
+			margin: 15px 0;
+
+			&_categoty, &_tag {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			@media (min-width: 980px) {
+				margin: 10px 0;
+			}
+			input[type="checkbox"] {
+				display:none;
+
+				& + label {
+					span {
+						pointer-events: none;
+						&.checkbox {
+							display: block;
+							margin: 0 0 5px;
+							width: 27px;
+							height: 27px;
+							background: $gray-color-1;
+							text-align: center;
+							transition: 300ms background;
+
+							@media (min-width: 980px) {
+								display: inline-block;
+								vertical-align: middle;
+								margin: 0 10px 0 0;
+							}
+							&:after {
+								@include material-icon();
+								content: 'check';
+								font-size: 22px;
+								line-height: 27px;
+								color: $white-color;
+								opacity: 0;
+								transform: scale(2);
+								transition: 300ms all;
+							}
+						}
+					}
+					&:hover {
+						cursor: pointer;
+						span.checkbox {
+							background: $gray-color-3;
+						}
+					}
+				}
+				&:checked + label span.checkbox {
+					background: $accent-color;
+
+					&:after {
+						opacity: 1;
+						transform: scale(1);
+					}
+				}
+			}
+		}
+	}
+
+	// Radio {
+	&_radio {
+		&-item {
+			margin: 10px 0;
+
+			input[type="radio"] {
+				display:none;
+
+				& + label {
+					span {
+						display: inline-block;
+						vertical-align: middle;
+						margin: 0 10px 0 0;
+						width: 27px;
+						height: 27px;
+						border-radius: 50%;
+						background: $gray-color-1;
+						text-align: center;
+						transition: 300ms background;
+						position: relative;
+
+						&:after {
+							content: '';
+							width: 17px;
+							height: 17px;
+							border-radius: 50%;
+							position: absolute;
+							top: 5px;
+							left: 5px;
+							background: $accent-color;
+							opacity: 0;
+							transform: scale(0);
+							transition: 300ms all;
+
+						}
+					}
+					&:hover {
+						//cursor: pointer;
+
+						span {
+							background: $gray-color-3;
+						}
+					}
+				}
+				&:checked + label span {
+					&:after {
+						opacity: 1;
+						transform: scale(1);
+					}
+				}
+			}
+		}
+	}
+
+	// Tooltip
+	&_tooltip {
+		position: relative;
+		background: $header-color;
+		color: $white-color;
+		min-width: 125px;
+		padding: 10px 20px;
+
+		&:before {
+			content: '';
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 6px 0 0 6px;
+			border-color: transparent transparent transparent $header-color;
+			top: -6px;
+			left: 0;
+			position: absolute;
+		}
+	}
+
+	// Popup menu
+	&_popup-menu {
+		min-width: 185px;
+		padding: 10px 0;
+		border-radius: $border-radius;
+		background: $gray-color-5;
+
+		li {
+			a {
+				padding: 5px 20px;
+				display: block;
+
+				&:hover {
+					background: $header-color;
+					color: $white-color;
+				}
+			}
+		}
+	}
+}

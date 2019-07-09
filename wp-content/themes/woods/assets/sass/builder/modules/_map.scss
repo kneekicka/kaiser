@@ -1,0 +1,75 @@
+.tm_pb_builder #tm_builder_outer_content {
+	.tm_pb_column  {
+		.tm_pb_map {
+			height: 375px;
+		}
+		.contacts_page_map .tm_pb_map{
+			height: 507px;
+		}
+
+		.elements_page_map .tm_pb_map {
+			height: 450px;
+		}
+	}
+
+	.location_info {
+		position: relative;
+		padding-bottom: 6px;
+		@include media-breakpoint-up(xl) {
+			padding-left: 85px;
+		}
+		&:before {
+			content:'';
+			display: inline-block;
+			position: absolute;
+			top: 21px;
+			left: 0;
+			width: 50px;
+			height: 1px;
+			opacity: .1;
+		}
+		h4 {
+			margin-bottom: 10px;
+		}
+
+		._phone_number {
+			position: relative;
+			font-size: 28px;
+			display: flex;
+			align-items: center;
+			opacity: .85;
+			&:before {
+				content:'+';
+				display: inline-block;
+				font-size: 19px;
+				margin-right: 10px;
+				opacity: .5;
+			}
+
+			@include media-breakpoint-down(md) {
+				font-size: 20px;
+			}
+		}
+		._phone {
+			font-size: 10px;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
+			opacity: .25;
+			font-weight: bold;
+			margin-top: 0;
+		}
+		._mail {
+			padding: 16px 0 13px;
+		}
+		p {
+			strong {
+				font-weight: 400;
+				font-size: 1rem;
+				opacity: .85;
+			}
+		}
+	}
+}
+h5.phone {
+	margin-top: -17px;
+}

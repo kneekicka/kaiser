@@ -1,0 +1,27 @@
+.subscribe-block__submit,
+.footer-area .subscribe-block__submit {
+	color: $regular_accent_color_2;
+}
+
+.subscribe-block__submit:hover:before,
+.footer-area .subscribe-block__submit:hover:before,
+.subscribe-block__error {
+	color: $regular_link_color;
+}
+
+.sidebar.widget-area .subscribe-block__input[type='email'],
+.full-width-header-area.widget-area .subscribe-block__input[type='email'],
+.before-loop-area .subscribe-block__input[type='email'],
+.before-content-area .subscribe-block__input[type='email'],
+.after-content-area .subscribe-block__input[type='email']
+ {
+		border: 1px solid $color__border-input;
+}
+
+.after-content-full-width-area {
+	background: $regular_accent_color_7;
+}
+
+.subscribe-block__success {
+	color: $regular_accent_color_3;
+}

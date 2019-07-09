@@ -1,0 +1,393 @@
+/* Basic */
+.main-navigation {
+	display: block;
+	clear: both;
+	width: 100%;
+
+	ul {
+		display: none;
+		margin: 0;
+		padding-left: 0;
+		list-style: none;
+	}
+	li {
+		position: relative;
+		text-align: left;
+	}
+	a {
+		position: relative;
+		display: block;
+		text-decoration: none;
+	}
+	@include media-breakpoint-down(sm) {
+		ul {
+			ul {
+				a {
+					text-indent: 1rem;
+				}
+				ul {
+					a {
+						text-indent: 2rem;
+					}
+					ul {
+						a { text-indent: 3rem;
+						}
+						ul {
+							a { text-indent: 4rem;
+							}
+							ul {
+								a { text-indent: 5rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&.toggled {
+			ul {
+				display: block;
+			}
+		}
+	}
+	@include media-breakpoint-up(md) {
+		ul {
+			display: block;
+		}
+		li {
+			&.menu-hover {
+				& > ul {
+					top: 100%;
+					left: 0;
+					right: auto;
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+			li {
+				margin-bottom: 16px;
+				&.menu-hover {
+					& > ul {
+						top: -34px;
+						left: calc(100% + 1px);
+
+						&.left-side {
+							left: auto;
+							right: calc(100% + 1px);
+						}
+					}
+				}
+			}
+		}
+		.menu {
+			display: flex;
+
+			flex-wrap: wrap;
+			justify-content: flex-end;
+			.minimal & {
+				> li:hover > ul, > li.menu-hover > ul {
+
+				}
+			}
+			.default & {
+				justify-content: flex-start;
+				padding-top: 10px;
+				@include media-breakpoint-down(md) {
+					padding-top: 0;
+				}
+				> li:hover > ul, > li.menu-hover > ul {
+
+				}
+			}
+			.centered & {
+				> li:hover > ul, > li.menu-hover > ul {
+
+				}
+			}
+			> li {
+				display: flex;
+				align-items: center;
+			}
+		}
+		.sub-menu {
+			position: absolute;
+			z-index: 999;
+			top: 120%;
+			left: 0;
+			margin: 0;
+			opacity: 0;
+			box-shadow: none;
+			visibility: hidden;
+			@include transition(all .2s ease-out);
+
+			@include media-breakpoint-down(sm) {
+				background: none;
+			}
+			ul {
+				left: calc(100% + 1px);
+				margin-top: 0;
+				top: 20%;
+			}
+		}
+		.menu-toggle {
+			display: none;
+		}
+	}
+}
+
+/* Skin */
+.main-navigation {
+	a {
+		padding:0;
+		&:focus {
+			outline: none;
+		}
+	}
+	.menu {
+		@include media-breakpoint-down(md) {
+			margin: 20px 0 0;
+		}
+		> li {
+			margin-left: 32px;
+
+			@media (max-width: 767px) {
+				margin: 0 0 20px;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+			> a {
+				padding: 39px 0;
+				letter-spacing: .7px;
+				.site-header.centered & {
+					padding: 24px 0;
+					@include media-breakpoint-down(md) {
+						padding: 0;
+					}
+				}
+				@include media-breakpoint-up(md) {
+					border-bottom: none;
+				}
+
+				@include media-breakpoint-down(md) {
+					padding: 0;
+				}
+
+				.isStuck & {
+					padding: 25px 0;
+				}
+			}
+			&.menu-item-has-children:not(.super-guacamole__menu-with-image):not(.super-guacamole__menu-with-icon) {
+				&::after {
+					/* Marker (level 1) */
+					content: '\f107';
+					@media (max-width: 767px) {
+						display: none;
+					}
+				}
+			}
+			&.super-guacamole__menu-with-image {
+				a,
+				img {
+					display: inline-block;
+					box-sizing: border-box;
+					border: 1px solid transparent;
+				}
+
+				img {
+					max-width: 1.6em;
+					transform: translateY(0.4em);
+					margin-top: -100%;
+				}
+			}
+			&:last-child {
+				> a {
+					border-bottom: none;
+				}
+			}
+			&.menu-hover,
+			&.current_page_item,
+			&.current_page_ancestor,
+			&.current-menu-item,
+			&.current-menu-ancestor {
+				> a {
+					/* Active and hover state (level 1) */
+				}
+			}
+			&[hidden] {
+				display: none;
+			}
+
+			.sub-menu {
+				@include media-breakpoint-down(md) {
+					margin-top: 20px;
+					.sub-menu {
+						margin-top: 0;
+					}
+				}
+			}
+
+			//Mobile toggle menu icon
+			.sub-menu-toggle {
+				position: absolute;
+				display: none;
+				top: 0;
+				height: 22px;
+				width: 80px;
+				right: 0;
+				z-index: 99;
+				&::before {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin-top: -11px;
+					transform: translate(-50%);
+					content: '\f107';
+					font-family: 'FontAwesome';
+					font-size: 22px;
+					line-height: 1;
+					transition: .3s all ease;
+				}
+
+				&.active {
+					&::before {
+						transform: translate(-50%) rotateX(180deg);
+					}
+				}
+				@include media-breakpoint-down(sm) {
+						display:block;
+				}
+			}
+			//Mobile toggle menu icon end
+
+		}
+	}
+	& > .menu > .menu-item > .sub-menu.left-side {
+		left: auto;
+		right: 0;
+	}
+	.sub-menu {
+		padding: 34px 0 18px;
+		&.left-side {
+			left: auto;
+			right: calc(100% + 1px);
+		}
+
+		li {
+			@include media-breakpoint-up(md) {
+				&:last-of-type {
+					& > a {
+						border-bottom: none;
+					}
+				}
+			}
+
+			@include media-breakpoint-down(md) {
+				margin-bottom: 20px;
+			}
+			&.menu-item-has-children {
+				&::after {
+					/* Marker (level 2, 3, ..., N) */
+					top: 1.1em;
+					content: '\f105';
+					font-size: inherit;
+					display: none;
+				}
+			}
+		}
+		a {
+			@include font-size(1);
+			@include media-breakpoint-up(md) {
+				width: 16em;
+				padding:0 38px;
+			}
+		}
+		li.menu-hover,
+		li.current_page_item,
+		li.current_page_ancestor,
+		li.current-menu-item,
+		li.current-menu-ancestor {
+			> a {
+				/* Active and hover state (level 2, 3, ..., N) */
+			}
+		}
+	}
+
+//DropDown mobile menu
+	li.menu-item-has-children {
+		& > ul.sub-menu {
+			display: none;
+			@include media-breakpoint-up(md) {
+				display: block;
+			}
+		}
+
+		&.sub-menu-open > ul.sub-menu {
+			display: block;
+		}
+	}
+	//DropDown mobile menu end
+
+	li {
+		&::after {
+			/* Marker style */
+			position: absolute;
+			top: 1em;
+			right: 1em;
+			cursor: pointer;
+
+			@include font-awesome-icon;
+			@include font-size(1.125);
+		}
+	}
+	@include media-breakpoint-up(md) {
+		.menu {
+			> li {
+				&::after {
+					/* Marker position (level 1) */
+					position: relative;
+					top: 2px;
+					right: 0;
+					margin-left: 12px;
+					font-size: inherit;
+				}
+			}
+		}
+	}
+}
+
+/* Menu items description */
+.menu-item__desc {
+	@include font-size(.625);
+	@include media-breakpoint-up(md) {
+		.menu > li > a > & {
+			position: absolute;
+		}
+	}
+}
+
+/* Toogle button */
+.menu-toggle {
+	padding:0;
+	border: none;
+	background: none;
+	@include transition(all .3s ease-out);
+	.toggled & {
+		&__icon {
+			&:before {
+				content:'\e5cd';
+			}
+		}
+	}
+	&__icon {
+		vertical-align: top;
+		font-size: 25px;
+		&:before {
+			content:'\e3c7';
+			font-family: 'Material Icons';
+			font-weight: 400;
+			font-style: normal;
+			margin-right: 0;
+		}
+	}
+}

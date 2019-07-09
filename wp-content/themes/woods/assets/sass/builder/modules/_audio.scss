@@ -1,0 +1,130 @@
+#tm_builder_outer_content {
+	.tm_pb_audio_module.tm_pb_module {
+		.tm_audio_container {
+			h2 {
+				letter-spacing: 0;
+			}
+			.mejs-volume-button {
+				button {
+					overflow: visible;
+				}
+			}
+			span.mejs-currenttime {
+				@include font-size(1.0625);
+			}
+
+			.mejs-container {
+				.mejs-controls {
+					.mejs-button {
+						button {
+							margin-top: 3px;
+						}
+						&.mejs-playpause-button {
+							button {
+								margin-top: -3px;
+								&:before {
+									font-size: 16px;
+								}
+							}
+						}
+					}
+
+					.mejs-time-rail {
+						.mejs-time-total {
+							height: 2px;
+							.mejs-time-current {
+								height: 2px;
+							}
+						}
+					}
+
+					.mejs-time-total {
+						.mejs-time-handle {
+							top: -2px;
+							width: 6px;
+							height: 6px;
+						}
+					}
+
+					.mejs-horizontal-volume-total,
+					.mejs-horizontal-volume-current {
+						height: 2px;
+					}
+
+					.mejs-horizontal-volume-handle {
+						width: 6px;
+						height: 6px;
+						top: 10px;
+					}
+				}
+			}
+		}
+		.tm_pb_audio_cover_art {
+			width: 250px;
+		}
+		.tm_audio_module_meta {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: .625rem;
+			letter-spacing: 1.4px;
+			opacity: .5;
+			padding-top: 3px;
+			margin-bottom: 22px;
+		}
+		.tm_pb_audio_module_content {
+				margin-left: 250px;
+				padding: 50px 40px 12px;
+
+				@include media-breakpoint-down(sm) {
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+		}
+		&.tm_pb_audio_no_image {
+			.tm_pb_audio_module_content {
+				margin-left: 0;
+				padding: 48px 112px 9px;
+				@include media-breakpoint-down(md) {
+						padding: 50px 30px;
+				}
+
+				@include media-breakpoint-down(sm) {
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+			}
+		}
+		@include media-breakpoint-down(md) {
+			.tm_pb_audio_cover_art {
+				position: relative;
+				width: auto;
+				padding-bottom: 60%;
+			}
+			.tm_pb_audio_module_content {
+				margin-left: 0;
+			}
+		}
+
+	}
+	.tm_pb_column_1_2, .tm_pb_column_1_3, .tm_pb_column_1_4 {
+		.tm_pb_audio_module.tm_pb_module .tm_pb_audio_module_content {
+			padding: 38px 50px 9px;
+			margin-left: 0;
+
+			@include media-breakpoint-down(sm) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			p.tm_audio_module_meta {
+					margin-bottom: 32px;
+			}
+		}
+
+		.tm_pb_audio_module.tm_pb_module .tm_pb_audio_cover_art {
+				height: 195px;
+				width: 100%;
+				position: relative;
+		}
+	}
+}

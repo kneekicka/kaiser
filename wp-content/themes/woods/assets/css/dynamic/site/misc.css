@@ -1,0 +1,17 @@
+/* #ToTop button */
+#toTop {
+	color: $invert_accent_color_1;
+	background-color: $regular_link_color;
+}
+#toTop:hover {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_3;
+}
+#toTop:before {
+	color: $invert_accent_color_1;
+}
+
+/* #Page Preloader */
+.page-preloader span {
+	background-color: $regular_accent_color_1;
+}

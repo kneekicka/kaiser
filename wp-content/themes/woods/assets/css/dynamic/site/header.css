@@ -1,0 +1,50 @@
+/* #Header */
+.header-container {
+	background-color: $header_bg_color;
+	background-image: url($header_bg_image);
+	background-repeat: $header_bg_repeat;
+	background-position: $header_bg_position_x top;
+	background-attachment: $header_bg_attachment;
+}
+
+.site-description {
+	font-family: @font_family( $h5_font_family );
+	color: $regular_h1_color;
+}
+
+.site-header.transparent .header-container {
+	background: @alpha($header_bg_color, 90%);
+}
+
+/* ##Logo */
+.site-logo {
+	font-style: $header_logo_font_style;
+	font-weight: $header_logo_font_weight;
+	font-size: $header_logo_font_size{px};
+	font-family: @font_family( $header_logo_font_family );
+}
+.site-logo__link, .site-logo__link:hover {
+	color: $regular_accent_color_2;
+}
+
+/* ##Top Panel */
+.top-panel {
+	background-color: $top_panel_bg;
+}
+.top-panel__message .fa,
+.top-panel__message .material-icons,
+.top-panel__message .info-block {
+	color: $invert_accent_color_1;
+}
+
+.top-panel__message .info-block a {
+	color: $invert_text_color;
+}
+
+.top-panel__message .material-icons {
+	background: $invert_accent_color_1;
+}
+
+.top-panel .top-panel__menu-list li a:hover {
+	color: $invert_accent_color_1;
+}

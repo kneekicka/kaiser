@@ -1,0 +1,18 @@
+#tm_builder_outer_content .tm_pb_countdown_timer_container{
+	color: $regular_accent_color_3;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_countdown_timer .sep {
+	color: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_countdown_timer.tm_pb_module .tm_pb_countdown_timer_container h4,
+#tm_builder_outer_content .tm_pb_countdown_timer.tm_pb_module .tm_pb_countdown_timer_container .section.values .label {
+	color:  $invert_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_countdown_timer.tm_pb_module .tm_pb_countdown_timer_container .section.values .value,
+#tm_builder_outer_content .tm_pb_countdown_timer.tm_pb_module .tm_pb_countdown_timer_container .section.sep .countdown-sep {
+	font-family: @font_family( $h5_font_family );
+	color:  $invert_accent_color_1;
+}

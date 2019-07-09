@@ -1,0 +1,49 @@
+.tm-pg-noty-theme {
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+	position: relative;
+	span {
+		color: #ffffff;
+		font-family: "Open Sans",sans-serif;
+		font-weight: 600;
+		font-size: 16px;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		word-break: keep-all;
+		line-break: loose;
+		hyphens: auto;
+	}
+
+	&.noty_container_type_alert {
+		background-color: rgba(44,144,251,1);
+	}
+
+	&.noty_container_type_information {
+		background-color: #bbe1e8;
+	}
+
+	&.noty_container_type_error {
+		background-color: #eaadad;
+		color: #fff;
+		font-weight: bold
+	}
+
+	&.noty_container_type_warning {
+		background-color: #fbb450;
+		color: #fff;
+	}
+
+	&.noty_container_type_success {
+		background-color: #b1ce8c;
+		color: #fff;
+	}
+
+	.noty_message {
+		padding: 10px 20px;
+	}
+
+	&:hover > .noty_bar > .noty_message > .noty_close {
+		visibility: visible;
+	}
+}

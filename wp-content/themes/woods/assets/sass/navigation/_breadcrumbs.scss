@@ -1,0 +1,46 @@
+.breadcrumbs {
+	position: relative;
+	margin: 0 0 46px;
+	padding: 15px 0 12px;
+	&__title {
+		float: left;
+		margin-right: 2em;
+		padding-right: 2em;
+		border-right: 1px solid #e0e0e8;
+		.page-title {
+			margin: 0;
+		}
+	}
+	&__items {
+		float: left;
+		text-transform: uppercase;
+	}
+	&__browse {
+		float: left;
+		margin-right: .5em;
+	}
+	&__wrap {
+		float: left;
+		margin: 0;
+		@include media-breakpoint-up(lg) {
+			margin: .25em 0;
+		}
+	}
+	&__item {
+		float: left;
+		&-sep {
+			margin: 0 2.3em;
+			opacity: .2;
+			i {
+				font-size: .875rem;
+			}
+		}
+		&-link {
+			text-decoration: none;
+			opacity: .2;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

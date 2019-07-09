@@ -1,0 +1,11 @@
+<wpml-config>
+	<admin-texts>
+		<key name="theme_mods_woods">
+			<key name="top_panel_text" />
+			<key name="hidden_menu_items_title" />
+			<key name="blog_sticky_label" />
+			<key name="blog_read_more_text" />
+			<key name="footer_copyright" />
+		</key>
+	</admin-texts>
+</wpml-config>

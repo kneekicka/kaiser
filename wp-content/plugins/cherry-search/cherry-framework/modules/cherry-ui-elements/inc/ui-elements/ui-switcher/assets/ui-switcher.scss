@@ -1,0 +1,123 @@
+@import "ui-kit/variables";
+
+.cherry-ui-container{
+	margin: 10px 0 20px 0;
+}
+label.cherry-label{
+	margin: 0 0 5px 0;
+	display: block;
+}
+.hide{
+	display: none !important;
+}
+.cherry-switcher-wrap{
+	height: 47px;
+	border-radius: 25px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+	border: 1px solid $switcher_border_color;
+	label{
+		background-color: $switcher_bg_color;
+		display: block;
+		float: left;
+		transition: all 0.4s ease;
+		span{
+			font-size: 12px;
+			line-height: 18px;
+			font-weight: 900;
+			text-transform: uppercase;
+			color: $dark_color;
+			text-align: center;
+			display: block;
+			opacity: 1;
+			transition: all 0.4s ease;
+		}
+	}
+	.sw-enable{
+		padding: 15px 10px 15px 20px;
+		span{
+			opacity: 0;
+		}
+	}
+	.sw-disable{
+		padding: 15px 20px 15px 10px;
+		span{
+			opacity: 1;
+		}
+	}
+	.state-marker{
+		background-color: $false_state_gradint_2;
+		display: block;
+		position: absolute;
+		width: 41px;
+		height: 41px;
+		margin: 3px;
+		top: 0;
+		left: 0;
+		margin-left: 4px;
+		border-radius: 25px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: $false_state_outset_1 $false_state_outset_2 $false_state_outset_2 $false_state_outset_1;
+		transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+		box-sizing: border-box;
+		&:before {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			border-radius: 50%;
+			background-image: linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+			content: '';
+		}
+	}
+	.cherry-input-switcher{
+		display: none;
+	}
+	.cherry-input-switcher-true:checked{
+		~ .sw-enable{
+				span{
+					opacity: 1;
+				}
+		}
+		~ .sw-disable{
+				span{
+					opacity: 0;
+				}
+		}
+		~ .state-marker{
+			left: 100%;
+			margin-left: -45px;
+			border-color: $true_state_outset_1 $true_state_outset_2 $true_state_outset_2 $true_state_outset_1;
+			background-color: $true_state_gradint_2;
+		}
+	}
+
+	&.size-small{
+		height: 23px;
+		label{
+			height: 23px;
+			padding: 0;
+				span{
+					font-size: 10px;
+					line-height: 15px;
+					padding: 5px;
+				}
+		}
+		.state-marker{
+			width: 17px;
+			height: 17px;
+			margin-left: 4px;
+		}
+		.cherry-input-switcher-true:checked{
+			~ .state-marker{
+				margin-left: -22px;
+			}
+		}
+	}
+}

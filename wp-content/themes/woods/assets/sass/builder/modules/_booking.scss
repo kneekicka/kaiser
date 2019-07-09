@@ -1,0 +1,1340 @@
+.mphb_sc_search-wrapper, .mphb-booking-form  {
+	.mphb_sc_search-submit-button-wrapper,
+	.mphb-reserve-btn-wrapper {
+		input {
+			border: 2px solid;
+			font-size: 15px;
+			letter-spacing: 0.5px;
+			padding: 20px 39px;
+
+			&:hover {
+				background: transparent;
+			}
+			@media (min-width: 1200px) and (max-width: 1400px) {
+				padding: 20px;
+				font-size: 12px;
+			}
+		}
+	}
+
+	.form_logo_wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		@include media-breakpoint-down(lg) {
+			position: relative;
+			margin-bottom: 30px;
+		}
+		.title, .description {
+			text-transform: uppercase;
+			margin: 0;
+		}
+
+		.title {
+			letter-spacing: -.7px;
+			margin-bottom: 5px;
+		}
+
+		.description {
+			font-weight: bold;
+			font-size: .75rem;
+			letter-spacing: 1px;
+		}
+	}
+}
+.mphb_sc_search-wrapper  {
+	background: none;
+}
+	.mphb_sc_search-form, .mphb-booking-form {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		overflow: hidden;
+		padding: 0;
+		transform: translateY(-6px);
+
+		@include media-breakpoint-down(lg) {
+			display: block;
+		}
+		.availability_search_wrapper & {
+			justify-content: center;
+		}
+		.mphb-datepick, select {
+			font-size: 14px;
+			text-transform: none;
+			padding: 14px;
+			border: none;
+			width: 100%;
+		}
+		select {
+			padding: 12px 14px;
+			min-height: 45px;
+			background: url(./assets/images/select_icon_small.png) right center no-repeat;
+			appearance: none;
+		}
+
+		.mphb_sc_search-check-in-date,
+		.mphb_sc_search-check-out-date,
+		.mphb_sc_search-adults,
+		.mphb_sc_search-childs,
+		.mphb-check-in-date-wrapper,
+		.mphb-check-out-date-wrapper,
+		.mphb-adults-wrapper,
+		.mphb-check-childs-date-wrapper
+		 {
+			label {
+				text-transform: uppercase;
+				font-size: 12px;
+				font-weight: bold;
+				margin: 0 0 5px;
+				letter-spacing: .7px;
+				display: inline-block;
+			}
+			strong {
+				display: none;
+			}
+		}
+		> p {
+			margin-right: 10px;
+			float: left;
+			@include media-breakpoint-down(lg) {
+				max-width: none;
+				float: none;
+				margin-right: 0;
+				width: 100%;
+			}
+		}
+		.mphb_sc_search-check-in-date,
+		.mphb_sc_search-check-out-date
+		 {
+			max-width: 180px;
+			position: relative;
+			.mphb_sc_search_results-wrapper & {
+				min-width: 220px;
+			}
+			@media (max-width: 1400px) {
+				max-width: 165px;
+			}
+
+			@include media-breakpoint-down(lg) {
+				max-width: none;
+				float: none;
+				margin-right: 0;
+				width: 100%;
+			}
+			input {
+				padding-left: 47px;
+			}
+			&:before{
+				content: '\f073';
+				font-family: 'FontAwesome';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				margin: 0 0 11px 16px;
+				opacity: .4;
+			}
+		}
+		.mphb_sc_search-submit-button-wrapper, .mphb-reserve-btn-wrapper, .single-mphb_room_type .mphb-booking-form  {
+			margin-left: 77px;
+			margin-right: 0;
+
+			.mphb_sc_search_results-wrapper & {
+				margin-left: 64px;
+			}
+
+			@media (max-width: 1500px) {
+				margin-left: 20px;
+
+				.mphb_sc_search_results-wrapper & {
+					margin-left: 20px;
+				}
+			}
+
+			@media (max-width: 1300px) {
+				margin-left: 0;
+
+				.mphb_sc_search_results-wrapper & {
+					margin-left: 0;
+				}
+			}
+
+			@include media-breakpoint-down(md) {
+				margin-left: 0;
+				float: none;
+				width: 100%;
+				input {
+					width: 100%;
+				}
+			}
+		}
+		.mphb_sc_search-adults, .mphb_sc_search-childs, .mphb-adults-wrapper, .mphb-check-childs-date-wrapper {
+				min-width: 91px;
+				.mphb_sc_search_results-wrapper & {
+					min-width: 140px;
+				}
+
+				@media (max-width: 1400px) {
+					min-width: 60px;
+				}
+				@include media-breakpoint-down(lg) {
+					max-width: none;
+					float: none;
+					margin-right: 0;
+					width: 100%;
+				}
+		}
+	}
+
+	.mphb-booking-form {
+		padding: 42px 40px 33px 40px;
+		justify-content: flex-start;
+
+		@include media-breakpoint-down(md) {
+			padding: 15px;
+		}
+	}
+
+	.mphb-room-type {
+		overflow: hidden;
+		> p:last-child {margin: 0;}
+	}
+
+	#tm_builder_outer_content .mphb_sc_search_results-wrapper,
+	#tm_builder_outer_content .availability_search_wrapper,
+	.availability_search_wrapper {
+		.mphb_sc_search-wrapper {
+			padding: 41px 55px 32px 53px;
+			transform: translateY(-1px);
+			margin-bottom: 80px;
+		}
+
+		.mphb_sc_search-results-count {
+			display: none;
+		}
+
+		.mphb-room-type {
+			padding-bottom: 62px;
+			.post-thumbnail {
+				float: left;
+				margin-right: 90px;
+			}
+
+			h3 {
+				font-size: 12px;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				font-weight: bold;
+				opacity: .6;
+			}
+
+			form {
+				overflow: hidden;
+				float: right;
+				transform: translateY(36px);
+			}
+
+			.mphb-loop-room-type-attributes,
+			.excerpt_caption {
+				ul {
+					overflow: hidden;
+					padding: 2px 0 19px;
+					li {
+						padding: 0 0 8px 76px;
+						position: relative;
+						&:before {
+							display: inline-block;
+							content: '';
+							width: 45px;
+							height: 1px;
+							position: absolute;
+							top: 10px;
+							left: 0;
+						}
+					}
+				}
+			}
+
+			.mphb-regular-price {
+				display: inline-block;
+				strong {
+					display: block;
+					font-weight: 400;
+				}
+				.mphb-price {
+					font-size: 54px;
+					line-height: .9em;
+					padding-top: 12px;
+					letter-spacing: -2.5px;
+					display: flex;
+					align-items: flex-start;
+					float: left;
+					.mphb-currency {
+						margin-right: 7px;
+						font-size: 1rem;
+						line-height: 1.9rem;
+						opacity: .5;
+						letter-spacing: 0;
+					}
+
+				}
+				.mrhb-price-suffix {
+					font-size: 1rem;
+					line-height: 2.1rem;
+					opacity: .5;
+					margin-left: 10px;
+					letter-spacing: 0;
+					float: left;
+					transform: translateY(11px);
+				}
+			}
+		}
+	}
+
+.mphb_sc_search_form_wrapper {
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	@include media-breakpoint-down(lg) {
+		background: none !important;
+	}
+}
+
+.mphb_sc_search_results-wrapper .mphb_sc_search-wrapper .mphb_sc_search-form {
+		> p {
+			transform: translateY(6px);
+		}
+	}
+
+.mphb-required-fields-tip {
+	display: none;
+}
+
+//Swiper slider
+.mphb_sc_room-wrapper .slider_wrapper {
+	+ .room-caption {
+			padding-top: 17px;
+			margin-top: calc(9.15% + 4px);
+			transform: translateY(-9.15%);
+			@include media-breakpoint-down(lg) {
+				margin-top: 0;
+				transform: translateY(0px);
+			}
+			#tm_builder_outer_content .tm_pb_module.room_type_small_thumbnail & {
+				padding-top: 4px;
+				margin-top: 0;
+				transform: translateY(0px);
+				.mphb-room-type-title {
+					margin-bottom: 18px;
+					letter-spacing: .2px;
+				}
+				.mphb-regular-price {
+					margin-bottom: 8px;
+
+					strong {display: none;}
+
+					.mphb-price {
+						padding-top: 4px;
+						line-height: 1.1em;
+						&:after {
+							line-height: 1.4rem;
+						}
+					}
+					.mrhb-price-suffix {
+						transform: translateY(0px);
+					}
+				}
+			}
+
+			.mphb_sc_rooms-wrapper.mphb-room-types & {
+				padding-top: 45px;
+			}
+			> p{
+				&:last-child{
+					margin: 0;
+				}
+			}
+	}
+
+	.swiper-image {
+		width: 100%;
+	}
+}
+
+.single-mphb_room_type {
+	p, h2, .mphb-single-room-type-attributes, .mphb-calendar {
+		overflow: hidden;
+	}
+	h2:nth-last-of-type(2){
+		clear: both;
+	}
+}
+
+#tm_builder_outer_content .tm_pb_module .mphb_sc_rooms-wrapper .mphb-room-type {
+	.slider_wrapper {
+		+ .room-caption {
+			padding: 55px 0 0;
+			.excerpt_caption {
+				padding-bottom: 10px;
+			}
+
+			@media (max-width: 1500px) {
+				padding: 20px 0 0;
+			}
+
+			@include media-breakpoint-down(lg) {
+				padding: 55px 30px 30px;
+			}
+			> p {
+				&:last-child{
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	> .room-caption {
+		padding: 30px;
+	}
+}
+
+.mphb-gallery-slider {
+	.post-gallery {
+		margin: 0;
+	}
+	.swiper-button-next, .swiper-button-prev {
+		width: 85px;
+		height: 85px;
+		opacity: 1;
+		margin: 0;
+		bottom: 0;
+		top: auto;
+		left: auto;
+		right: 0;
+		font-size: 20px;
+		@include transition(all 0.3s ease-out);
+
+		@include media-breakpoint-down(md) {
+			width: 50px;
+			height: 50px;
+		}
+		.room_type_small_thumbnail & {
+			display: none !important;
+		}
+		i {
+			display: none;
+		}
+		&:after {
+			width: 100%;
+			height: 100%;
+			line-height: 85px;
+			display: block;
+			background: inherit;
+			font-family: "arrows";
+
+			@include media-breakpoint-down(md) {
+				line-height: 50px;
+			}
+		}
+	}
+	.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+		opacity: 1;
+	}
+	.swiper-button-next {
+		&:after {
+			content: "\e008";
+		}
+	}
+	.swiper-button-prev {
+		transform: translateX(-100%);
+		&:after {
+			content: "\e009";
+		}
+		&:before {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 1px;
+			height: 40px;
+			display: inline-block;
+			content: '';
+			transform: translateY(-50%);
+		}
+	}
+}
+.flexslider {
+	border: none;
+}
+
+//Fullwidth Backgrount Image Booking Wrapper
+.fullwidth_booking_wrapper {
+	h5 {
+		letter-spacing: 0;
+		margin-top: 0;
+		font-size: 1rem;
+
+		strong {
+			text-transform: none;
+			font-weight: 400;
+			letter-spacing: -3px;
+
+			span {
+				sup {
+					font-size: 1rem;
+					top: -1.25em;
+					letter-spacing: 0;
+
+					&:first-child {
+						margin-right: 7px;
+					}
+					&:last-child {
+						margin-left: 11px;
+					}
+				}
+			}
+		}
+	}
+	.tm_pb_module {
+		height: 100%;
+	}
+	strong {
+		font-weight: 400;
+		display: block;
+		margin: 0;
+	}
+
+	h3 {
+		margin-bottom: 0;
+	}
+	h6 {
+		margin-top: 6px;
+	}
+
+	p > sub {
+			padding: 19px 16px;
+			margin: 0;
+			font-size: 12px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 1.3px;
+			display: inline-block;
+		}
+
+	.btn:hover {
+		background: transparent;
+	}
+
+	@media (max-width: 1200px) {
+		.tm_pb_column {
+			flex: 0 0 100%;
+			max-width: 100%;
+			> .tm_pb_module {
+				width: 100%;
+			}
+		}
+	}
+
+	@media (min-width: 980px) and (max-width: 1200px) {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+.mphb-room-type-gallery-wrapper.flexslider {
+	border: none;
+}
+
+.mphb-gallery-thumbnails-slider,
+.mphb-to-book-btn-wrapper,
+.mphb-view-details-button-wrapper {
+	display: none;
+}
+
+//Swiper Slider Content
+#tm_builder_outer_content .tm_pb_module.room_type_small_thumbnail .mphb_sc_room-wrapper {
+	width: 100%;
+
+}
+
+#tm_builder_outer_content .tm_pb_module .mphb_sc_room-wrapper,
+#tm_builder_outer_content .tm_pb_module .mphb_sc_rooms-wrapper {
+	width: 100%;
+	.mphb-room-type {
+		padding-right: 15%;
+		@media (max-width: 1500px) {
+			padding-right: 30px;
+		}
+		@include media-breakpoint-down(lg) {
+				padding-right: 0;
+		}
+		.room-caption {
+			overflow: hidden;
+			@include media-breakpoint-down(lg) {
+					padding: 30px;
+			}
+		}
+		.slider_wrapper {
+			width: 65%;
+			float: left;
+			margin-right: 128px;
+			img {
+				width: 100%;
+			}
+			@media (max-width: 1500px) {
+				margin-right: 30px;
+			}
+			@include media-breakpoint-down(lg) {
+				width: 100%;
+				float: none;
+				margin-right: 0;
+			}
+		}
+		&:nth-child(2n) {
+			padding-right: 0;
+			padding-left: 15%;
+			@media (max-width: 1500px) {
+				padding-left: 30px;
+			}
+			@include media-breakpoint-down(lg) {
+				padding-left: 0;
+			}
+			.slider_wrapper {
+				float: right;
+				margin-right: 0;
+				margin-left: 128px;
+				@include media-breakpoint-down(lg) {
+					margin-left: 0;
+					float: none;
+				}
+				@media (max-width: 1500px) {
+					margin-left: 30px;
+				}
+
+				@include media-breakpoint-down(lg) {
+					margin-left: 0;
+				}
+			}
+		}
+		.mphb-room-type-title {
+			font-size: 40px;
+			margin-top: 0;
+			padding-bottom: 2px;
+			letter-spacing: -.6px;
+		}
+	}
+	 ul {
+		padding: 7px 0 25px 0;
+		position: relative;
+		overflow: hidden;
+		li {
+			position: relative;
+			padding: 0 0 8px 76px;
+			&:before {
+				display: inline-block;
+				content: '';
+				width: 45px;
+				height: 1px;
+				position: absolute;
+				top: 10px;
+				left: 0;
+			}
+		}
+	}
+
+	.mphb-regular-price {
+		display: inline-block;
+		margin-bottom: 17px;
+
+		> strong {
+			display: block;
+			font-weight: 400;
+		}
+
+		.mphb-price {
+			font-size: 54px;
+			line-height: .9em;
+			padding-top: 12px;
+			letter-spacing: -2.5px;
+			display: flex;
+			align-items: flex-start;
+			float: left;
+			.room_type_small_thumbnail & { font-size: 41px;	}
+			.mphb-currency {
+				margin-right: 7px;
+				font-size: 1rem;
+				line-height: 1.9rem;
+				opacity: .5;
+				letter-spacing: 0;
+			}
+		}
+
+		.mrhb-price-suffix {
+			font-size: 1rem;
+			line-height: 2.1rem;
+			opacity: .5;
+			margin-left: 10px;
+			letter-spacing: 0;
+			float: left;
+			transform: translateY(11px);
+		}
+	}
+
+	&.mphb-room-types form {
+		overflow: hidden;
+		float: right;
+		transform: translateY(26px);
+
+		@media (min-width: 1200px) and (max-width: 1800px) {
+			.button {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+		}
+
+		@include media-breakpoint-down(sm) {
+			float: none;
+			margin-bottom: 30px;
+		}
+	}
+
+	.room_type_small_thumbnail & {
+		.post-thumbnail {
+				float: left;
+				margin-right: 50px;
+				max-width: 410px;
+		}
+		.mphb-book-button {
+			background: transparent;
+			box-shadow: none;
+		}
+	}
+}
+
+#tm_builder_outer_content .tm_pb_module .mphb_sc_rooms-wrapper {
+	.mphb-regular-price {
+		margin-bottom: 0;
+	}
+}
+
+#tm_builder_outer_content .tm_pb_module .mphb_sc_search_results-wrapper {
+	ul {
+	 padding: 7px 0 25px 0;
+	 position: relative;
+	 overflow: hidden;
+	 li {
+		 position: relative;
+		 padding: 0 0 8px 76px;
+		 &:before {
+			 display: inline-block;
+			 content: '';
+			 width: 45px;
+			 height: 1px;
+			 position: absolute;
+			 top: 10px;
+			 left: 0;
+		 }
+	 }
+ }
+}
+
+#tm_builder_outer_content .tm_pb_module.room_type_small_thumbnail .mphb_sc_room-wrapper .mphb-regular-price .mphb-price {
+	font-size: 40px;
+}
+
+#tm_builder_outer_content .tm_pb_module.room_type_small_thumbnail .mphb_sc_room-wrapper .button.mphb-book-button {
+	@include media-breakpoint-up(xl) {
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+	}
+}
+
+.room_type_small_thumbnail .mphb_sc_room-wrapper .mphb-book-button {
+	background: transparent;
+}
+
+//Single Room
+.single-mphb_room_type #primary {
+	width: 100%;
+}
+
+.mphb-single-room-content {
+	h2 {
+		padding-top: 30px;
+	}
+}
+
+.site-content .site-main .calendar_designations {
+	li {
+		padding-left: 0 !important;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		font-size: .75rem;
+		&:after {
+			display:none;
+		}
+		&:before {
+			width: 31px;
+			height: 23px;
+			margin: 0 0 0 10px;
+			line-height: 23px;
+			font-weight: 400;
+			font-size: 0.85rem;
+			text-align: center;
+		}
+		&:nth-child(3):before {
+
+		}
+	}
+}
+
+.mphb-single-room-sidebar {
+	@include media-breakpoint-up(xl) {
+		padding-top: 132px;
+	}
+}
+
+.mphb-preloader {
+	margin-top: 19px;
+}
+
+//Room Type with small thumbs
+#tm_builder_outer_content .tm_pb_module {
+	.mphb-room-type {
+		h3 {
+			font-size: .75rem;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			font-weight: bold;
+			opacity: .6;
+		}
+	}
+
+	&.room_type_small_thumbnail {
+		.mphb-room-type {
+			padding-left: 0;
+			padding-right: 0;
+			.slider_wrapper {
+				margin-right: 50px;
+			}
+		}
+	}
+}
+
+//Checkout page
+.mphb-room-details {
+		float: right;
+		width: 25%;
+		padding-top: 42px;
+	@include media-breakpoint-down(lg) {
+		width: 100%;
+		float: none;
+		padding-top: 0;
+		padding-bottom: 60px;
+	}
+
+	.mphb_sc_checkout-submit-wrapper {
+		input {
+			width: 100%;
+			@include media-breakpoint-down(lg) {
+				width: auto;
+			}
+		}
+	}
+
+	.mphb-total-price-field {
+		margin-left: 60px;
+	}
+	.mphb-total-price {
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: bold;
+		letter-spacing: 1.7px;
+		padding-bottom: 16px;
+		output {
+			display: flex;
+			align-items: flex-end;
+		}
+		.mphb-price {
+			font-size: 40px;
+			line-height: .9em;
+			padding-top: 0;
+			letter-spacing: -2.5px;
+			align-items: flex-start;
+			font-weight: 400;
+			display: flex;
+			align-items: flex-start;
+			.mphb-currency {
+				margin-right: 7px;
+				font-size: 0.9375rem;
+				line-height: 1.9rem;
+				opacity: .5;
+				font-weight: 400;
+				letter-spacing: 0;
+			}
+		}
+	}
+
+	.mphb-room-type-title,
+	.mphb-guests-number,
+	.mphb-check-in-date,
+	.mphb-check-out-date {
+		font-size: .75rem;
+		span {
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 1.55px;
+			display: inline-block;
+			width: 155px;
+		}
+		strong {
+			font-weight: 400;
+			font-size: .875rem;
+		}
+	}
+
+	.mphb-check-out-date {
+		padding-bottom: 28px;
+	}
+
+	.mphb-price-breakdown {
+		border: none;
+
+		th, td {
+			border: none;
+			font-weight: 400;
+		}
+
+		tbody {
+			border: none;
+
+			tr {
+				border-bottom: 1px solid;
+				> td, > th {
+					padding: 13px 20px;
+				}
+
+				&:first-child + tr {
+					text-transform: uppercase;
+					font-size: .625rem;
+					letter-spacing: .9px;
+					font-weight: bold;
+					opacity: .6;
+				}
+				&:first-child + tr, &:first-child {
+					background: none;
+				}
+			}
+		}
+		tfoot tr th {
+			padding: 13px 20px;
+		}
+	}
+}
+
+.mphb_sc_checkout-services-list {
+	li:before {
+		display: none;
+	}
+	.mphb_sc_checkout-service {
+		margin-right: 5px;
+	}
+}
+
+#mphb-customer-details {
+	width: 70%;
+	padding: 42px 50px 60px;
+	box-sizing: border-box;
+	input, textarea {
+		width: 100%;
+		margin-top: 11px;
+		letter-spacing: 1.4px;
+		outline: none;
+		box-shadow: none;
+	}
+	.mphb-customer-name,
+	.mphb-customer-last-name,
+	.mphb-customer-email,
+	.mphb-customer-phone,
+	.mphb-customer-note {
+		margin: 0 0 19px;
+	}
+
+	@include media-breakpoint-down(lg){
+		width: 100%;
+	}
+}
+
+.mphb-room-details, #mphb-customer-details {
+	h3 {
+		font-size: 30px;
+	}
+	label {
+		font-size: 15px;
+	}
+}
+
+// Room Services
+.single-mphb_room_service {
+	.mphb_room_service {
+		padding-bottom: 65px;
+		border-bottom: 1px solid $color__border-input;
+	}
+}
+
+.single-mphb_room_service .mphb-price-wrapper,
+.single-mphb_room_type .mphb-regular-price {
+	font-size: 1rem;
+	line-height: 2.1rem;
+}
+
+.single-mphb_room_service .mphb-price-wrapper .mphb-price,
+.single-mphb_room_type .mphb-regular-price .mphb-price {
+	font-size: 40px;
+}
+
+.single-mphb_room_service .mphb-price-wrapper .mphb-currency,
+.single-mphb_room_type .mphb-regular-price .mphb-currency{
+	margin-right: 2px;
+	font-size: 1rem;
+	line-height: 1.9rem;
+	opacity: .5;
+	letter-spacing: 0;
+	display: inline-block;
+	vertical-align: super;
+}
+
+// Single Room
+.single-mphb_room_type {
+	.mphb_room_type {
+		.mphb-single-room-type-attributes {
+			list-style: none;
+			li {
+				padding: 0 0 8px 76px;
+				position: relative;
+				&:before {
+					display: inline-block;
+					content: '';
+					width: 45px;
+					height: 1px;
+					position: absolute;
+					top: 10px;
+					left: 0;
+				}
+			}
+		}
+	}
+
+	.mphb-regular-price {
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+		flex-direction: column;
+		align-items: baseline;
+		padding-bottom: 30px;
+		strong {
+			font-weight: 400;
+			opacity: .5;
+		}
+	}
+
+	.mphb-single-room-type-attributes {
+		margin-bottom: 60px;
+	}
+
+	.mphb-booking-form {
+		margin-bottom: 90px;
+		justify-content: center;
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+//Calendar
+.mphb-calendar {
+	margin-bottom: 30px;
+}
+
+.mphb-calendar, .datepick-popup {
+	.datepick {
+		border: none;
+		border-radius: 0;
+		width: 460px !important;
+
+		.mphb-single-room-sidebar & {
+			width: 100% !important;
+		}
+
+		.datepick-ctrl {
+			a {
+				font-weight: 400;
+				width: 50%;
+				height: auto;
+				padding-bottom: 15px;
+
+				&:first-child {
+					border-right: 2px solid;
+				}
+
+				&:hover {
+					background: none;
+				}
+			}
+		}
+
+		.datepick-month {
+			width: 50%;
+			border: none;
+			padding-left: 11px;
+
+			a {
+				background: none;
+			}
+
+			&:first-child {
+				border-right: 2px solid;
+			}
+
+			table {
+				margin: 0;
+
+				thead tr th {
+					border: none;
+					text-transform: uppercase;
+					padding: 8px 0;
+					> span {
+						font-size: .625rem;
+					}
+				}
+
+				td span {
+					background: none;
+				}
+			}
+
+			thead, tbody, td, tr {
+				border: none;
+				background: none;
+				padding-bottom: 7px;
+			}
+
+			td {
+				border-right: 1px solid;
+			}
+		}
+	}
+
+	.datepick-nav {
+		display: flex;
+		justify-content: space-between;
+		.datepick-cmd-prev,
+		.datepick-cmd-next {
+			font-size: 0;
+			line-height: 0;
+
+			a {
+				background: none;
+			}
+
+			&:before {
+				font-size: 16px;
+				font-family: 'FontAwesome';
+				line-height: 50px;
+			}
+		}
+		.datepick-cmd-next {
+			margin-right: 10px;
+			&:before {
+				content: '\f105';
+			}
+		}
+
+		.datepick-cmd-prev {
+			margin-left: 10px;
+			&:before {
+				content: '\f104';
+			}
+		}
+
+		.datepick-cmd-today {
+			text-transform: uppercase;
+		}
+
+		> a {
+			height: 50px;
+			line-height: 50px;
+			&:hover {
+				background: none;
+			}
+		}
+
+	}
+
+	.datepick-month-header,
+	.datepick-month-header select,
+	.datepick-month-header input {
+		height: 46px;
+		line-height: 46px;
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	.datepick-month-header {
+		display: flex;
+		padding-left: 16px;
+		margin-left: -11px;
+		> .datepick-month-year {
+			display: inline-block;
+			width: auto;
+			padding-right: 13px;
+			margin-right: 13px;
+			background: url(./assets/images/datepick_icon.png) right center no-repeat;
+		}
+	}
+}
+
+.mphb-calendar{
+	.datepick {
+
+		.datepick-month {
+			border: none;
+			width: 50%;
+
+			.datepick-month-header, select {
+				text-transform: none;
+				option {
+					letter-spacing: 1px;
+				}
+			}
+
+			a {
+				background: none;
+			}
+
+			table {
+				margin: 0;
+				thead > tr > th {
+					border: none;
+					> span {
+						border: none;
+					}
+				}
+
+				tbody > tr > td {
+					border: none;
+					border-right: 1px solid;
+				}
+
+				thead, tbody, td, tr {
+					border: none;
+					background: none;
+					padding-bottom: 7px;
+				}
+			}
+		}
+	}
+}
+
+.mprm-main-wrapper .mprm-tags .mprm-tag,
+.mprm-container .mprm-tags .mprm-tag {
+		display: inline-block;
+		font-size: .625rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: .9px;
+		line-height: 22px;
+		margin: 0 5px 5px 0;
+		padding: 2px 13px;
+		vertical-align: top;
+		text-decoration: none;
+		border: 2px solid;
+}
+
+//Sidebar
+
+//Rooms Widget
+.widget_mphb_rooms_widget {
+	text-align: left;
+	.mphb-room-type {
+		.mphb-widget-room-type-attributes {
+			li {
+				padding-bottom: 17px;
+				> span {
+					text-transform: uppercase;
+					font-weight: bold;
+					letter-spacing: 1.55px;
+					display: inline-block;
+					width: 155px;
+					font-size: .75rem;
+				}
+			}
+		}
+
+		.mphb-widget-room-type-featured-image {
+			margin-bottom: 20px;
+		}
+
+		.mphb-widget-room-type-price {
+				text-transform: uppercase;
+				font-size: 12px;
+				font-weight: bold;
+				letter-spacing: 1.7px;
+				padding-bottom: 16px;
+				display: flex;
+				align-items: flex-end;
+				padding-top: 20px;
+
+				.mphb-price {
+					font-size: 40px;
+					line-height: .9em;
+					padding-top: 0;
+					letter-spacing: -2.5px;
+					align-items: flex-start;
+					font-weight: 400;
+					display: flex;
+					align-items: flex-start;
+					margin-left: 60px;
+					.mphb-currency {
+						margin-right: 7px;
+						font-size: 0.9375rem;
+						line-height: 1.9rem;
+						opacity: .5;
+						font-weight: 400;
+						letter-spacing: 0;
+					}
+				}
+		}
+	}
+}
+
+//Search Availability Widget
+.widget_mphb_search_availability_widget {
+	padding: 42px 50px;
+
+	@include media-breakpoint-down(lg) {
+		padding: 30px;
+	}
+	.mphb_widget_search-form {
+		label {
+			font-size: 1rem;
+		}
+		select, input {
+			width: 100%;
+			padding: 20px 44px 20px 24px;
+			font-size: .875rem;
+			border: none;
+			margin-top: 11px;
+		}
+	}
+
+	.mphb_widget_search-submit-button-wrapper {
+		input {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.post {
+	&-author {
+		&-bio {
+			margin: 2em 0 80px;
+		}
+		&__holder {
+			padding: 1em;
+
+			@include media-breakpoint-up(lg) {
+				padding: 2em;
+			}
+		}
+		&__avatar {
+			float: left;
+			margin: 0 1em 1em 0;
+
+			@include media-breakpoint-up(lg) {
+				margin: 0 2em 1em 0;
+			}
+			.avatar {
+				width: 70px;
+				vertical-align: top;
+				border-radius: 0;
+
+				@include media-breakpoint-up(lg) {
+					width: auto;
+				}
+			}
+		}
+		&__title {
+			@include media-breakpoint-up(lg) {
+				font-size: 20px;
+				line-height: 1.4;
+				margin: 20px 0;
+			}
+		}
+	}
+}

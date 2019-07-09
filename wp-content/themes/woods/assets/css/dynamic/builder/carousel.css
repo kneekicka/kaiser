@@ -1,0 +1,22 @@
+#tm_builder_outer_content .tm_pb_swiper .swiper-button-prev,
+#tm_builder_outer_content .tm_pb_swiper .swiper-container-rtl .swiper-button-prev,
+#tm_builder_outer_content .tm_pb_swiper .swiper-button-next,
+#tm_builder_outer_content .tm_pb_swiper .swiper-container-rtl .swiper-button-next,
+#tm_builder_outer_content .swiper-pagination-bullet-active,
+#tm_builder_outer_content .swiper-pagination-bullet:hover {
+	background: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_swiper .swiper-button-prev:hover,
+#tm_builder_outer_content .tm_pb_swiper .swiper-container-rtl .swiper-button-prev:hover,
+#tm_builder_outer_content .tm_pb_swiper .swiper-button-next:hover,
+#tm_builder_outer_content .tm_pb_swiper .swiper-container-rtl .swiper-button-next:hover {
+	background: $regular_accent_color_3;
+}
+
+#tm_builder_outer_content .tm_pb_swiper .swiper-button-prev:after,
+#tm_builder_outer_content .tm_pb_swiper	.swiper-button-next:after,
+#tm_builder_outer_content .tm_pb_swiper .swiper-container-rtl .swiper-button-prev:after,
+#tm_builder_outer_content .tm_pb_swiper .swiper-container-rtl .swiper-button-next:after {
+	color: $invert_accent_color_1;
+}

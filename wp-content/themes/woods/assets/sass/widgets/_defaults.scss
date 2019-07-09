@@ -1,0 +1,132 @@
+.widget {
+	margin-bottom: 23px;
+
+	.sidebar & {
+		margin-bottom: 53px;
+		&.custom-posts {
+			margin-bottom: 13px;
+		}
+	}
+	ul {
+		margin-bottom: 0;
+		margin-left: 0;
+		padding: 0;
+	}
+	> ul {
+		> li {
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+	li {
+		position: relative;
+		margin-left: 0;
+		list-style: none;
+		margin-top: 0;
+
+		> ul {
+			margin-left: 10px;
+		}
+	}
+}
+
+.widget_pages,
+.widget_meta,
+.widget_rss,
+.widget_nav_menu {
+	li {
+		&::before {
+			font-size: 6px;
+			position: absolute;
+			top: 1.25em;
+			left: -2em;
+			content: 'fiber_manual_record';
+			@include material-icon();
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Calendar
+--------------------------------------------------------------*/
+.widget_calendar {
+	table {
+		margin-bottom: 0;
+		border: none;
+	}
+	caption {
+		margin-bottom: 1.5em;
+		padding: 1em .5em;
+
+		@include border-radius;
+		@include font-size(1);
+	}
+	th, tbody td {
+		padding: .25em 0;
+		text-align: center;
+		border: none;
+	}
+	tr {
+		border: none;
+	}
+	#next {
+		text-align: right;
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Tag Cloud
+--------------------------------------------------------------*/
+.tagcloud {
+	a {
+		display: inline-block;
+		margin: 0 5px 5px 0;
+		padding: 8px;
+		vertical-align: top;
+		text-decoration: none;
+		border: 1px solid;
+
+		@include border-radius;
+		@include media-breakpoint-up(lg) {
+			padding: 10px 20px;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Recent Posts
+--------------------------------------------------------------*/
+.widget_recent_entries {
+	li {
+		margin-left: 0;
+		&::before {
+			display: none;
+		}
+		& + li {
+			margin-top: 1em;
+		}
+		.post-date {
+			font-size: .85em;
+			display: block;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Recent Comments
+--------------------------------------------------------------*/
+.widget_recent_comments {
+	li {
+		margin-left: 0;
+		&::before {
+			display: none;
+		}
+		& + li {
+			margin-top: 1em;
+		}
+	}
+}

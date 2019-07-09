@@ -1,0 +1,55 @@
+.widget {
+	&-title {
+		margin: 0 0 11px 0;
+		.footer-area & {
+			margin-bottom: 25px;
+		}
+		.sidebar & {
+			margin-bottom: 30px;
+		}
+	}
+	& + .widget {
+		margin-top: 1em;
+
+		@include media-breakpoint-up(md) {
+			margin-top: 2em;
+		}
+	}
+	.sidebar &,
+	.footer-area & {
+		margin-top: 0;
+
+		@include media-breakpoint-up(md) {
+			margin-top: 0;
+		}
+	}
+	&:last-child {
+		.widget-area & {
+			@include media-breakpoint-up(md) {}
+		}
+	}
+	select {
+		max-width: 100%;
+	}
+}
+
+.after-content-full-width-area,
+.after-content-area,
+.after-loop-area
+ {
+	text-align: center;
+}
+
+.after-content-full-width-area .widget {
+	padding-top: 70px;
+}
+
+.after-content-area .widget-instagram {
+	margin-bottom: 0;
+}
+
+.single-mphb_room_type {
+	.sidebar {
+		padding-top: 30px;
+	}
+}

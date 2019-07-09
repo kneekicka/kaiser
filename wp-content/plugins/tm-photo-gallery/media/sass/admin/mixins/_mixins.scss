@@ -1,0 +1,118 @@
+/* Typography */
+$phi: 1.618;
+
+$base_font_size: 16;
+$px: ( 1 / $base_font_size ) * 1rem;
+
+$htag_lineheight: 1.313em;
+$htag_family: $font-family;
+$htag_weight: 600;
+
+// H tag font sizes 1 through 6
+$htag_sizes: 2.85, 2.43, 2.14, 1.74, 1.43, 1.14;
+
+// H tag vertical margins 1 through 6
+$htag_vmargins: 0.2, 0.4, 0.5, 0.7, 0.8, 0.8;
+
+@mixin htags( $factor: 1 ){
+	.tm-pg, .tm-pg_library_popup{
+		h1, h2, h3, h4, h5, h6 {
+			font-family: $htag_family;
+			//line-height: $htag_lineheight;
+			font-weight: $htag_weight;
+			color: $header-color;
+		}
+
+		@for $i from 1 through 6 {
+			h#{$i} {
+				$value: nth($htag_sizes, $i);
+				$size: if( ($value * $factor) < 1, 1, $value * $factor );
+				font-size: $size * 1em;
+				margin: 0 0 ( nth($htag_vmargins, $i) * 1em ) 0;
+			}
+		}
+	}
+}
+
+/* Blocks */
+@mixin blocks() {
+	box-shadow: $box-shadow;
+	background: $white-color;
+}
+
+/* Material Icons */
+@mixin material-icon() {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+
+// Grid breakpoints
+$grid-breakpoints: (
+// Extra small screen / phone
+xs: 0,
+// Small screen / phone
+sm: 544px,
+// Medium screen / tablet
+md: 768px,
+// Large screen / desktop
+lg: 992px,
+// Extra large screen / wide desktop
+xl: 1200px
+) !default;
+
+// Grid containers
+$container-max-widths: (
+sm: 576px,
+md: 720px,
+lg: 940px,
+xl: 1140px
+) !default;
+
+// Minimum breakpoint width. Null for the smallest (first) breakpoint.
+//
+//    >> breakpoint-min(sm, (xs: 0, sm: 544px, md: 768px))
+//    544px
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+	$min: map-get($breakpoints, $name);
+	@return if($min != 0, $min, null);
+}
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+
+// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Makes the @content apply to the given breakpoint and wider.
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+	$min: breakpoint-min($name, $breakpoints);
+	@if $min {
+		@media (min-width: $min) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}

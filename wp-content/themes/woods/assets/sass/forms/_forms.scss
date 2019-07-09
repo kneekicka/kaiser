@@ -1,0 +1,9 @@
+@import "buttons";
+@import "fields";
+@import "search-form";
+@import "comment-form";
+@import "password-form";
+
+.sidebar select {
+	background: url(assets/images/select_icon.png) right center no-repeat;
+}

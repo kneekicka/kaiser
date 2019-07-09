@@ -1,0 +1,19 @@
+#tm_builder_outer_content {
+	.tm_pb_team_member{
+		.tm_pb_team_member_image {
+			padding-bottom: 3px;
+		}
+
+		.tm_pb_member_social_links {
+			li {
+				margin-right: 45px;
+				&:before {
+					display: none;
+				}
+				.tm-pb-icon {
+					font-size: 0.75rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+//Restaraunt cart
+.widget.widget_mprm_cart_widget {
+	.mprm-cart-content {
+		.mprm-cart {
+			.mprm-cart-item {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+//Restaraunt items
+.widget.mprm_widget {
+	.mprm-title {
+		margin-top: 15px;
+	}
+	.type-mp_menu_item {
+		margin-bottom: 30px;
+	}
+}

@@ -1,0 +1,58 @@
+#tm_builder_outer_content {
+	.tm_pb_blog.tm_pb_module {
+		padding-top: 35px;
+		.tm_pb_image_container {
+			margin-bottom: 18px;
+		}
+		.entry-title {
+			padding-bottom: 9px;
+		}
+		.tm_pb_post {
+			padding-bottom: 30px;
+			&_meta, &_comments {
+				text-transform: uppercase;
+				font-size: .625rem;
+				font-weight: 900;
+				letter-spacing: 1.5px;
+				float: left;
+			}
+			&_comments {
+				margin-left: 5px;
+				background: none;
+			}
+			span {
+				margin-right: 2px;
+
+				a {
+					background: none;
+				}
+			}
+			&_content {
+				clear: both;
+				padding-top: 9px;
+			}
+			.more-link {
+				margin-top: 25px;
+				display: inline-block;
+				float: left;
+			}
+			&_categories {
+				a {
+					text-transform: uppercase;
+					font-size: .625rem;
+					font-weight: 900;
+					letter-spacing: 1.5px;
+					padding: 8px 13px;
+					margin: 7px 15px 2px 0;
+					display: inline-block;
+					margin-right: 2px;
+				}
+			}
+		}
+		.caption {
+			@include media-breakpoint-up(xl) {
+				padding-left: 20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+#tm_builder_outer_content .tm_pb_toggle .tm_pb_toggle_content,
+#tm_builder_outer_content .tm_pb_toggle.tm_pb_toggle_open {
+	background-color: $invert_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_toggle.tm_pb_toggle_close {
+	background-color: $regular_accent_color_7;
+}
+
+#tm_builder_outer_content .tm_pb_toggle .tm_pb_toggle_title,
+#tm_builder_outer_content .tm_pb_toggle .tm_pb_toggle_title::before {
+	color: $invert_text_color;
+}
+
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_toggle.tm_pb_toggle_close .tm_pb_toggle_title,
+#tm_builder_outer_content .tm_pb_module.tm_pb_toggle.tm_pb_toggle_open .tm_pb_toggle_title {
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	font-size: $h6_font_size{px};
+	line-height: $h6_line_height;
+	font-family: @font_family( $h6_font_family );
+	letter-spacing: $h6_letter_spacing{px};
+	text-align: $h6_text_align;
+	color: $regular_h6_color;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_toggle.tm_pb_toggle_close .tm_pb_toggle_title:hover,
+#tm_builder_outer_content .tm_pb_module.tm_pb_toggle.tm_pb_toggle_open .tm_pb_toggle_title:hover,
+#tm_builder_outer_content .tm_pb_module.tm_pb_toggle.tm_pb_toggle_close .tm_pb_toggle_title::before,
+#tm_builder_outer_content .tm_pb_module.tm_pb_toggle.tm_pb_toggle_open .tm_pb_toggle_title::before {
+	color: $regular_accent_color_1;
+}

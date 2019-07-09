@@ -1,0 +1,129 @@
+#main-page-content {
+	font-style: italic;
+	padding: 30px;
+	color: #96989A;
+}
+.search_settings_section {
+
+	.cherry-section__title {
+		margin-top: 0;
+	}
+	.info-block{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.submite_buttons {
+		padding-bottom: 20px;
+
+		border: 0;
+		> .cherry-settings__content {
+			display: flex;
+			flex-direction: row;
+
+			align-content: stretch;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+			justify-content: flex-end;
+
+			> button {
+				position: relative;
+
+				margin-left: 10px;
+				.text {
+					transition: opacity .7s ease;
+				}
+				.icon,
+				.loader-wrapper {
+					transition: opacity .5s ease, transform .5s ease;
+					transform: scale(0);
+
+					opacity: 0;
+				}
+				.icon {
+					font-size: 40px;
+
+					position: absolute;
+					top: 50%;
+					left: 50%;
+
+					width: 40px;
+					height: 40px;
+					margin: -20px 0 0 -20px;
+				}
+				.loader-wrapper {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+
+					width: 20px;
+					height: 20px;
+					margin: -13px 0 0 -13px;
+				}
+				.loader {
+					display: block;
+
+					width: 20px;
+					height: 20px;
+
+					animation: spin .7s linear infinite;
+
+					border: 3px solid #FFF;
+					border-top: 3px solid #3498DB;
+					border-radius: 50%;
+				}
+				&[disabled],
+				&.success {
+					cursor: default;
+					pointer-events: none;
+					.text {
+						opacity: 0;
+					}
+				}
+				&[disabled] {
+					.loader-wrapper {
+						transform: scale(1);
+
+						opacity: 1;
+					}
+				}
+				&.success {
+					.icon {
+						transition-delay: .1s;
+						transform: scale(1);
+
+						opacity: 1;
+					}
+				}
+				@keyframes spin {
+					0% {
+						transform: rotate(0deg);
+					}
+					100% {
+						transform: rotate(360deg);
+					}
+				}
+			}
+		}
+	}
+	@media (min-width: 783px) {
+		.search_settings_tab.cherry-component.cherry-tab--vertical > .cherry-tab__body {
+			height: 480px;
+			> .cherry-tab__tabs {
+				flex: 0 1 15%;
+			}
+			> .cherry-tab__content {
+				flex: 0 1 85%;
+				.cherry-scroll {
+					max-height: 478px;
+					overflow-y: auto;
+				}
+			}
+		}
+		.cherry-component {
+			padding: 0;
+		}
+		.submite_buttons {
+			padding: 20px;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+#tm_builder_outer_content .tm_pb_taxonomy.tm_pb_module .tm_pb_taxonomy__content {
+	background: @alpha( $regular_accent_color_3, 60 );
+}
+
+#tm_builder_outer_content .tm_pb_taxonomy.tm_pb_module .tm_pb_taxonomy__content h6 a, #tm_builder_outer_content .tm_pb_taxonomy.tm_pb_module .tm_pb_taxonomy__content .post-count {
+	color: $invert_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_taxonomy.tm_pb_module .tm_pb_taxonomy__content h6 a:hover {
+	color: $regular_link_color;
+}

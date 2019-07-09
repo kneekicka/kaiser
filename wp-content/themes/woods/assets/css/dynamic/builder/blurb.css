@@ -1,0 +1,12 @@
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb {
+	color: $regular_text_color;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb .tm-pb-icon,
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb h4 a:hover {
+	color: $regular_link_color;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_blurb h4 a {
+	color: $regular_h4_color;
+}

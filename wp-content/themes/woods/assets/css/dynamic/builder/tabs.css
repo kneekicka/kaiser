@@ -1,0 +1,12 @@
+#tm_builder_outer_content .tm_pb_tabs_controls li.tm_pb_tab_active{
+	border-bottom: 2px solid $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_tabs_controls li a {
+	color: $regular_text_color;
+}
+
+#tm_builder_outer_content .tm_pb_tabs_controls li.tm_pb_tab_active a,
+#tm_builder_outer_content .tm_pb_tabs_controls li:hover a {
+	color: $regular_accent_color_2;
+}

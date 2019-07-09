@@ -1,0 +1,85 @@
+/* Slider */
+.tm-pg {
+	&_frontend {
+		&_lightbox {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			width: 100vw;
+			height: 100vh;
+
+			.lSSlideOuter,
+			.lSSlideWrapper,
+			.lslide,
+			.lslide div {
+				height: 100%;
+			}
+			.lightSlider {
+				height: 100% !important;
+			}
+			.lSSlideOuter {
+				.lSPager.lSGallery {
+					position: absolute;
+					bottom: 0;
+					padding: 5px;
+					background: rgba(30,30,30,.8);
+					width: 100% !important;
+					margin: 0 !important;
+					text-align: center;
+					box-sizing: border-box;
+					li {
+						width: auto !important;
+						display: inline-block;
+						vertical-align: middle;
+						float: none;
+						a {
+							display: block;
+							max-width: 100%;
+							position: relative;
+							z-index: 10;
+
+							&:before {
+								content: '';
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								background: rgba(30,30,30,.8);
+								opacity: 0;
+								transition: 333ms opacity;
+							}
+							&:after {
+								content: 'check';
+								@include material-icon();
+								font-size: 30px;
+								color: white;
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								opacity: 0;
+								transform: translate(-50%, -50%) scale(2);
+								transition: 333ms all;
+							}
+						}
+
+						&.active,
+						&:hover {
+							border-radius: 0;
+
+							a {
+								&:before,
+								&:after {
+									opacity: 1;
+								}
+								&:after {
+									transform: translate(-50%, -50%) scale(1);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

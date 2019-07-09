@@ -1,0 +1,9 @@
+#tm_builder_outer_content .tm_pb_brands_showcase_module__super-title {
+	font-size: $h3_font_size{px};
+}
+
+@media (max-width: 767px) {
+	#tm_builder_outer_content .tm_pb_brands_showcase_module__super-title {
+		font-size: @font_size($h3_font_size, multiple, ceil, 0.7)px;
+	}
+}

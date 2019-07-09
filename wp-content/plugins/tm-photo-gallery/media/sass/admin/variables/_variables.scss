@@ -1,0 +1,30 @@
+/* Fonts vars */
+$font-family: 		'Open Sans', sans-serif;
+$body-font-size: 	14px;
+$small-font-size: 	12px;
+
+/* Colors */
+$text-color: 		#888888;
+$header-color: 		#23282d;
+$accent-color: 		#298ffc;
+$white-color: 		#ffffff;
+$gray-color-1: 		#f1f1f1;
+$gray-color-2:		#e5e5e5;
+$gray-color-3: 		#b4b7ba;
+$gray-color-4: 		#e3e4e4;
+$gray-color-5: 		#e2e2e2;
+$gray-color-6: 		#dedede;
+$gray-color-7: 		#c9c8c8;
+
+/* Elements */
+$border-radius: 	2px;
+$box-shadow: 		4px 7px 21px 0px rgba(0, 0, 0, 0.1);
+
+/* Layouts */
+$gap: 				30px;
+$gap-double: 		$gap * 2;
+$grid-gap: 			10px;
+$sidebar-width: 	420px;
+
+/* Grid */
+$grid-gutter-width: 1.875rem !default; // 30px

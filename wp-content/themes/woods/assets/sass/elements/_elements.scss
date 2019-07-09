@@ -1,0 +1,74 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+blockquote, q {
+	quotes: none;
+	background: none;
+	&:before,
+	&:after {
+		content: '';
+	}
+}
+
+.entry-content {
+	blockquote {
+		position: relative;
+		margin: 22px 0 1em;
+		padding: 2px 0 0 42px;
+		background: none;
+		border-left: 2px solid red;
+		h5 {
+			padding-bottom: 17px;
+		}
+		p {
+			margin: 0;
+			& + p {
+				margin-top: 1em;
+			}
+		}
+		cite {
+			&:before {
+				content: "- ";
+			}
+		}
+	}
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin: 1.5em 0;
+}
+
+/*--------------------------------------------------------------
+## Lists
+--------------------------------------------------------------*/
+@import "lists";
+
+/*--------------------------------------------------------------
+## Tables
+--------------------------------------------------------------*/
+@import "tables";
+
+/*--------------------------------------------------------------
+## Preloader
+--------------------------------------------------------------*/
+@import "page-preloader";
+
+/*--------------------------------------------------------------
+## ToTop button
+--------------------------------------------------------------*/
+@import "totop-button";

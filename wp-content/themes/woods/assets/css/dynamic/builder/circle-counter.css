@@ -1,0 +1,16 @@
+#tm_builder_outer_content .tm_pb_module.tm_pb_circle_counter .percent {
+	color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_circle_counter .percent + * {
+	color: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_circle_counter .percent p {
+	font-family: @font_family( $h5_font_family );
+	color: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .tm_pb_circle_counter .tm_pb_circle_counter_bar .percent h6 {
+	color: @alpha( $regular_accent_color_2, 75 );
+}

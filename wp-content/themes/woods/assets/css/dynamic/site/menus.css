@@ -1,0 +1,94 @@
+/* #Main Menu */
+.main-navigation .menu > li > a {
+	color: $regular_accent_color_2;
+}
+.main-navigation .menu > li > a:hover,
+.main-navigation .menu > li.menu-hover > a,
+.main-navigation .menu > li.current_page_item > a,
+.main-navigation .menu > li.current_page_ancestor > a,
+.main-navigation .menu > li.current-menu-item > a,
+.main-navigation .menu > li.current-menu-ancestor > a {
+	color: $regular_accent_color_1;
+}
+.main-navigation .sub-menu {
+	background: $regular_accent_color_3;
+}
+
+.sub-menu-toggle {
+	color: $regular_accent_color_1;
+}
+
+@media (max-width: 767px) {
+	.main-navigation .sub-menu a {
+		color: $regular_accent_color_2;
+	}
+}
+
+.main-navigation ul ul a {
+	color: $invert_text_color;
+}
+.main-navigation .sub-menu > li > a:hover,
+.main-navigation .sub-menu > li.menu-hover > a,
+.main-navigation .sub-menu > li.current_page_item > a,
+.main-navigation .sub-menu > li.current_page_ancestor > a,
+.main-navigation .sub-menu > li.current-menu-item > a,
+.main-navigation .sub-menu > li.current-menu-ancestor > a {
+	color: $regular_accent_color_1;
+}
+.menu-item__desc {
+	color: $regular_text_color;
+}
+
+.main-navigation li::after {
+	color: $regular_accent_color_2;
+}
+
+.menu-toggle {
+	color: $regular_accent_color_2;
+}
+
+.menu-toggle:hover {
+	color: $regular_accent_color_1;
+}
+
+.top-panel .top-panel__menu-list li a {
+	color: $invert_accent_color_1;
+}
+
+.top-panel .top-panel__menu-list li a:hover {
+	color: $regular_link_color;
+}
+
+/* #Inverted Main Menu */
+.invert .main-navigation .menu > li > a,
+.invert .main-navigation .menu > li::after {
+	color: $invert_accent_color_1;
+}
+.invert .main-navigation .menu > li > a:hover,
+.invert .main-navigation .menu > li.menu-hover > a,
+.invert .main-navigation .menu > li.current_page_item > a,
+.invert .main-navigation .menu > li.current_page_ancestor > a,
+.invert .main-navigation .menu > li.current-menu-item > a,
+.invert .main-navigation .menu > li.current-menu-ancestor > a {
+	color: $invert_accent_color_3;
+}
+.invert .main-navigation .sub-menu > li > a:hover,
+.invert .main-navigation .sub-menu > li::after,
+.invert .main-navigation .sub-menu > li.menu-hover > a,
+.invert .main-navigation .sub-menu > li.current_page_item > a,
+.invert .main-navigation .sub-menu > li.current_page_ancestor > a,
+.invert .main-navigation .sub-menu > li.current-menu-item > a,
+.invert .main-navigation .sub-menu > li.current-menu-ancestor > a {
+	color: $regular_accent_color_1;
+}
+
+/* #Footer Menu */
+.footer-menu__items .menu-item a {
+	color: $invert_accent_color_1;
+}
+
+.footer-menu__items .menu-item a:hover,
+.footer-menu__items li.current-menu-item a,
+.footer-menu__items li.current_page_item a {
+	color: $regular_link_color;
+}

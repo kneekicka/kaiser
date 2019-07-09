@@ -1,0 +1,14 @@
+#tm_builder_outer_content {
+	.tm_pb_taxonomy.tm_pb_module {
+		.tm_pb_taxonomy__content {
+
+			h6 {
+				a {
+					@include transition(all 0.3s ease-out);
+				}
+			}
+			.post-count {}
+			.tm_builder_outer_content {}
+		}
+	}
+}

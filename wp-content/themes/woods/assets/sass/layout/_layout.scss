@@ -1,0 +1,12 @@
+.container {
+	&.site-header,
+	&.site-footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&.site-content {
+		.container {
+			@include reset-container();
+		}
+	}
+}

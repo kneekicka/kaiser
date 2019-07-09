@@ -1,0 +1,36 @@
+.comment {
+	&-respond {
+	}
+	&-reply-title {
+	}
+	&-form {
+		&-comment,
+		&-author,
+		&-email,
+		&-url {
+			margin: 20px 0 0 0;
+		}
+		.form-submit {
+			margin: 50px 0 0 0;
+			.submit:focus {
+				box-shadow: none;
+			}
+		}
+		&__field {
+			width: 100%;
+			vertical-align: top;
+			letter-spacing: 1px;
+			border: 1px solid;
+		}
+		.logged-in-as,
+		.comment-notes {
+			margin: 1em 0;
+		}
+		.comment-list & {
+			padding-bottom: 2em;
+		}
+	}
+}
+#cancel-comment-reply-link {
+	@include font-size(0.75);
+}

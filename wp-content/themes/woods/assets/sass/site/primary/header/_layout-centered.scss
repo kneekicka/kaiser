@@ -1,0 +1,34 @@
+.site-header.centered {
+	@include media-breakpoint-up(md) {
+		text-align: center;
+	}
+	.header-container {
+		padding-top: 30px;
+		.btn.booking {
+			margin: 0 0 30px;
+		}
+
+		@include media-breakpoint-down(md) {
+			text-align: center;
+		}
+	}
+	.main-navigation {
+		padding-top: 0;
+		padding-bottom: 8px;
+		text-align: left;
+		@include media-breakpoint-down(md) {
+			padding-bottom: 0;
+		}
+		&.isStuck {
+			padding-bottom: 0;
+		}
+		.menu {
+			justify-content: center;
+		}
+
+		@include media-breakpoint-down(md) {
+			text-align: center;
+			padding: 20px 0;
+		}
+	}
+}
